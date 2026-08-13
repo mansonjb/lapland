@@ -1,32 +1,31 @@
 @import "tailwindcss";
 
 /* ==========================================================================
-   LAPLAND STAYS — placeholder palette, deliberately theme-agnostic.
-   Everything is a CSS custom property so the final design (in review,
-   separate mockup) can swap values here without touching component code.
+   LAPLAND STAYS — approved palette ("Namibia Stays" art direction).
    ========================================================================== */
 :root {
   color-scheme: light;
 }
 
 @theme {
-  /* --- Ink / neutrals --- */
-  --color-ink: #10151a; /* primary text */
-  --color-ink-soft: #4a5560; /* secondary text */
-  --color-surface: #ffffff; /* cards, embeds */
-  --color-paper: #f5f7f8; /* page background */
-  --color-paper-2: #e9edf0; /* section bands */
-  --color-line: #dbe1e5; /* hairlines / borders */
+  /* --- Approved palette --- */
+  --color-frost: #f2f6f6;
+  --color-birch: #ddc9a0;
+  --color-birch-dark: #b98f47;
+  --color-granite: #8898a4;
+  --color-spruce: #2f6b52;
+  --color-spruce-dark: #1f4d3a;
+  --color-copper: #c1611a;
+  --color-copper-dark: #9c4d12;
+  --color-midnight: #212a38;
+  --color-ink: #12161f;
 
-  /* --- Aurora accent ramp (placeholder — northern-lights greens/violets) --- */
-  --color-aurora-green: #2fbf8f;
-  --color-aurora-green-deep: #1c8f68;
-  --color-aurora-violet: #6a5acd;
-  --color-aurora-violet-deep: #4b3fa0;
-
-  /* --- Warm accent (cabin-light amber, used for CTAs) --- */
-  --color-amber: #d98e3f;
-  --color-amber-deep: #b6721f;
+  /* --- Functional aliases built on the approved palette --- */
+  --color-ink-soft: color-mix(in srgb, var(--color-ink) 68%, white);
+  --color-surface: #ffffff;
+  --color-paper: var(--color-frost);
+  --color-paper-2: color-mix(in srgb, var(--color-frost) 60%, white);
+  --color-line: color-mix(in srgb, var(--color-granite) 32%, white);
 
   --radius: 12px;
   --radius-sm: 8px;
@@ -40,4 +39,34 @@ body {
   color: var(--color-ink);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+/* Serif italic display type — logo, section titles, city names. */
+.font-display {
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+  font-style: italic;
+}
+
+/* Copper -> birch-dark -> spruce text gradient for hero/brand emphasis. */
+.text-gradient-brand {
+  background-image: linear-gradient(
+    100deg,
+    var(--color-copper) 0%,
+    var(--color-birch-dark) 50%,
+    var(--color-spruce) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Small conic-gradient brand mark used next to the wordmark. */
+.brand-mark {
+  background-image: conic-gradient(
+    from 200deg,
+    var(--color-copper),
+    var(--color-birch-dark),
+    var(--color-spruce),
+    var(--color-copper)
+  );
 }

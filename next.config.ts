@@ -22,6 +22,7 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       { protocol: "https", hostname: "images.unsplash.com" },
+      { protocol: "https", hostname: "pub-60789f33389a47598f61e2195719102a.r2.dev" },
     ],
   },
   async headers() {

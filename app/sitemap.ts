@@ -1,13 +1,20 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/site";
-import { LOCALES, DEFAULT_LOCALE, localeHref } from "@/lib/i18n";
+import { LOCALES, localeHref } from "@/lib/i18n";
+import { DESTINATIONS } from "@/data/destinations";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return LOCALES.map((locale) => ({
-    url:
-      locale === DEFAULT_LOCALE
-        ? SITE_URL
-        : `${SITE_URL}${localeHref(locale)}`,
+  const home = LOCALES.map((locale) => ({
+    url: `${SITE_URL}${localeHref(locale)}`,
     lastModified: new Date(),
   }));
+
+  const cities = LOCALES.flatMap((locale) =>
+    DESTINATIONS.map((d) => ({
+      url: `${SITE_URL}${localeHref(locale, d.slug)}`,
+      lastModified: new Date(),
+    }))
+  );
+
+  return [...home, ...cities];
 }

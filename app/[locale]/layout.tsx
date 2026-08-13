@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 import Script from "next/script";
-import { HTML_LANG, LOCALES, isLocale } from "@/lib/i18n";
+import { HTML_LANG, LOCALES, isLocale, type Locale } from "@/lib/i18n";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 
 export function generateStaticParams() {
   return LOCALES.map((locale) => ({ locale }));
@@ -15,11 +17,14 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
+  const lang = locale as Locale;
 
   return (
     <html lang={HTML_LANG[locale]}>
       <body className="min-h-screen bg-paper text-ink antialiased">
+        <Header locale={lang} />
         {children}
+        <Footer locale={lang} />
         <Script id="stay22-lma" strategy="afterInteractive">
           {`(function (s, t, a, y, twenty, two) {
     s.Stay22 = s.Stay22 || {};
