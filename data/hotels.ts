@@ -11,18 +11,50 @@ export type Hotel = {
   description: {
     fr: string;
     en: string;
+    de: string;
+    nl: string;
+    es: string;
+    it: string;
   };
   highlights: {
     fr: string[];
     en: string[];
+    de: string[];
+    nl: string[];
+    es: string[];
+    it: string[];
   };
 };
 
-export const HOTEL_TYPE_LABEL: Record<HotelType, { fr: string; en: string }> = {
-  hotel: { fr: "Hotel", en: "Hotel" },
-  "glass-igloo": { fr: "Igloo de verre", en: "Glass igloo" },
-  "ice-hotel": { fr: "Hotel de glace", en: "Ice hotel" },
-  cabin: { fr: "Cabane / chalet", en: "Cabin / chalet" },
+export const HOTEL_TYPE_LABEL: Record<
+  HotelType,
+  { fr: string; en: string; de: string; nl: string; es: string; it: string }
+> = {
+  hotel: { fr: "Hotel", en: "Hotel", de: "Hotel", nl: "Hotel", es: "Hotel", it: "Hotel" },
+  "glass-igloo": {
+    fr: "Igloo de verre",
+    en: "Glass igloo",
+    de: "Glasiglu",
+    nl: "Glazen iglo",
+    es: "Iglu de cristal",
+    it: "Iglu di vetro",
+  },
+  "ice-hotel": {
+    fr: "Hotel de glace",
+    en: "Ice hotel",
+    de: "Eishotel",
+    nl: "IJshotel",
+    es: "Hotel de hielo",
+    it: "Hotel di ghiaccio",
+  },
+  cabin: {
+    fr: "Cabane / chalet",
+    en: "Cabin / chalet",
+    de: "Huette / Chalet",
+    nl: "Hut / chalet",
+    es: "Cabana / chalet",
+    it: "Baita / chalet",
+  },
 };
 
 export const HOTELS: Hotel[] = [
@@ -37,10 +69,18 @@ export const HOTELS: Hotel[] = [
     description: {
       fr: "Cabanes suspendues tout en verre, murs orientes au nord pour guetter les aurores depuis le lit, a deux pas du Village du Pere Noel.",
       en: "Glass-walled treehouse cabins with north-facing windows for aurora watching from bed, just outside Santa Claus Village.",
+      de: "Freistehende Baumhaus-Kabinen ganz aus Glas, mit nach Norden ausgerichteten Fenstern zur Polarlichtbeobachtung vom Bett aus, direkt neben dem Weihnachtsmanndorf.",
+      nl: "Boomhut-cabines volledig van glas, met naar het noorden gerichte ramen om het noorderlicht vanuit bed te bekijken, vlak bij het Kerstman Dorp.",
+      es: "Cabanas elevadas totalmente acristaladas, con ventanas orientadas al norte para observar las auroras desde la cama, justo al lado del Pueblo de Papa Noel.",
+      it: "Baite sopraelevate interamente in vetro, con finestre orientate a nord per osservare le aurore dal letto, a pochi passi dal Villaggio di Babbo Natale.",
     },
     highlights: {
       fr: ["Murs vitres orientes nord", "Cuisine nordique sur place", "A 10 min de l'aeroport"],
       en: ["North-facing glass walls", "On-site Nordic kitchen", "10 min from the airport"],
+      de: ["Nach Norden ausgerichtete Glaswaende", "Nordische Kueche vor Ort", "10 Min vom Flughafen entfernt"],
+      nl: ["Naar het noorden gerichte glazen wanden", "Noordse keuken ter plaatse", "10 min van de luchthaven"],
+      es: ["Paredes de cristal orientadas al norte", "Cocina nordica en el propio hotel", "A 10 min del aeropuerto"],
+      it: ["Pareti di vetro orientate a nord", "Cucina nordica in loco", "A 10 min dall'aeroporto"],
     },
   },
   {
@@ -53,10 +93,18 @@ export const HOTELS: Hotel[] = [
     description: {
       fr: "Igloos de verre chauffes directement dans le Village du Pere Noel, sur le cercle polaire arctique.",
       en: "Heated glass igloos set right inside Santa Claus Village, on the Arctic Circle line.",
+      de: "Beheizte Glasiglus direkt im Weihnachtsmanndorf, auf der Polarkreislinie.",
+      nl: "Verwarmde glazen iglos midden in het Kerstman Dorp, op de poolcirkellijn.",
+      es: "Iglus de cristal climatizados situados dentro del Pueblo de Papa Noel, sobre la linea del circulo polar artico.",
+      it: "Iglu di vetro riscaldati proprio all'interno del Villaggio di Babbo Natale, sulla linea del circolo polare artico.",
     },
     highlights: {
       fr: ["Sur le cercle polaire", "Igloo chauffe individuel", "Activites Pere Noel sur place"],
       en: ["Right on the Arctic Circle", "Individually heated igloo", "Santa Claus activities on-site"],
+      de: ["Direkt am Polarkreis", "Individuell beheiztes Iglu", "Weihnachtsmann-Aktivitaeten vor Ort"],
+      nl: ["Direct op de poolcirkel", "Individueel verwarmde iglo", "Kerstman-activiteiten ter plaatse"],
+      es: ["Justo en el circulo polar artico", "Iglu con calefaccion individual", "Actividades de Papa Noel en el mismo lugar"],
+      it: ["Proprio sul circolo polare artico", "Iglu con riscaldamento individuale", "Attivita di Babbo Natale in loco"],
     },
   },
   {
@@ -69,10 +117,18 @@ export const HOTELS: Hotel[] = [
     description: {
       fr: "Hotel de neige et de glace reconstruit chaque hiver, avec option igloos de verre chauffes juste a cote.",
       en: "A snow and ice hotel rebuilt from scratch every winter, with heated glass igloos right next door.",
+      de: "Ein Schnee- und Eishotel, das jeden Winter komplett neu gebaut wird, mit beheizten Glasiglus direkt nebenan.",
+      nl: "Een sneeuw- en ijshotel dat elke winter volledig opnieuw wordt gebouwd, met verwarmde glazen iglos vlak ernaast.",
+      es: "Un hotel de nieve y hielo reconstruido desde cero cada invierno, con iglus de cristal climatizados justo al lado.",
+      it: "Un hotel di neve e ghiaccio ricostruito da zero ogni inverno, con iglu di vetro riscaldati proprio accanto.",
     },
     highlights: {
       fr: ["Chambres sculptees dans la glace", "Sacs de couchage thermiques fournis", "Jacuzzi exterieur"],
       en: ["Rooms carved from ice", "Thermal sleeping bags provided", "Outdoor hot tub"],
+      de: ["Aus Eis geschnitzte Zimmer", "Thermoschlafsaecke inklusive", "Aussen-Whirlpool"],
+      nl: ["Kamers gebeeldhouwd uit ijs", "Thermische slaapzakken inbegrepen", "Buiten jacuzzi"],
+      es: ["Habitaciones talladas en hielo", "Sacos de dormir termicos incluidos", "Jacuzzi exterior"],
+      it: ["Camere scolpite nel ghiaccio", "Sacchi a pelo termici inclusi", "Vasca idromassaggio esterna"],
     },
   },
 
@@ -87,10 +143,18 @@ export const HOTELS: Hotel[] = [
     description: {
       fr: "Igloos de verre individuels sur la colline de Levi, vue degagee sur les pistes et le ciel.",
       en: "Standalone glass igloos on Levi's fell, with clear views over the slopes and sky.",
+      de: "Freistehende Glasiglus auf dem Fjell von Levi, mit freiem Blick auf die Pisten und den Himmel.",
+      nl: "Vrijstaande glazen iglos op de fjell van Levi, met vrij uitzicht over de pistes en de hemel.",
+      es: "Iglus de cristal independientes en la colina de Levi, con vistas despejadas a las pistas y al cielo.",
+      it: "Iglu di vetro indipendenti sulla collina di Levi, con vista libera sulle piste e sul cielo.",
     },
     highlights: {
       fr: ["Vue panoramique sur la colline", "Sauna prive dans certains igloos", "A 5 min du centre de Levi"],
       en: ["Panoramic fell views", "Private sauna in some igloos", "5 min from Levi centre"],
+      de: ["Panoramablick auf das Fjell", "Private Sauna in manchen Iglus", "5 Min vom Zentrum von Levi"],
+      nl: ["Panoramisch uitzicht over de fjell", "Prive sauna in sommige iglos", "5 min van het centrum van Levi"],
+      es: ["Vistas panoramicas de la colina", "Sauna privada en algunos iglus", "A 5 min del centro de Levi"],
+      it: ["Vista panoramica sulla collina", "Sauna privata in alcuni iglu", "A 5 min dal centro di Levi"],
     },
   },
   {
@@ -103,10 +167,18 @@ export const HOTELS: Hotel[] = [
     description: {
       fr: "Grand hotel familial au coeur du village de Levi, base pratique pour skier et enchainer les excursions aurores.",
       en: "A large family hotel in the heart of Levi village, a practical base for skiing and aurora tours.",
+      de: "Ein grosses Familienhotel im Herzen des Dorfes Levi, eine praktische Basis zum Skifahren und fuer Polarlicht-Touren.",
+      nl: "Een groot familiehotel in het hart van het dorp Levi, een praktische uitvalsbasis om te skien en noorderlichttochten te maken.",
+      es: "Un gran hotel familiar en el corazon del pueblo de Levi, una base practica para esquiar y encadenar excursiones de auroras.",
+      it: "Un grande hotel per famiglie nel cuore del villaggio di Levi, una base pratica per sciare e per le escursioni alle aurore.",
     },
     highlights: {
       fr: ["Au centre du village", "Piscine et spa", "Adapte aux familles"],
       en: ["Village-centre location", "Pool and spa", "Family-friendly"],
+      de: ["Lage im Dorfzentrum", "Pool und Spa", "Familienfreundlich"],
+      nl: ["Ligging in het dorpscentrum", "Zwembad en spa", "Geschikt voor gezinnen"],
+      es: ["Ubicacion en el centro del pueblo", "Piscina y spa", "Apto para familias"],
+      it: ["Posizione nel centro del villaggio", "Piscina e spa", "Adatto alle famiglie"],
     },
   },
   {
@@ -119,10 +191,18 @@ export const HOTELS: Hotel[] = [
     description: {
       fr: "Hotel design, la mieux notee du secteur, a distance de marche des remontees mecaniques.",
       en: "A design hotel, the best-rated property in the area, within walking distance of the ski lifts.",
+      de: "Ein Designhotel, die bestbewertete Unterkunft der Gegend, in Gehweite zu den Skiliften.",
+      nl: "Een designhotel, de best beoordeelde accommodatie in de omgeving, op loopafstand van de skiliften.",
+      es: "Un hotel de diseno, el mejor valorado de la zona, a poca distancia a pie de los remontes.",
+      it: "Un hotel di design, la struttura meglio valutata della zona, a pochi passi dagli impianti di risalita.",
     },
     highlights: {
       fr: ["Meilleure note du secteur", "A pied des remontees", "Restaurant reconnu sur place"],
       en: ["Best-rated in the area", "Walk to the lifts", "Well-regarded on-site restaurant"],
+      de: ["Bestbewertet in der Gegend", "Zu Fuss zu den Liften", "Angesehenes Restaurant vor Ort"],
+      nl: ["Best beoordeeld in de omgeving", "Loopafstand tot de liften", "Gerenommeerd restaurant ter plaatse"],
+      es: ["El mejor valorado de la zona", "A pie de los remontes", "Restaurante de prestigio en el hotel"],
+      it: ["Il migliore valutato della zona", "A piedi dagli impianti", "Ristorante rinomato in loco"],
     },
   },
 
@@ -137,10 +217,18 @@ export const HOTELS: Hotel[] = [
     description: {
       fr: "L'igloo de verre le plus connu de Laponie, au bord du parc national d'Urho Kekkonen.",
       en: "Lapland's best-known glass igloo resort, on the edge of Urho Kekkonen National Park.",
+      de: "Das bekannteste Glasiglu-Resort Lapplands, am Rand des Urho-Kekkonen-Nationalparks.",
+      nl: "Het bekendste glazen iglo-resort van Lapland, aan de rand van het Urho Kekkonen Nationaal Park.",
+      es: "El complejo de iglus de cristal mas conocido de Laponia, al borde del Parque Nacional de Urho Kekkonen.",
+      it: "Il resort di iglu di vetro piu famoso della Lapponia, ai margini del Parco Nazionale di Urho Kekkonen.",
     },
     highlights: {
       fr: ["Le nom le plus reconnu du secteur", "Chalets et igloos de verre", "Acces direct au parc national"],
       en: ["The most recognised name in the region", "Chalets and glass igloos", "Direct access to the national park"],
+      de: ["Der bekannteste Name der Region", "Chalets und Glasiglus", "Direkter Zugang zum Nationalpark"],
+      nl: ["De meest bekende naam in de regio", "Chalets en glazen iglos", "Directe toegang tot het nationaal park"],
+      es: ["El nombre mas reconocido de la region", "Chalets e iglus de cristal", "Acceso directo al parque nacional"],
+      it: ["Il nome piu riconosciuto della regione", "Chalet e iglu di vetro", "Accesso diretto al parco nazionale"],
     },
   },
   {
@@ -153,10 +241,18 @@ export const HOTELS: Hotel[] = [
     description: {
       fr: "Cabanes au toit entierement vitre, pensees pour observer les aurores allonge sans sortir du lit.",
       en: "Cabins with a full glass ceiling, designed for aurora watching without leaving the bed.",
+      de: "Huetten mit komplett verglastem Dach, konzipiert fuer die Polarlichtbeobachtung, ohne das Bett zu verlassen.",
+      nl: "Hutten met een volledig glazen dak, ontworpen om het noorderlicht te bekijken zonder het bed te verlaten.",
+      es: "Cabanas con techo totalmente acristalado, pensadas para observar las auroras sin salir de la cama.",
+      it: "Baite con soffitto interamente in vetro, pensate per osservare le aurore senza uscire dal letto.",
     },
     highlights: {
       fr: ["Toit integralement vitre", "Sauna et restaurant sur place", "Navette depuis Ivalo"],
       en: ["Full glass ceiling", "On-site sauna and restaurant", "Shuttle from Ivalo"],
+      de: ["Vollstaendig verglastes Dach", "Sauna und Restaurant vor Ort", "Shuttle ab Ivalo"],
+      nl: ["Volledig glazen dak", "Sauna en restaurant ter plaatse", "Shuttle vanaf Ivalo"],
+      es: ["Techo totalmente acristalado", "Sauna y restaurante en el mismo lugar", "Traslado desde Ivalo"],
+      it: ["Soffitto interamente vetrato", "Sauna e ristorante in loco", "Navetta da Ivalo"],
     },
   },
   {
@@ -171,10 +267,18 @@ export const HOTELS: Hotel[] = [
     description: {
       fr: "Large eventail de formules dans la zone de Saariselka, des chambres classiques aux igloos de verre.",
       en: "A wide range of stay types in the Saariselka area, from standard rooms to glass igloos.",
+      de: "Ein breites Angebot an Unterkunftsarten im Gebiet von Saariselka, von Standardzimmern bis zu Glasiglus.",
+      nl: "Een breed scala aan verblijfsopties in het gebied van Saariselka, van standaardkamers tot glazen iglos.",
+      es: "Una amplia variedad de tipos de alojamiento en la zona de Saariselka, desde habitaciones clasicas hasta iglus de cristal.",
+      it: "Un'ampia gamma di tipologie di soggiorno nella zona di Saariselka, dalle camere standard agli iglu di vetro.",
     },
     highlights: {
       fr: ["Plusieurs formats d'hebergement", "Restaurant lodge sur place", "Proche des pistes de ski de fond"],
       en: ["Several room formats on one site", "On-site lodge restaurant", "Close to cross-country trails"],
+      de: ["Mehrere Zimmerformate an einem Ort", "Lodge-Restaurant vor Ort", "Nahe an Langlaufloipen"],
+      nl: ["Meerdere kamertypes op een locatie", "Lodge-restaurant ter plaatse", "Dicht bij langlaufpistes"],
+      es: ["Varios formatos de habitacion en un mismo sitio", "Restaurante lodge en el hotel", "Cerca de las pistas de esqui de fondo"],
+      it: ["Diverse tipologie di camere in un unico sito", "Ristorante lodge in loco", "Vicino alle piste di sci di fondo"],
     },
   },
 
@@ -189,10 +293,18 @@ export const HOTELS: Hotel[] = [
     description: {
       fr: "L'hotel de glace original, refait chaque hiver par des artistes, avec une aile chauffee toute l'annee.",
       en: "The original ice hotel, rebuilt every winter by artists, with a heated wing open year-round.",
+      de: "Das originale Eishotel, jeden Winter von Kuenstlern neu errichtet, mit einem ganzjaehrig beheizten Fluegel.",
+      nl: "Het originele ijshotel, elke winter opnieuw opgebouwd door kunstenaars, met een het hele jaar verwarmde vleugel.",
+      es: "El hotel de hielo original, reconstruido cada invierno por artistas, con un ala climatizada abierta todo el ano.",
+      it: "L'hotel di ghiaccio originale, ricostruito ogni inverno da artisti, con un'ala riscaldata aperta tutto l'anno.",
     },
     highlights: {
       fr: ["Suites d'art sculptees a la main", "Aile chauffee disponible", "Sur la riviere Torne"],
       en: ["Hand-carved art suites", "Heated wing available", "On the Torne River"],
+      de: ["Handgeschnitzte Kunst-Suiten", "Beheizter Fluegel verfuegbar", "Am Fluss Torne"],
+      nl: ["Handgesneden kunst-suites", "Verwarmde vleugel beschikbaar", "Aan de rivier de Torne"],
+      es: ["Suites artisticas talladas a mano", "Ala climatizada disponible", "A orillas del rio Torne"],
+      it: ["Suite artistiche scolpite a mano", "Ala riscaldata disponibile", "Sul fiume Torne"],
     },
   },
   {
@@ -205,10 +317,18 @@ export const HOTELS: Hotel[] = [
     description: {
       fr: "A 5 minutes de l'Aurora Sky Station, l'option la plus pratique et la plus accessible pour voir des aurores a Abisko.",
       en: "5 minutes from the Aurora Sky Station, the most practical and accessible base for seeing the lights in Abisko.",
+      de: "5 Minuten von der Aurora Sky Station entfernt, die praktischste und zugaenglichste Basis, um Polarlichter in Abisko zu sehen.",
+      nl: "5 minuten van het Aurora Sky Station, de meest praktische en toegankelijke uitvalsbasis om het noorderlicht in Abisko te zien.",
+      es: "A 5 minutos de la Aurora Sky Station, la opcion mas practica y accesible para ver auroras en Abisko.",
+      it: "A 5 minuti dall'Aurora Sky Station, l'opzione piu pratica e accessibile per vedere le aurore ad Abisko.",
     },
     highlights: {
       fr: ["A 5 min de l'Aurora Sky Station", "Ciel parmi les plus clairs de Scandinavie", "Formules auberge et chambres privees"],
       en: ["5 min from the Aurora Sky Station", "Some of Scandinavia's clearest skies", "Hostel and private-room options"],
+      de: ["5 Min von der Aurora Sky Station", "Einer der klarsten Himmel Skandinaviens", "Hostel- und Privatzimmer-Optionen"],
+      nl: ["5 min van het Aurora Sky Station", "Een van de helderste luchten van Scandinavie", "Hostel- en priveskameropties"],
+      es: ["A 5 min de la Aurora Sky Station", "Uno de los cielos mas despejados de Escandinavia", "Opciones de albergue y habitaciones privadas"],
+      it: ["A 5 min dall'Aurora Sky Station", "Uno dei cieli piu limpidi della Scandinavia", "Opzioni ostello e camere private"],
     },
   },
 
@@ -225,10 +345,18 @@ export const HOTELS: Hotel[] = [
     description: {
       fr: "Jacuzzi sur le toit avec vue sur le fjord, en plein centre-ville de Tromso.",
       en: "Rooftop hot tub with fjord views, right in downtown Tromso.",
+      de: "Whirlpool auf dem Dach mit Blick auf den Fjord, mitten im Zentrum von Tromso.",
+      nl: "Jacuzzi op het dak met uitzicht op de fjord, midden in het centrum van Tromso.",
+      es: "Jacuzzi en la azotea con vistas al fiordo, en pleno centro de Tromso.",
+      it: "Vasca idromassaggio sul tetto con vista sul fiordo, nel pieno centro di Tromso.",
     },
     highlights: {
       fr: ["Jacuzzi sur le toit", "Centre-ville de Tromso", "Repas du soir inclus"],
       en: ["Rooftop hot tub", "Downtown Tromso", "Evening meal included"],
+      de: ["Whirlpool auf dem Dach", "Zentrum von Tromso", "Abendessen inklusive"],
+      nl: ["Jacuzzi op het dak", "Centrum van Tromso", "Avondmaaltijd inbegrepen"],
+      es: ["Jacuzzi en la azotea", "Centro de Tromso", "Cena incluida"],
+      it: ["Vasca idromassaggio sul tetto", "Centro di Tromso", "Cena inclusa"],
     },
   },
   {
@@ -241,10 +369,18 @@ export const HOTELS: Hotel[] = [
     description: {
       fr: "Sky bar en hauteur et pont vitre sur le front de mer, a distance de marche du centre.",
       en: "A rooftop sky bar and a glass-walled bridge over the waterfront, within walking distance of the centre.",
+      de: "Eine Sky Bar auf dem Dach und eine verglaste Bruecke ueber die Uferpromenade, in Gehweite zum Zentrum.",
+      nl: "Een sky bar op het dak en een glazen brug over de waterkant, op loopafstand van het centrum.",
+      es: "Un sky bar en la azotea y un puente acristalado sobre el paseo maritimo, a poca distancia a pie del centro.",
+      it: "Uno sky bar sul tetto e un ponte vetrato sul lungomare, a pochi passi dal centro.",
     },
     highlights: {
       fr: ["Sky bar avec vue", "Pont vitre sur le fjord", "A pied du centre historique"],
       en: ["Sky bar with a view", "Glass bridge over the fjord", "Walk to the old town"],
+      de: ["Sky Bar mit Aussicht", "Verglaste Bruecke ueber den Fjord", "Zu Fuss zur Altstadt"],
+      nl: ["Sky bar met uitzicht", "Glazen brug over de fjord", "Loopafstand tot de oude stad"],
+      es: ["Sky bar con vistas", "Puente acristalado sobre el fiordo", "A pie del casco antiguo"],
+      it: ["Sky bar panoramico", "Ponte vetrato sul fiordo", "A piedi dal centro storico"],
     },
   },
   {
@@ -257,10 +393,18 @@ export const HOTELS: Hotel[] = [
     description: {
       fr: "Grand hotel front de mer de 305 chambres, base solide pour enchainer excursions aurores et fjords.",
       en: "A large 305-room waterfront hotel, a solid base for stacking aurora and fjord excursions.",
+      de: "Ein grosses Hotel mit 305 Zimmern direkt am Wasser, eine solide Basis fuer Polarlicht- und Fjord-Ausfluege.",
+      nl: "Een groot hotel met 305 kamers aan het water, een solide uitvalsbasis om noorderlicht- en fjordtochten te combineren.",
+      es: "Un gran hotel de 305 habitaciones frente al mar, una base solida para encadenar excursiones de auroras y fiordos.",
+      it: "Un grande hotel fronte mare con 305 camere, una base solida per alternare escursioni alle aurore e ai fiordi.",
     },
     highlights: {
       fr: ["305 chambres, front de mer", "Depart facile pour les excursions", "Restaurant et bar sur place"],
       en: ["305 rooms, on the waterfront", "Easy pickup for excursions", "On-site restaurant and bar"],
+      de: ["305 Zimmer, direkt am Wasser", "Einfache Abholung fuer Ausfluege", "Restaurant und Bar vor Ort"],
+      nl: ["305 kamers aan het water", "Makkelijke ophaalservice voor excursies", "Restaurant en bar ter plaatse"],
+      es: ["305 habitaciones frente al mar", "Recogida facil para las excursiones", "Restaurante y bar en el hotel"],
+      it: ["305 camere fronte mare", "Ritiro facile per le escursioni", "Ristorante e bar in loco"],
     },
   },
 ];

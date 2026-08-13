@@ -10,10 +10,28 @@ export type Stay22MapProps = {
   mode?: "accommodation" | "experience";
   /** Free-form campaign tag for attribution, typically the page slug. */
   campaign?: string;
-  lang: "fr" | "en";
+  lang: "fr" | "en" | "de" | "nl" | "es" | "it";
   /** Reserved iframe height in px. Fixed so the layout never shifts (no CLS). */
   height?: number;
   className?: string;
+};
+
+const MAP_TITLE_TEMPLATE: Record<Stay22MapProps["lang"], (place: string) => string> = {
+  fr: (place) => `Hebergements pres de ${place}`,
+  en: (place) => `Stays near ${place}`,
+  de: (place) => `Unterkuenfte in der Naehe von ${place}`,
+  nl: (place) => `Verblijven bij ${place}`,
+  es: (place) => `Alojamientos cerca de ${place}`,
+  it: (place) => `Alloggi vicino a ${place}`,
+};
+
+const MAP_TITLE_FALLBACK: Record<Stay22MapProps["lang"], string> = {
+  fr: "cette destination",
+  en: "this destination",
+  de: "dieses Reiseziel",
+  nl: "deze bestemming",
+  es: "este destino",
+  it: "questa destinazione",
 };
 
 const INVMODE: Record<NonNullable<Stay22MapProps["mode"]>, string> = {
@@ -57,10 +75,9 @@ function buildStay22Src({
 export function Stay22Map(props: Stay22MapProps) {
   const { height = 460, className } = props;
   const src = buildStay22Src(props);
-  const title =
-    props.lang === "fr"
-      ? `Hebergements pres de ${props.address ?? "cette destination"}`
-      : `Stays near ${props.address ?? "this destination"}`;
+  const title = MAP_TITLE_TEMPLATE[props.lang](
+    props.address ?? MAP_TITLE_FALLBACK[props.lang]
+  );
 
   return (
     <div

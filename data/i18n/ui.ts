@@ -15,6 +15,10 @@ export type Dict = {
     ctaButton: string;
     langFr: string;
     langEn: string;
+    langDe: string;
+    langNl: string;
+    langEs: string;
+    langIt: string;
   };
   hero: {
     badgeBrand: string;

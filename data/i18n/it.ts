@@ -1,0 +1,126 @@
+import type { Dict } from "./ui";
+
+export const UI_IT: Dict = {
+  site: {
+    name: "Lapland Stays",
+    tagline: "Vedere l'aurora boreale in Lapponia: dove dormire, quando partire.",
+  },
+  nav: {
+    destinations: "Destinazioni",
+    hotels: "Alloggi",
+    map: "Mappa",
+    faq: "FAQ",
+  },
+  header: {
+    ctaButton: "Vedi gli alloggi",
+    langFr: "FR",
+    langEn: "EN",
+    langDe: "DE",
+    langNl: "NL",
+    langEs: "ES",
+    langIt: "IT",
+  },
+  hero: {
+    badgeBrand: "Lapland Stays",
+    badgeKp: "Indice KP in diretta",
+    titlePre: "Dove dormire per vedere l'",
+    titleHighlight: "aurora boreale",
+    titlePost: "in Lapponia",
+    lede: "Una guida indipendente per scegliere il villaggio giusto, il periodo giusto e l'alloggio giusto, iglu di vetro, hotel di ghiaccio o baita vetrata, tra settembre e marzo.",
+    ctaPrimary: "Confronta gli alloggi",
+    ctaSecondary: "Vedi tutte le 5 destinazioni",
+    trust: [
+      "Selezione indipendente, nessuna commissione cambia le nostre raccomandazioni",
+      "Foto reali di ogni struttura, niente immagini stock generiche",
+      "Aggiornato per la stagione delle aurore 2026-2027",
+    ],
+    stats: [
+      { value: "5", label: "destinazioni coperte" },
+      { value: "60+", label: "alloggi elencati" },
+      { value: "100%", label: "indipendente" },
+    ],
+    imageAlt: "Baita vetrata sotto l'aurora boreale a Rovaniemi, Lapponia",
+  },
+  planning: {
+    heading: "Trova il tuo alloggio",
+    cityLabel: "Citta",
+    cityAll: "Tutte le destinazioni",
+    typeLabel: "Tipo di alloggio",
+    typeAll: "Tutti i tipi",
+    searchButton: "Cerca",
+  },
+  manifesto: {
+    quote: "Non vendiamo viaggi. Ti aiutiamo a scegliere dove dormire per massimizzare le tue possibilita di vedere le aurore, e poi ti indirizziamo ai nostri partner di prenotazione.",
+    attribution: "La promessa di Lapland Stays",
+  },
+  intro: {
+    heading: "La Lapponia non e un unico posto",
+    paragraphLeft: "Rovaniemi, Levi, Saariselka, Kiruna, Abisko, Tromso: cinque basi molto diverse finiscono tutte sotto l'etichetta 'vedere l'aurora boreale'. Ognuna ha il proprio clima, accesso, atmosfera e tipo di alloggio dominante. Scegliere la destinazione giusta conta quanto scegliere le date giuste.",
+    paragraphRight: "Questa guida confronta destinazioni e alloggi senza cercare di venderti il pacchetto piu caro. Ogni scheda rimanda ai nostri partner di prenotazione (Stay22, Booking, Airbnb, GetYourGuide) solo quando l'offerta corrisponde davvero a cio che cerchi.",
+    linkLabel: "Vedi il nostro metodo",
+  },
+  destinationsSection: {
+    heading: "Le 5 destinazioni",
+    subheading: "Ogni citta ha un profilo diverso: accesso, densita di iglu di vetro, atmosfera. Confronta prima di prenotare.",
+    ctaLabel: "Vedi gli alloggi",
+  },
+  mapSection: {
+    heading: "La Lapponia sulla mappa",
+    subheading: "Tutte le destinazioni coperte da questa guida, con alloggi vicini disponibili per la prenotazione.",
+  },
+  hotelsSection: {
+    heading: "La nostra selezione di alloggi",
+    subheading: "Iglu di vetro, hotel di ghiaccio e baite vetrate scelti per la posizione e il potenziale di osservazione delle aurore.",
+    availabilityLabel: "Disponibilita variabile",
+    ctaLabel: "Controlla la disponibilita",
+  },
+  faqSection: {
+    heading: "Domande frequenti",
+    subheading: "Cosa ci viene chiesto piu spesso prima di un viaggio per le aurore.",
+    items: [
+      {
+        q: "Con quanto anticipo devo prenotare?",
+        a: "Per gli iglu di vetro e gli hotel di ghiaccio piu richiesti, prenota da 6 a 10 mesi prima, soprattutto per le date di dicembre-gennaio e le vacanze scolastiche europee. Gli hotel standard si possono prenotare piu tardi, di solito bastano 2 o 3 mesi.",
+      },
+      {
+        q: "Qual e il periodo migliore per vedere l'aurora boreale?",
+        a: "La stagione va da settembre ad aprile, con le probabilita piu alte in ottobre e di nuovo a febbraio-marzo, quando il cielo e spesso piu limpido che in pieno inverno. Dicembre-gennaio porta le notti piu lunghe ma anche una copertura nuvolosa piu frequente a seconda della destinazione.",
+      },
+      {
+        q: "Un iglu di vetro garantisce di vedere le aurore?",
+        a: "No. Nessun alloggio, per quanto ben posizionato, puo garantire un avvistamento: dipende dall'attivita solare e dalla copertura nuvolosa, due fattori che nessuno controlla. Un iglu di vetro massimizza semplicemente le tue possibilita permettendoti di osservare il cielo dal letto invece di stare fuori al freddo.",
+      },
+      {
+        q: "Che budget devo prevedere?",
+        a: "Un hotel standard ben posizionato costa in genere tra 100 e 200 EUR a notte in stagione. Un iglu di vetro o un hotel di ghiaccio si aggira piuttosto tra 250 e 600 EUR a notte a seconda della destinazione e del livello di comfort. Prevedi un budget separato per le escursioni guidate se non guidi tu stesso.",
+      },
+    ],
+  },
+  footer: {
+    tagline: "Una guida indipendente sugli alloggi per l'aurora boreale in Lapponia e nell'estremo nord scandinavo.",
+    columnDestinations: "Destinazioni",
+    columnGuide: "Guida",
+    guideHow: "Come funziona",
+    guideFaq: "FAQ",
+    guideMap: "Mappa delle destinazioni",
+    columnAbout: "Chi siamo",
+    disclosureHeading: "Trasparenza",
+    disclosure: "Lapland Stays e un sito indipendente finanziato da link di affiliazione. Potremmo guadagnare una commissione se prenoti tramite i nostri partner Stay22, Booking.com, Airbnb o GetYourGuide, senza costi aggiuntivi per te. Queste partnership non influenzano mai le nostre raccomandazioni.",
+    rights: "Tutti i diritti riservati.",
+  },
+  city: {
+    breadcrumbHome: "Home",
+    quickFactsHeading: "In breve",
+    whyHeading: "Perche scegliere questa destinazione",
+    hotelsHeading: "Dove dormire",
+    hotelsEmpty: "Stiamo aggiornando la nostra selezione per questa destinazione.",
+    faqHeading: "Domande frequenti",
+    mapHeading: "Alloggi sulla mappa",
+    backToDestinations: "Tutte le destinazioni",
+    seasonLabel: "Stagione delle aurore: {start} - {end}",
+  },
+  stay22: {
+    sponsored: "Prenotazione partner",
+    browse: "Vedi gli alloggi a {name}",
+  },
+};

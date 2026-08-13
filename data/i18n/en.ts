@@ -15,6 +15,10 @@ export const UI_EN: Dict = {
     ctaButton: "See stays",
     langFr: "FR",
     langEn: "EN",
+    langDe: "DE",
+    langNl: "NL",
+    langEs: "ES",
+    langIt: "IT",
   },
   hero: {
     badgeBrand: "Lapland Stays",

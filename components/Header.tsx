@@ -2,25 +2,34 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { getDict, localeHref, type Locale } from "@/lib/i18n";
+import { getDict, localeHref, LOCALES, type Locale } from "@/lib/i18n";
+import type { Dict } from "@/data/i18n/ui";
 
 // `usePathname()` returns the post-rewrite internal path (proxy.ts always
 // rewrites "/" to "/fr" server-side before the [locale] route matches), so
-// both the "fr" and "en" prefixes need stripping here, not just the current
-// locale's — otherwise the language switcher builds URLs like "/en/fr".
+// every locale prefix needs stripping here, not just the current one,
+// otherwise the language switcher builds URLs like "/en/fr".
+const LOCALE_PREFIX_RE = new RegExp(`^/(${LOCALES.join("|")})(/.*)?$`);
+
 function stripLocalePrefix(pathname: string): string {
-  const match = pathname.match(/^\/(fr|en)(\/.*)?$/);
+  const match = pathname.match(LOCALE_PREFIX_RE);
   if (match) return match[2] ?? "/";
   return pathname;
 }
+
+const LANG_LABEL_KEY: Record<Locale, keyof Dict["header"]> = {
+  fr: "langFr",
+  en: "langEn",
+  de: "langDe",
+  nl: "langNl",
+  es: "langEs",
+  it: "langIt",
+};
 
 export function Header({ locale }: { locale: Locale }) {
   const t = getDict(locale);
   const pathname = usePathname();
   const path = stripLocalePrefix(pathname);
-
-  const frHref = localeHref("fr", path);
-  const enHref = localeHref("en", path);
 
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-surface/90 backdrop-blur">
@@ -50,18 +59,15 @@ export function Header({ locale }: { locale: Locale }) {
 
         <div className="flex items-center gap-3">
           <div className="flex items-center overflow-hidden rounded-full border border-line text-xs font-medium">
-            <Link
-              href={frHref}
-              className={`px-2.5 py-1.5 ${locale === "fr" ? "bg-ink text-surface" : "text-ink-soft hover:bg-paper-2"}`}
-            >
-              {t.header.langFr}
-            </Link>
-            <Link
-              href={enHref}
-              className={`px-2.5 py-1.5 ${locale === "en" ? "bg-ink text-surface" : "text-ink-soft hover:bg-paper-2"}`}
-            >
-              {t.header.langEn}
-            </Link>
+            {LOCALES.map((l) => (
+              <Link
+                key={l}
+                href={localeHref(l, path)}
+                className={`px-2.5 py-1.5 ${locale === l ? "bg-ink text-surface" : "text-ink-soft hover:bg-paper-2"}`}
+              >
+                {t.header[LANG_LABEL_KEY[l]]}
+              </Link>
+            ))}
           </div>
           <a
             href="#hebergements"
