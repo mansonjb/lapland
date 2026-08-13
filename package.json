@@ -1,0 +1,31 @@
+{
+  "name": "lapland",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Lapland / northern lights travel guide — SEO programmatique + affiliation Stay22 (FR/EN).",
+  "scripts": {
+    "dev": "next dev -p 3063",
+    "build": "next build",
+    "start": "next start -p 3063",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@mdx-js/loader": "^3.1.0",
+    "@mdx-js/react": "^3.1.0",
+    "@next/mdx": "^16.2.4",
+    "next": "^16.2.4",
+    "next-intl": "^4.9.1",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.13",
+    "@types/mdx": "^2.0.13",
+    "@types/node": "22.10.5",
+    "@types/react": "19.0.2",
+    "@types/react-dom": "19.0.2",
+    "tailwindcss": "^4.1.13",
+    "typescript": "5.7.2"
+  }
+}

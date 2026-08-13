@@ -1,0 +1,16 @@
+{
+  "site": {
+    "name": "Lapland Stays",
+    "tagline": "See the northern lights in Lapland: where to stay, when to go."
+  },
+  "home": {
+    "title": "Lapland & the Northern Lights: stay guide",
+    "intro": "An independent guide to picking where to stay in Lapland and the Nordic far north during the aurora season (September to March).",
+    "mapHeading": "Stays near {name}",
+    "destinationsHeading": "Destinations"
+  },
+  "stay22": {
+    "sponsored": "Partner booking",
+    "browse": "See stays in {name}"
+  }
+}

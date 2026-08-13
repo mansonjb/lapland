@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   LAPLAND STAYS — placeholder palette, deliberately theme-agnostic.
+   Everything is a CSS custom property so the final design (in review,
+   separate mockup) can swap values here without touching component code.
+   ========================================================================== */
+:root {
+  color-scheme: light;
+}
+
+@theme {
+  /* --- Ink / neutrals --- */
+  --color-ink: #10151a; /* primary text */
+  --color-ink-soft: #4a5560; /* secondary text */
+  --color-surface: #ffffff; /* cards, embeds */
+  --color-paper: #f5f7f8; /* page background */
+  --color-paper-2: #e9edf0; /* section bands */
+  --color-line: #dbe1e5; /* hairlines / borders */
+
+  /* --- Aurora accent ramp (placeholder — northern-lights greens/violets) --- */
+  --color-aurora-green: #2fbf8f;
+  --color-aurora-green-deep: #1c8f68;
+  --color-aurora-violet: #6a5acd;
+  --color-aurora-violet-deep: #4b3fa0;
+
+  /* --- Warm accent (cabin-light amber, used for CTAs) --- */
+  --color-amber: #d98e3f;
+  --color-amber-deep: #b6721f;
+
+  --radius: 12px;
+  --radius-sm: 8px;
+  --radius-lg: 20px;
+
+  --spacing-maxw: 72rem;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
