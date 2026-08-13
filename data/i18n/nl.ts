@@ -30,8 +30,8 @@ export const UI_NL: Dict = {
     ctaPrimary: "Vergelijk verblijven",
     ctaSecondary: "Bekijk alle 5 bestemmingen",
     trust: [
-      "Onafhankelijke selectie, geen commissie beinvloedt onze aanbevelingen",
-      "Echte fotos van elke accommodatie, geen generieke stockfotos",
+      "Onafhankelijke selectie, geen commissie beïnvloedt onze aanbevelingen",
+      "Echte foto's van elke accommodatie, geen generieke stockfoto's",
       "Bijgewerkt voor het noorderlichtseizoen 2026-2027",
     ],
     stats: [
@@ -55,7 +55,7 @@ export const UI_NL: Dict = {
   },
   intro: {
     heading: "Lapland is niet een enkele plek",
-    paragraphLeft: "Rovaniemi, Levi, Saariselka, Kiruna, Abisko, Tromso: vijf heel verschillende uitvalsbasissen vallen allemaal onder 'het noorderlicht zien'. Elk heeft zijn eigen klimaat, bereikbaarheid, sfeer en dominant type verblijf. De juiste bestemming kiezen is net zo belangrijk als de juiste data kiezen.",
+    paragraphLeft: "Rovaniemi, Levi, Saariselkä, Kiruna, Abisko, Tromsø: vijf heel verschillende uitvalsbasissen vallen allemaal onder 'het noorderlicht zien'. Elk heeft zijn eigen klimaat, bereikbaarheid, sfeer en dominant type verblijf. De juiste bestemming kiezen is net zo belangrijk als de juiste data kiezen.",
     paragraphRight: "Deze gids vergelijkt bestemmingen en verblijven zonder u het duurste pakket te willen verkopen. Elke vermelding linkt alleen naar onze boekingspartners (Stay22, Booking, Airbnb, GetYourGuide) wanneer het aanbod echt past bij wat u zoekt.",
     linkLabel: "Bekijk onze methode",
   },
@@ -105,7 +105,7 @@ export const UI_NL: Dict = {
     guideMap: "Kaart van bestemmingen",
     columnAbout: "Over ons",
     disclosureHeading: "Transparantie",
-    disclosure: "Lapland Stays is een onafhankelijke site gefinancierd door affiliate links. We kunnen een commissie verdienen als u boekt via onze partners Stay22, Booking.com, Airbnb of GetYourGuide, zonder extra kosten voor u. Deze partnerschappen beinvloeden onze aanbevelingen nooit.",
+    disclosure: "Lapland Stays is een onafhankelijke site gefinancierd door affiliate links. We kunnen een commissie verdienen als u boekt via onze partners Stay22, Booking.com, Airbnb of GetYourGuide, zonder extra kosten voor u. Deze partnerschappen beïnvloeden onze aanbevelingen nooit.",
     rights: "Alle rechten voorbehouden.",
   },
   city: {

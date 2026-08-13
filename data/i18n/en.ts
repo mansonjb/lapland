@@ -55,7 +55,7 @@ export const UI_EN: Dict = {
   },
   intro: {
     heading: "Lapland isn't one place",
-    paragraphLeft: "Rovaniemi, Levi, Saariselka, Kiruna, Abisko, Tromso: five very different bases all get filed under \"see the northern lights.\" Each has its own climate, access, atmosphere and dominant stay type. Picking the right destination matters as much as picking the right dates.",
+    paragraphLeft: "Rovaniemi, Levi, Saariselkä, Kiruna, Abisko, Tromsø: five very different bases all get filed under \"see the northern lights.\" Each has its own climate, access, atmosphere and dominant stay type. Picking the right destination matters as much as picking the right dates.",
     paragraphRight: "This guide compares destinations and stays without trying to sell you the priciest package. Every listing links to our booking partners (Stay22, Booking, Airbnb, GetYourGuide) only when the offer genuinely matches what you're looking for.",
     linkLabel: "See our method",
   },

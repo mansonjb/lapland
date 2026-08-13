@@ -17,9 +17,9 @@ export type Stay22MapProps = {
 };
 
 const MAP_TITLE_TEMPLATE: Record<Stay22MapProps["lang"], (place: string) => string> = {
-  fr: (place) => `Hebergements pres de ${place}`,
+  fr: (place) => `Hébergements près de ${place}`,
   en: (place) => `Stays near ${place}`,
-  de: (place) => `Unterkuenfte in der Naehe von ${place}`,
+  de: (place) => `Unterkünfte in der Nähe von ${place}`,
   nl: (place) => `Verblijven bij ${place}`,
   es: (place) => `Alojamientos cerca de ${place}`,
   it: (place) => `Alloggi vicino a ${place}`,

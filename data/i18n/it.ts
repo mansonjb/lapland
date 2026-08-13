@@ -43,25 +43,25 @@ export const UI_IT: Dict = {
   },
   planning: {
     heading: "Trova il tuo alloggio",
-    cityLabel: "Citta",
+    cityLabel: "Città",
     cityAll: "Tutte le destinazioni",
     typeLabel: "Tipo di alloggio",
     typeAll: "Tutti i tipi",
     searchButton: "Cerca",
   },
   manifesto: {
-    quote: "Non vendiamo viaggi. Ti aiutiamo a scegliere dove dormire per massimizzare le tue possibilita di vedere le aurore, e poi ti indirizziamo ai nostri partner di prenotazione.",
+    quote: "Non vendiamo viaggi. Ti aiutiamo a scegliere dove dormire per massimizzare le tue possibilità di vedere le aurore, e poi ti indirizziamo ai nostri partner di prenotazione.",
     attribution: "La promessa di Lapland Stays",
   },
   intro: {
-    heading: "La Lapponia non e un unico posto",
-    paragraphLeft: "Rovaniemi, Levi, Saariselka, Kiruna, Abisko, Tromso: cinque basi molto diverse finiscono tutte sotto l'etichetta 'vedere l'aurora boreale'. Ognuna ha il proprio clima, accesso, atmosfera e tipo di alloggio dominante. Scegliere la destinazione giusta conta quanto scegliere le date giuste.",
-    paragraphRight: "Questa guida confronta destinazioni e alloggi senza cercare di venderti il pacchetto piu caro. Ogni scheda rimanda ai nostri partner di prenotazione (Stay22, Booking, Airbnb, GetYourGuide) solo quando l'offerta corrisponde davvero a cio che cerchi.",
+    heading: "La Lapponia non è un unico posto",
+    paragraphLeft: "Rovaniemi, Levi, Saariselkä, Kiruna, Abisko, Tromsø: cinque basi molto diverse finiscono tutte sotto l'etichetta 'vedere l'aurora boreale'. Ognuna ha il proprio clima, accesso, atmosfera e tipo di alloggio dominante. Scegliere la destinazione giusta conta quanto scegliere le date giuste.",
+    paragraphRight: "Questa guida confronta destinazioni e alloggi senza cercare di venderti il pacchetto più caro. Ogni scheda rimanda ai nostri partner di prenotazione (Stay22, Booking, Airbnb, GetYourGuide) solo quando l'offerta corrisponde davvero a ciò che cerchi.",
     linkLabel: "Vedi il nostro metodo",
   },
   destinationsSection: {
     heading: "Le 5 destinazioni",
-    subheading: "Ogni citta ha un profilo diverso: accesso, densita di iglu di vetro, atmosfera. Confronta prima di prenotare.",
+    subheading: "Ogni città ha un profilo diverso: accesso, densità di iglu di vetro, atmosfera. Confronta prima di prenotare.",
     ctaLabel: "Vedi gli alloggi",
   },
   mapSection: {
@@ -71,24 +71,24 @@ export const UI_IT: Dict = {
   hotelsSection: {
     heading: "La nostra selezione di alloggi",
     subheading: "Iglu di vetro, hotel di ghiaccio e baite vetrate scelti per la posizione e il potenziale di osservazione delle aurore.",
-    availabilityLabel: "Disponibilita variabile",
-    ctaLabel: "Controlla la disponibilita",
+    availabilityLabel: "Disponibilità variabile",
+    ctaLabel: "Controlla la disponibilità",
   },
   faqSection: {
     heading: "Domande frequenti",
-    subheading: "Cosa ci viene chiesto piu spesso prima di un viaggio per le aurore.",
+    subheading: "Cosa ci viene chiesto più spesso prima di un viaggio per le aurore.",
     items: [
       {
         q: "Con quanto anticipo devo prenotare?",
-        a: "Per gli iglu di vetro e gli hotel di ghiaccio piu richiesti, prenota da 6 a 10 mesi prima, soprattutto per le date di dicembre-gennaio e le vacanze scolastiche europee. Gli hotel standard si possono prenotare piu tardi, di solito bastano 2 o 3 mesi.",
+        a: "Per gli iglu di vetro e gli hotel di ghiaccio più richiesti, prenota da 6 a 10 mesi prima, soprattutto per le date di dicembre-gennaio e le vacanze scolastiche europee. Gli hotel standard si possono prenotare più tardi, di solito bastano 2 o 3 mesi.",
       },
       {
-        q: "Qual e il periodo migliore per vedere l'aurora boreale?",
-        a: "La stagione va da settembre ad aprile, con le probabilita piu alte in ottobre e di nuovo a febbraio-marzo, quando il cielo e spesso piu limpido che in pieno inverno. Dicembre-gennaio porta le notti piu lunghe ma anche una copertura nuvolosa piu frequente a seconda della destinazione.",
+        q: "Qual è il periodo migliore per vedere l'aurora boreale?",
+        a: "La stagione va da settembre ad aprile, con le probabilità più alte in ottobre e di nuovo a febbraio-marzo, quando il cielo è spesso più limpido che in pieno inverno. Dicembre-gennaio porta le notti più lunghe ma anche una copertura nuvolosa più frequente a seconda della destinazione.",
       },
       {
         q: "Un iglu di vetro garantisce di vedere le aurore?",
-        a: "No. Nessun alloggio, per quanto ben posizionato, puo garantire un avvistamento: dipende dall'attivita solare e dalla copertura nuvolosa, due fattori che nessuno controlla. Un iglu di vetro massimizza semplicemente le tue possibilita permettendoti di osservare il cielo dal letto invece di stare fuori al freddo.",
+        a: "No. Nessun alloggio, per quanto ben posizionato, può garantire un avvistamento: dipende dall'attività solare e dalla copertura nuvolosa, due fattori che nessuno controlla. Un iglu di vetro massimizza semplicemente le tue possibilità permettendoti di osservare il cielo dal letto invece di stare fuori al freddo.",
       },
       {
         q: "Che budget devo prevedere?",
@@ -105,13 +105,13 @@ export const UI_IT: Dict = {
     guideMap: "Mappa delle destinazioni",
     columnAbout: "Chi siamo",
     disclosureHeading: "Trasparenza",
-    disclosure: "Lapland Stays e un sito indipendente finanziato da link di affiliazione. Potremmo guadagnare una commissione se prenoti tramite i nostri partner Stay22, Booking.com, Airbnb o GetYourGuide, senza costi aggiuntivi per te. Queste partnership non influenzano mai le nostre raccomandazioni.",
+    disclosure: "Lapland Stays è un sito indipendente finanziato da link di affiliazione. Potremmo guadagnare una commissione se prenoti tramite i nostri partner Stay22, Booking.com, Airbnb o GetYourGuide, senza costi aggiuntivi per te. Queste partnership non influenzano mai le nostre raccomandazioni.",
     rights: "Tutti i diritti riservati.",
   },
   city: {
     breadcrumbHome: "Home",
     quickFactsHeading: "In breve",
-    whyHeading: "Perche scegliere questa destinazione",
+    whyHeading: "Perché scegliere questa destinazione",
     hotelsHeading: "Dove dormire",
     hotelsEmpty: "Stiamo aggiornando la nostra selezione per questa destinazione.",
     faqHeading: "Domande frequenti",
