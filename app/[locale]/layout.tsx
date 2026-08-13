@@ -1,10 +1,8 @@
-import { hasLocale } from "next-intl";
-import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
-import { routing } from "@/i18n/routing";
+import { HTML_LANG, LOCALES, isLocale } from "@/lib/i18n";
 
 export function generateStaticParams() {
-  return routing.locales.map((locale) => ({ locale }));
+  return LOCALES.map((locale) => ({ locale }));
 }
 
 export default async function LocaleLayout({
@@ -15,14 +13,12 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  if (!hasLocale(routing.locales, locale)) notFound();
+  if (!isLocale(locale)) notFound();
 
   return (
-    <html lang={locale}>
+    <html lang={HTML_LANG[locale]}>
       <body className="min-h-screen bg-paper text-ink antialiased">
-        <NextIntlClientProvider locale={locale}>
-          {children}
-        </NextIntlClientProvider>
+        {children}
       </body>
     </html>
   );

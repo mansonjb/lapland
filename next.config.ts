@@ -1,6 +1,5 @@
 import type { NextConfig } from "next";
 import createMDX from "@next/mdx";
-import createNextIntlPlugin from "next-intl/plugin";
 
 const securityHeaders = [
   { key: "X-Content-Type-Options", value: "nosniff" },
@@ -31,6 +30,5 @@ const nextConfig: NextConfig = {
 };
 
 const withMDX = createMDX();
-const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
 
-export default withNextIntl(withMDX(nextConfig));
+export default withMDX(nextConfig);

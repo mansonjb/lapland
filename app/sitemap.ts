@@ -1,10 +1,13 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/site";
-import { routing } from "@/i18n/routing";
+import { LOCALES, DEFAULT_LOCALE, localeHref } from "@/lib/i18n";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return routing.locales.map((locale) => ({
-    url: locale === routing.defaultLocale ? SITE_URL : `${SITE_URL}/${locale}`,
+  return LOCALES.map((locale) => ({
+    url:
+      locale === DEFAULT_LOCALE
+        ? SITE_URL
+        : `${SITE_URL}${localeHref(locale)}`,
     lastModified: new Date(),
   }));
 }

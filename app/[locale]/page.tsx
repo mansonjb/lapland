@@ -1,12 +1,10 @@
-import { hasLocale } from "next-intl";
-import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { routing, type AppLocale } from "@/i18n/routing";
+import { LOCALES, isLocale, getDict, fill, type Locale } from "@/lib/i18n";
 import { DESTINATIONS } from "@/data/destinations";
 import { Stay22Map } from "@/components/Stay22Map";
 
 export function generateStaticParams() {
-  return routing.locales.map((locale) => ({ locale }));
+  return LOCALES.map((locale) => ({ locale }));
 }
 
 export default async function HomePage({
@@ -15,11 +13,10 @@ export default async function HomePage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  if (!hasLocale(routing.locales, locale)) notFound();
-  setRequestLocale(locale);
+  if (!isLocale(locale)) notFound();
 
-  const t = await getTranslations({ locale, namespace: "home" });
-  const lang = locale as AppLocale;
+  const lang = locale as Locale;
+  const t = getDict(lang);
   const featured = DESTINATIONS[0]; // Rovaniemi
 
   const aid = process.env.NEXT_PUBLIC_STAY22_AID ?? "PLACEHOLDER_AID";
@@ -27,15 +24,15 @@ export default async function HomePage({
   return (
     <main className="mx-auto max-w-(--spacing-maxw) px-6 py-16">
       <h1 className="text-4xl font-semibold tracking-tight text-ink">
-        {t("title")}
+        {t.home.title}
       </h1>
       <p className="mt-4 max-w-2xl text-lg leading-relaxed text-ink-soft">
-        {t("intro")}
+        {t.home.intro}
       </p>
 
       <section className="mt-10">
         <h2 className="mb-4 text-sm font-medium uppercase tracking-wide text-ink-soft">
-          {t("destinationsHeading")}
+          {t.home.destinationsHeading}
         </h2>
         <ul className="flex flex-wrap gap-3">
           {DESTINATIONS.map((d) => (
@@ -51,7 +48,7 @@ export default async function HomePage({
 
       <section className="mt-10">
         <h2 className="mb-4 text-sm font-medium uppercase tracking-wide text-ink-soft">
-          {t("mapHeading", { name: featured.label[lang] })}
+          {fill(t.home.mapHeading, { name: featured.label[lang] })}
         </h2>
         <Stay22Map
           aid={aid}
