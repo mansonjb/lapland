@@ -26,7 +26,7 @@ export const UI_EN: Dict = {
     titlePre: "Where to stay to see the",
     titleHighlight: "northern lights",
     titlePost: "in Lapland",
-    lede: "An independent guide to picking the right village, the right date window, and the right stay, glass igloo, ice hotel or glazed cabin, between September and March.",
+    lede: "An independent guide to picking the right village, the right date window, and the right stay, glass igloo, ice hotel or glazed cabin, between September and March. Lapland isn't only about the lights either: Santa Claus Village and husky sledding are part of the trip too.",
     ctaPrimary: "Compare stays",
     ctaSecondary: "See all 5 destinations",
     trust: [
@@ -55,9 +55,14 @@ export const UI_EN: Dict = {
   },
   intro: {
     heading: "Lapland isn't one place",
-    paragraphLeft: "Rovaniemi, Levi, Saariselkä, Kiruna, Abisko, Tromsø: five very different bases all get filed under \"see the northern lights.\" Each has its own climate, access, atmosphere and dominant stay type. Picking the right destination matters as much as picking the right dates.",
+    paragraphLeft: "Rovaniemi, Levi, Saariselkä, Kiruna, Abisko, Tromsø: five very different bases all get filed under \"see the northern lights.\" Each has its own climate, access, atmosphere and dominant stay type. Picking the right destination matters as much as picking the right dates. And while the northern lights remain the common thread of this guide, the region is also about Santa Claus Village, husky sledding and a handful of other winter experiences.",
     paragraphRight: "This guide compares destinations and stays without trying to sell you the priciest package. Every listing links to our booking partners (Stay22, Booking, Airbnb, GetYourGuide) only when the offer genuinely matches what you're looking for.",
     linkLabel: "See our method",
+  },
+  experiencesSection: {
+    heading: "Experience Lapland",
+    subheading: "Beyond the northern lights: Santa, husky sledding and the great outdoors, Lapland has more than one speed.",
+    ctaLabel: "Discover",
   },
   destinationsSection: {
     heading: "The 5 destinations",

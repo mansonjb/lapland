@@ -26,7 +26,7 @@ export const UI_IT: Dict = {
     titlePre: "Dove dormire per vedere l'",
     titleHighlight: "aurora boreale",
     titlePost: "in Lapponia",
-    lede: "Una guida indipendente per scegliere il villaggio giusto, il periodo giusto e l'alloggio giusto, iglu di vetro, hotel di ghiaccio o baita vetrata, tra settembre e marzo.",
+    lede: "Una guida indipendente per scegliere il villaggio giusto, il periodo giusto e l'alloggio giusto, iglu di vetro, hotel di ghiaccio o baita vetrata, tra settembre e marzo. La Lapponia non si limita alle aurore: anche il Villaggio di Babbo Natale e le slitte trainate dagli husky fanno parte del viaggio.",
     ctaPrimary: "Confronta gli alloggi",
     ctaSecondary: "Vedi tutte le 5 destinazioni",
     trust: [
@@ -55,9 +55,14 @@ export const UI_IT: Dict = {
   },
   intro: {
     heading: "La Lapponia non è un unico posto",
-    paragraphLeft: "Rovaniemi, Levi, Saariselkä, Kiruna, Abisko, Tromsø: cinque basi molto diverse finiscono tutte sotto l'etichetta 'vedere l'aurora boreale'. Ognuna ha il proprio clima, accesso, atmosfera e tipo di alloggio dominante. Scegliere la destinazione giusta conta quanto scegliere le date giuste.",
+    paragraphLeft: "Rovaniemi, Levi, Saariselkä, Kiruna, Abisko, Tromsø: cinque basi molto diverse finiscono tutte sotto l'etichetta 'vedere l'aurora boreale'. Ognuna ha il proprio clima, accesso, atmosfera e tipo di alloggio dominante. Scegliere la destinazione giusta conta quanto scegliere le date giuste. E se le aurore restano il filo conduttore di questa guida, la regione si vive anche attraverso il Villaggio di Babbo Natale, le slitte trainate dagli husky e una manciata di altre esperienze invernali.",
     paragraphRight: "Questa guida confronta destinazioni e alloggi senza cercare di venderti il pacchetto più caro. Ogni scheda rimanda ai nostri partner di prenotazione (Stay22, Booking, Airbnb, GetYourGuide) solo quando l'offerta corrisponde davvero a ciò che cerchi.",
     linkLabel: "Vedi il nostro metodo",
+  },
+  experiencesSection: {
+    heading: "Vivere la Lapponia",
+    subheading: "Oltre le aurore: Babbo Natale, slitte trainate dagli husky e grande avventura all'aperto, la Lapponia si vive a più velocità.",
+    ctaLabel: "Scoprire",
   },
   destinationsSection: {
     heading: "Le 5 destinazioni",

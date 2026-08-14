@@ -26,7 +26,7 @@ export const UI_FR: Dict = {
     titlePre: "Où dormir pour voir les",
     titleHighlight: "aurores boréales",
     titlePost: "en Laponie",
-    lede: "Guide indépendant pour choisir le bon village, la bonne fenêtre de dates et le bon hébergement, igloo de verre, hôtel de glace ou cabane vitrée, entre septembre et mars.",
+    lede: "Guide indépendant pour choisir le bon village, la bonne fenêtre de dates et le bon hébergement, igloo de verre, hôtel de glace ou cabane vitrée, entre septembre et mars. Ici, la Laponie ne se résume pas aux aurores : Village du Père Noël et traîneaux à chiens font aussi partie du voyage.",
     ctaPrimary: "Comparer les hébergements",
     ctaSecondary: "Voir les 5 destinations",
     trust: [
@@ -55,9 +55,14 @@ export const UI_FR: Dict = {
   },
   intro: {
     heading: "La Laponie n'est pas un seul endroit",
-    paragraphLeft: "Rovaniemi, Levi, Saariselkä, Kiruna, Abisko, Tromsø : cinq bases très différentes se partagent l'étiquette « voir les aurores boréales ». Chacune a son climat, son accès, son ambiance et son type d'hébergement dominant. Choisir la bonne destination compte autant que choisir la bonne date.",
+    paragraphLeft: "Rovaniemi, Levi, Saariselkä, Kiruna, Abisko, Tromsø : cinq bases très différentes se partagent l'étiquette « voir les aurores boréales ». Chacune a son climat, son accès, son ambiance et son type d'hébergement dominant. Choisir la bonne destination compte autant que choisir la bonne date. Et si les aurores restent le fil rouge de ce guide, la région se vit aussi via le Village du Père Noël, les traîneaux à chiens et une poignée d'autres expériences hivernales.",
     paragraphRight: "Ce guide compare les destinations et les hébergements sans essayer de vous vendre le forfait le plus cher. Chaque fiche renvoie vers nos partenaires de réservation (Stay22, Booking, Airbnb, GetYourGuide) uniquement quand l'offre correspond vraiment à ce que vous cherchez.",
     linkLabel: "Voir notre méthode",
+  },
+  experiencesSection: {
+    heading: "Vivre la Laponie",
+    subheading: "Au-delà des aurores : Père Noël, chiens de traîneau et grand air, la Laponie se vit à plusieurs vitesses.",
+    ctaLabel: "Découvrir",
   },
   destinationsSection: {
     heading: "Les 5 destinations",

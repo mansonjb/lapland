@@ -51,6 +51,11 @@ export type Dict = {
     paragraphRight: string;
     linkLabel: string;
   };
+  experiencesSection: {
+    heading: string;
+    subheading: string;
+    ctaLabel: string;
+  };
   destinationsSection: {
     heading: string;
     subheading: string;

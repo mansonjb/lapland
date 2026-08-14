@@ -26,7 +26,7 @@ export const UI_NL: Dict = {
     titlePre: "Waar overnachten om het",
     titleHighlight: "noorderlicht",
     titlePost: "in Lapland te zien",
-    lede: "Een onafhankelijke gids om het juiste dorp, de juiste periode en het juiste verblijf te kiezen, glazen iglo, ijshotel of glazen hut, tussen september en maart.",
+    lede: "Een onafhankelijke gids om het juiste dorp, de juiste periode en het juiste verblijf te kiezen, glazen iglo, ijshotel of glazen hut, tussen september en maart. Lapland gaat niet alleen over het noorderlicht: het Kerstman Dorp en husky sleeën horen er ook bij.",
     ctaPrimary: "Vergelijk verblijven",
     ctaSecondary: "Bekijk alle 5 bestemmingen",
     trust: [
@@ -55,9 +55,14 @@ export const UI_NL: Dict = {
   },
   intro: {
     heading: "Lapland is niet een enkele plek",
-    paragraphLeft: "Rovaniemi, Levi, Saariselkä, Kiruna, Abisko, Tromsø: vijf heel verschillende uitvalsbasissen vallen allemaal onder 'het noorderlicht zien'. Elk heeft zijn eigen klimaat, bereikbaarheid, sfeer en dominant type verblijf. De juiste bestemming kiezen is net zo belangrijk als de juiste data kiezen.",
+    paragraphLeft: "Rovaniemi, Levi, Saariselkä, Kiruna, Abisko, Tromsø: vijf heel verschillende uitvalsbasissen vallen allemaal onder 'het noorderlicht zien'. Elk heeft zijn eigen klimaat, bereikbaarheid, sfeer en dominant type verblijf. De juiste bestemming kiezen is net zo belangrijk als de juiste data kiezen. En hoewel het noorderlicht de rode draad van deze gids blijft, beleeft u de regio ook via het Kerstman Dorp, husky sleeën en een handvol andere winterervaringen.",
     paragraphRight: "Deze gids vergelijkt bestemmingen en verblijven zonder u het duurste pakket te willen verkopen. Elke vermelding linkt alleen naar onze boekingspartners (Stay22, Booking, Airbnb, GetYourGuide) wanneer het aanbod echt past bij wat u zoekt.",
     linkLabel: "Bekijk onze methode",
+  },
+  experiencesSection: {
+    heading: "Lapland beleven",
+    subheading: "Meer dan noorderlicht: de Kerstman, husky sleeën en de buitenlucht, Lapland heeft meer dan één snelheid.",
+    ctaLabel: "Ontdekken",
   },
   destinationsSection: {
     heading: "De 5 bestemmingen",

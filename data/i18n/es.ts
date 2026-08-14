@@ -26,7 +26,7 @@ export const UI_ES: Dict = {
     titlePre: "Dónde dormir para ver la",
     titleHighlight: "aurora boreal",
     titlePost: "en Laponia",
-    lede: "Una guía independiente para elegir el pueblo adecuado, la fecha adecuada y el alojamiento adecuado, iglu de cristal, hotel de hielo o cabaña acristalada, entre septiembre y marzo.",
+    lede: "Una guía independiente para elegir el pueblo adecuado, la fecha adecuada y el alojamiento adecuado, iglu de cristal, hotel de hielo o cabaña acristalada, entre septiembre y marzo. Laponia tampoco se limita a las auroras: el Pueblo de Papá Noel y los trineos de huskies también forman parte del viaje.",
     ctaPrimary: "Comparar alojamientos",
     ctaSecondary: "Ver los 5 destinos",
     trust: [
@@ -55,9 +55,14 @@ export const UI_ES: Dict = {
   },
   intro: {
     heading: "Laponia no es un solo lugar",
-    paragraphLeft: "Rovaniemi, Levi, Saariselkä, Kiruna, Abisko, Tromsø: cinco bases muy diferentes que se agrupan bajo 'ver la aurora boreal'. Cada una tiene su propio clima, acceso, ambiente y tipo de alojamiento dominante. Elegir el destino correcto importa tanto como elegir las fechas correctas.",
+    paragraphLeft: "Rovaniemi, Levi, Saariselkä, Kiruna, Abisko, Tromsø: cinco bases muy diferentes que se agrupan bajo 'ver la aurora boreal'. Cada una tiene su propio clima, acceso, ambiente y tipo de alojamiento dominante. Elegir el destino correcto importa tanto como elegir las fechas correctas. Y aunque las auroras siguen siendo el hilo conductor de esta guía, la región también se vive a través del Pueblo de Papá Noel, los trineos de huskies y un puñado de otras experiencias de invierno.",
     paragraphRight: "Esta guía compara destinos y alojamientos sin intentar venderte el paquete más caro. Cada ficha enlaza con nuestros socios de reserva (Stay22, Booking, Airbnb, GetYourGuide) solo cuando la oferta realmente coincide con lo que buscas.",
     linkLabel: "Ver nuestro método",
+  },
+  experiencesSection: {
+    heading: "Vivir Laponia",
+    subheading: "Más allá de las auroras: Papá Noel, trineos de huskies y aire libre, Laponia se vive a varios ritmos.",
+    ctaLabel: "Descubrir",
   },
   destinationsSection: {
     heading: "Los 5 destinos",

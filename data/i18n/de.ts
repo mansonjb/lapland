@@ -26,7 +26,7 @@ export const UI_DE: Dict = {
     titlePre: "Wo übernachten, um die",
     titleHighlight: "Polarlichter",
     titlePost: "in Lappland zu sehen",
-    lede: "Ein unabhängiger Ratgeber, um das richtige Dorf, das richtige Datumsfenster und die richtige Unterkunft zu wählen, Glasiglu, Eishotel oder Glashütte, zwischen September und März.",
+    lede: "Ein unabhängiger Ratgeber, um das richtige Dorf, das richtige Datumsfenster und die richtige Unterkunft zu wählen, Glasiglu, Eishotel oder Glashütte, zwischen September und März. Lappland ist aber nicht nur Polarlichter: Das Weihnachtsmanndorf und Huskyschlittenfahrten gehören genauso zur Reise.",
     ctaPrimary: "Unterkünfte vergleichen",
     ctaSecondary: "Alle 5 Reiseziele ansehen",
     trust: [
@@ -55,9 +55,14 @@ export const UI_DE: Dict = {
   },
   intro: {
     heading: "Lappland ist nicht nur ein Ort",
-    paragraphLeft: "Rovaniemi, Levi, Saariselkä, Kiruna, Abisko, Tromsø: fünf sehr unterschiedliche Ausgangspunkte werden alle unter 'Polarlichter sehen' eingeordnet. Jeder hat sein eigenes Klima, seine Erreichbarkeit, Atmosphäre und dominierende Unterkunftsart. Das richtige Reiseziel zu wählen zählt genauso wie das richtige Datum.",
+    paragraphLeft: "Rovaniemi, Levi, Saariselkä, Kiruna, Abisko, Tromsø: fünf sehr unterschiedliche Ausgangspunkte werden alle unter 'Polarlichter sehen' eingeordnet. Jeder hat sein eigenes Klima, seine Erreichbarkeit, Atmosphäre und dominierende Unterkunftsart. Das richtige Reiseziel zu wählen zählt genauso wie das richtige Datum. Und auch wenn die Polarlichter der rote Faden dieses Ratgebers bleiben, lässt sich die Region ebenso über das Weihnachtsmanndorf, Huskyschlittenfahrten und einige weitere Wintererlebnisse entdecken.",
     paragraphRight: "Dieser Ratgeber vergleicht Reiseziele und Unterkünfte, ohne Ihnen das teuerste Paket verkaufen zu wollen. Jeder Eintrag verlinkt nur dann zu unseren Buchungspartnern (Stay22, Booking, Airbnb, GetYourGuide), wenn das Angebot wirklich passt.",
     linkLabel: "Unsere Methode ansehen",
+  },
+  experiencesSection: {
+    heading: "Lappland erleben",
+    subheading: "Mehr als nur Polarlichter: Weihnachtsmann, Huskyschlitten und die freie Natur, Lappland hat mehr als ein Tempo.",
+    ctaLabel: "Entdecken",
   },
   destinationsSection: {
     heading: "Die 5 Reiseziele",

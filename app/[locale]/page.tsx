@@ -4,9 +4,11 @@ import Link from "next/link";
 import { LOCALES, isLocale, getDict, localeHref, type Locale } from "@/lib/i18n";
 import { DESTINATIONS } from "@/data/destinations";
 import { HOTELS } from "@/data/hotels";
+import { EXPERIENCES } from "@/data/experiences";
 import { Stay22Map } from "@/components/Stay22Map";
 import { DestinationCard } from "@/components/DestinationCard";
 import { HotelCard } from "@/components/HotelCard";
+import { ExperienceCard } from "@/components/ExperienceCard";
 import { PlanningBar } from "@/components/PlanningBar";
 
 export function generateStaticParams() {
@@ -133,6 +135,29 @@ export default async function HomePage({
                 {t.intro.linkLabel} &rarr;
               </a>
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ---------- EXPERIENCES ---------- */}
+      <section id="experiences" className="py-16">
+        <div className="mx-auto max-w-(--spacing-maxw) px-6">
+          <h2 className="font-display text-3xl text-ink">
+            {t.experiencesSection.heading}
+          </h2>
+          <p className="mt-2 max-w-2xl text-base text-ink-soft">
+            {t.experiencesSection.subheading}
+          </p>
+
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {EXPERIENCES.map((experience) => (
+              <ExperienceCard
+                key={experience.slug}
+                experience={experience}
+                locale={lang}
+                ctaLabel={t.experiencesSection.ctaLabel}
+              />
+            ))}
           </div>
         </div>
       </section>
