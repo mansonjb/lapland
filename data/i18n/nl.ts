@@ -78,6 +78,8 @@ export const UI_NL: Dict = {
     subheading: "Glazen iglos, ijshotels en glazen hutten gekozen om hun ligging en potentieel om het noorderlicht te zien.",
     availabilityLabel: "Beschikbaarheid varieert",
     ctaLabel: "Beschikbaarheid controleren",
+    priceFromLabel: "vanaf",
+    perNightLabel: "/ nacht",
   },
   faqSection: {
     heading: "Veelgestelde vragen",

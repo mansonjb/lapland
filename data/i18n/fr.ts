@@ -78,6 +78,8 @@ export const UI_FR: Dict = {
     subheading: "Igloos de verre, hôtels de glace et cabanes vitrées choisis pour leur emplacement et leur potentiel d'observation.",
     availabilityLabel: "Disponibilité variable",
     ctaLabel: "Voir les disponibilités",
+    priceFromLabel: "à partir de",
+    perNightLabel: "/ nuit",
   },
   faqSection: {
     heading: "Questions fréquentes",

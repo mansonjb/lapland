@@ -1,5 +1,7 @@
 export type HotelType = "hotel" | "glass-igloo" | "ice-hotel" | "cabin";
 
+export type Currency = "EUR" | "SEK" | "NOK";
+
 export type Hotel = {
   slug: string;
   citySlug: string;
@@ -8,6 +10,12 @@ export type Hotel = {
   /** R2 key suffix under hotels/, i.e. hotels/<image>.jpg */
   image: string;
   priceTier: 1 | 2 | 3;
+  /** Fiche Booking.com reelle de l'etablissement (verifiee manuellement). */
+  bookingUrl: string;
+  /** Prix de depart pour la categorie de chambre la moins chere, arrondi a l'unite. */
+  priceFrom: number;
+  /** Devise du prix, selon le pays reel de l'hotel (FI/SE/NO ne partagent pas la meme devise). */
+  currency: Currency;
   description: {
     fr: string;
     en: string;
@@ -66,6 +74,9 @@ export const HOTELS: Hotel[] = [
     type: "cabin",
     image: "arctic-treehouse-hotel",
     priceTier: 3,
+    bookingUrl: "https://www.booking.com/hotel/fi/arctic-treehouse.html",
+    priceFrom: 290,
+    currency: "EUR",
     description: {
       fr: "Cabanes suspendues tout en verre, murs orientés au nord pour guetter les aurores depuis le lit, à deux pas du Village du Père Noël.",
       en: "Glass-walled treehouse cabins with north-facing windows for aurora watching from bed, just outside Santa Claus Village.",
@@ -90,6 +101,9 @@ export const HOTELS: Hotel[] = [
     type: "glass-igloo",
     image: "santas-igloos-arctic-circle",
     priceTier: 3,
+    bookingUrl: "https://www.booking.com/hotel/fi/santas-igloos-arctic-circle.html",
+    priceFrom: 279,
+    currency: "EUR",
     description: {
       fr: "Igloos de verre chauffés directement dans le Village du Père Noël, sur le cercle polaire arctique.",
       en: "Heated glass igloos set right inside Santa Claus Village, on the Arctic Circle line.",
@@ -114,6 +128,9 @@ export const HOTELS: Hotel[] = [
     type: "ice-hotel",
     image: "arctic-snowhotel-glass-igloos",
     priceTier: 2,
+    bookingUrl: "https://www.booking.com/hotel/fi/arctic-glass-igloos.html",
+    priceFrom: 314,
+    currency: "EUR",
     description: {
       fr: "Hôtel de neige et de glace reconstruit chaque hiver, avec option igloos de verre chauffés juste à côté.",
       en: "A snow and ice hotel rebuilt from scratch every winter, with heated glass igloos right next door.",
@@ -140,6 +157,9 @@ export const HOTELS: Hotel[] = [
     type: "glass-igloo",
     image: "golden-crown-levin-iglut",
     priceTier: 3,
+    bookingUrl: "https://www.booking.com/hotel/fi/golden-crown-levin-iglut.html",
+    priceFrom: 299,
+    currency: "EUR",
     description: {
       fr: "Igloos de verre individuels sur la colline de Levi, vue dégagée sur les pistes et le ciel.",
       en: "Standalone glass igloos on Levi's fell, with clear views over the slopes and sky.",
@@ -164,6 +184,9 @@ export const HOTELS: Hotel[] = [
     type: "hotel",
     image: "break-sokos-hotel-levi",
     priceTier: 2,
+    bookingUrl: "https://www.booking.com/hotel/fi/sokos-levi.html",
+    priceFrom: 114,
+    currency: "EUR",
     description: {
       fr: "Grand hôtel familial au cœur du village de Levi, base pratique pour skier et enchaîner les excursions aurores.",
       en: "A large family hotel in the heart of Levi village, a practical base for skiing and aurora tours.",
@@ -188,6 +211,9 @@ export const HOTELS: Hotel[] = [
     type: "hotel",
     image: "hotel-k5-levi",
     priceTier: 3,
+    bookingUrl: "https://www.booking.com/hotel/fi/k5-levi.html",
+    priceFrom: 119,
+    currency: "EUR",
     description: {
       fr: "Hôtel design, le mieux noté du secteur, à distance de marche des remontées mécaniques.",
       en: "A design hotel, the best-rated property in the area, within walking distance of the ski lifts.",
@@ -214,6 +240,9 @@ export const HOTELS: Hotel[] = [
     type: "glass-igloo",
     image: "kakslauttanen-arctic-resort",
     priceTier: 3,
+    bookingUrl: "https://www.booking.com/hotel/fi/hotelli-kakslauttanen.html",
+    priceFrom: 169,
+    currency: "EUR",
     description: {
       fr: "L'igloo de verre le plus connu de Laponie, au bord du parc national d'Urho Kekkonen.",
       en: "Lapland's best-known glass igloo resort, on the edge of Urho Kekkonen National Park.",
@@ -238,6 +267,9 @@ export const HOTELS: Hotel[] = [
     type: "cabin",
     image: "northern-lights-village",
     priceTier: 3,
+    bookingUrl: "https://www.booking.com/hotel/fi/northern-lights-village.html",
+    priceFrom: 209,
+    currency: "EUR",
     description: {
       fr: "Cabanes au toit entièrement vitré, pensées pour observer les aurores allongé sans sortir du lit.",
       en: "Cabins with a full glass ceiling, designed for aurora watching without leaving the bed.",
@@ -264,6 +296,9 @@ export const HOTELS: Hotel[] = [
     type: "hotel",
     image: "wilderness-hotel-saariselka",
     priceTier: 2,
+    bookingUrl: "https://www.booking.com/hotel/fi/muotka-igloos.html",
+    priceFrom: 129,
+    currency: "EUR",
     description: {
       fr: "Large éventail de formules dans la zone de Saariselkä, des chambres classiques aux igloos de verre.",
       en: "A wide range of stay types in the Saariselka area, from standard rooms to glass igloos.",
@@ -290,6 +325,9 @@ export const HOTELS: Hotel[] = [
     type: "ice-hotel",
     image: "icehotel-kiruna",
     priceTier: 3,
+    bookingUrl: "https://www.booking.com/hotel/se/icehotel.html",
+    priceFrom: 3000,
+    currency: "SEK",
     description: {
       fr: "L'hôtel de glace original, refait chaque hiver par des artistes, avec une aile chauffée toute l'année.",
       en: "The original ice hotel, rebuilt every winter by artists, with a heated wing open year-round.",
@@ -314,6 +352,9 @@ export const HOTELS: Hotel[] = [
     type: "hotel",
     image: "stf-abisko-turiststation",
     priceTier: 1,
+    bookingUrl: "https://www.booking.com/hotel/se/stf-abisko.html",
+    priceFrom: 295,
+    currency: "SEK",
     description: {
       fr: "À 5 minutes de l'Aurora Sky Station, l'option la plus pratique et la plus accessible pour voir des aurores à Abisko.",
       en: "5 minutes from the Aurora Sky Station, the most practical and accessible base for seeing the lights in Abisko.",
@@ -336,12 +377,16 @@ export const HOTELS: Hotel[] = [
   {
     slug: "clarion-collection-hotel-aurora",
     citySlug: "tromso",
-    // TODO: verifier le nom exact suite a un possible rebranding Nordic Choice avant lancement public
-    // (la photo scrapee reference "Home Hotel Aurora").
-    name: "Clarion Collection Hotel Aurora",
+    // Rebranding Nordic Choice confirme (aout 2026) : "Clarion Collection Hotel Aurora"
+    // s'appelle desormais "Home Hotel Aurora" sur Booking.com. Slug/image conserves
+    // pour ne pas casser l'asset R2 existant, seul le nom affiche change.
+    name: "Home Hotel Aurora",
     type: "hotel",
     image: "clarion-collection-hotel-aurora",
     priceTier: 2,
+    bookingUrl: "https://www.booking.com/hotel/no/home-hotel-aurora.html",
+    priceFrom: 1050,
+    currency: "NOK",
     description: {
       fr: "Jacuzzi sur le toit avec vue sur le fjord, en plein centre-ville de Tromsø.",
       en: "Rooftop hot tub with fjord views, right in downtown Tromso.",
@@ -366,6 +411,9 @@ export const HOTELS: Hotel[] = [
     type: "hotel",
     image: "clarion-hotel-the-edge",
     priceTier: 2,
+    bookingUrl: "https://www.booking.com/hotel/no/the-edge.html",
+    priceFrom: 1100,
+    currency: "NOK",
     description: {
       fr: "Sky bar en hauteur et pont vitré sur le front de mer, à distance de marche du centre.",
       en: "A rooftop sky bar and a glass-walled bridge over the waterfront, within walking distance of the centre.",
@@ -390,6 +438,9 @@ export const HOTELS: Hotel[] = [
     type: "hotel",
     image: "the-dock-6939-by-scandic",
     priceTier: 2,
+    bookingUrl: "https://www.booking.com/hotel/no/the-dock-69-39-by-scandic.html",
+    priceFrom: 1500,
+    currency: "NOK",
     description: {
       fr: "Grand hôtel front de mer de 305 chambres, base solide pour enchaîner excursions aurores et fjords.",
       en: "A large 305-room waterfront hotel, a solid base for stacking aurora and fjord excursions.",

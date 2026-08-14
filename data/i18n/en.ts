@@ -78,6 +78,8 @@ export const UI_EN: Dict = {
     subheading: "Glass igloos, ice hotels and glazed cabins chosen for their location and aurora-watching potential.",
     availabilityLabel: "Availability varies",
     ctaLabel: "Check availability",
+    priceFromLabel: "from",
+    perNightLabel: "/ night",
   },
   faqSection: {
     heading: "Frequently asked questions",

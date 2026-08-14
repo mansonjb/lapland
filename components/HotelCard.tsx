@@ -2,6 +2,7 @@ import Image from "next/image";
 import type { Hotel } from "@/data/hotels";
 import { HOTEL_TYPE_LABEL } from "@/data/hotels";
 import { getDestination } from "@/data/destinations";
+import { HTML_LANG } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n";
 
 const TIER_SIGN: Record<Hotel["priceTier"], string> = {
@@ -16,6 +17,8 @@ export function HotelCard({
   imageBaseUrl,
   availabilityLabel,
   ctaLabel,
+  priceFromLabel,
+  perNightLabel,
   showRegion = true,
 }: {
   hotel: Hotel;
@@ -23,9 +26,16 @@ export function HotelCard({
   imageBaseUrl: string;
   availabilityLabel: string;
   ctaLabel: string;
+  priceFromLabel: string;
+  perNightLabel: string;
   showRegion?: boolean;
 }) {
   const city = getDestination(hotel.citySlug);
+  const formattedPrice = new Intl.NumberFormat(HTML_LANG[locale], {
+    style: "currency",
+    currency: hotel.currency,
+    maximumFractionDigits: 0,
+  }).format(hotel.priceFrom);
 
   return (
     <div className="flex flex-col overflow-hidden rounded-2xl border border-line bg-surface">
@@ -68,9 +78,21 @@ export function HotelCard({
           ))}
         </ul>
 
-        <div className="mt-4 flex items-center justify-between gap-2 border-t border-line pt-3">
-          <span className="text-xs text-ink-soft">{availabilityLabel}</span>
-          <span className="text-sm font-medium text-copper">{ctaLabel} &rarr;</span>
+        <div className="mt-4 border-t border-line pt-3">
+          <p className="text-sm font-medium text-ink">
+            {priceFromLabel} {formattedPrice} <span className="font-normal text-ink-soft">{perNightLabel}</span>
+          </p>
+          <div className="mt-1 flex items-center justify-between gap-2">
+            <span className="text-xs text-ink-soft">{availabilityLabel}</span>
+            <a
+              href={hotel.bookingUrl}
+              target="_blank"
+              rel="noopener sponsored"
+              className="text-sm font-medium text-copper hover:underline"
+            >
+              {ctaLabel} &rarr;
+            </a>
+          </div>
         </div>
       </div>
     </div>

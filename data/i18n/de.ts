@@ -78,6 +78,8 @@ export const UI_DE: Dict = {
     subheading: "Glasiglus, Eishotels und Glashütten, ausgewählt nach Lage und Polarlicht-Potenzial.",
     availabilityLabel: "Verfügbarkeit variiert",
     ctaLabel: "Verfügbarkeit prüfen",
+    priceFromLabel: "ab",
+    perNightLabel: "/ Nacht",
   },
   faqSection: {
     heading: "Häufig gestellte Fragen",

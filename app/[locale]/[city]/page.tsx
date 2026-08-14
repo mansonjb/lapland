@@ -157,6 +157,8 @@ export default async function CityPage({
                   imageBaseUrl={imageBaseUrl}
                   availabilityLabel={t.hotelsSection.availabilityLabel}
                   ctaLabel={t.hotelsSection.ctaLabel}
+                  priceFromLabel={t.hotelsSection.priceFromLabel}
+                  perNightLabel={t.hotelsSection.perNightLabel}
                   showRegion={false}
                 />
               ))}

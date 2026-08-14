@@ -78,6 +78,8 @@ export const UI_ES: Dict = {
     subheading: "Iglus de cristal, hoteles de hielo y cabañas acristaladas elegidos por su ubicación y potencial para ver auroras.",
     availabilityLabel: "Disponibilidad variable",
     ctaLabel: "Comprobar disponibilidad",
+    priceFromLabel: "desde",
+    perNightLabel: "/ noche",
   },
   faqSection: {
     heading: "Preguntas frecuentes",

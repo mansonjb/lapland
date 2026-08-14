@@ -70,6 +70,8 @@ export type Dict = {
     subheading: string;
     availabilityLabel: string;
     ctaLabel: string;
+    priceFromLabel: string; // ex. "à partir de"
+    perNightLabel: string; // ex. "/ nuit"
   };
   faqSection: {
     heading: string;

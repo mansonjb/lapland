@@ -78,6 +78,8 @@ export const UI_IT: Dict = {
     subheading: "Iglu di vetro, hotel di ghiaccio e baite vetrate scelti per la posizione e il potenziale di osservazione delle aurore.",
     availabilityLabel: "Disponibilità variabile",
     ctaLabel: "Controlla la disponibilità",
+    priceFromLabel: "da",
+    perNightLabel: "/ notte",
   },
   faqSection: {
     heading: "Domande frequenti",
