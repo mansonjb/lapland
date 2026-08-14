@@ -23,9 +23,9 @@ export const UI_NL: Dict = {
   hero: {
     badgeBrand: "Lapland Stays",
     badgeKp: "KP-index live",
-    titlePre: "Waar overnachten om het",
-    titleHighlight: "noorderlicht",
-    titlePost: "in Lapland te zien",
+    titlePre: "",
+    titleHighlight: "Lapland",
+    titlePost: ": de hemel ontbrandt, de honden trekken de slee, de Kerstman heeft een adres.",
     lede: "Een onafhankelijke gids om het juiste dorp, de juiste periode en het juiste verblijf te kiezen, glazen iglo, ijshotel of glazen hut, tussen september en maart. Lapland gaat niet alleen over het noorderlicht: het Kerstman Dorp en husky sleeën horen er ook bij.",
     ctaPrimary: "Vergelijk verblijven",
     ctaSecondary: "Bekijk alle 5 bestemmingen",

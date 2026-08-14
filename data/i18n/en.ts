@@ -23,9 +23,9 @@ export const UI_EN: Dict = {
   hero: {
     badgeBrand: "Lapland Stays",
     badgeKp: "Live KP index",
-    titlePre: "Where to stay to see the",
-    titleHighlight: "northern lights",
-    titlePost: "in Lapland",
+    titlePre: "",
+    titleHighlight: "Lapland",
+    titlePost: ": the sky catches fire, the dogs pull the sled, Santa has an address.",
     lede: "An independent guide to picking the right village, the right date window, and the right stay, glass igloo, ice hotel or glazed cabin, between September and March. Lapland isn't only about the lights either: Santa Claus Village and husky sledding are part of the trip too.",
     ctaPrimary: "Compare stays",
     ctaSecondary: "See all 5 destinations",

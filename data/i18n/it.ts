@@ -23,9 +23,9 @@ export const UI_IT: Dict = {
   hero: {
     badgeBrand: "Lapland Stays",
     badgeKp: "Indice KP in diretta",
-    titlePre: "Dove dormire per vedere l'",
-    titleHighlight: "aurora boreale",
-    titlePost: "in Lapponia",
+    titlePre: "",
+    titleHighlight: "Lapponia",
+    titlePost: ": il cielo si accende, i cani tirano la slitta, Babbo Natale ha un indirizzo.",
     lede: "Una guida indipendente per scegliere il villaggio giusto, il periodo giusto e l'alloggio giusto, iglu di vetro, hotel di ghiaccio o baita vetrata, tra settembre e marzo. La Lapponia non si limita alle aurore: anche il Villaggio di Babbo Natale e le slitte trainate dagli husky fanno parte del viaggio.",
     ctaPrimary: "Confronta gli alloggi",
     ctaSecondary: "Vedi tutte le 5 destinazioni",

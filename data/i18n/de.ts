@@ -23,9 +23,9 @@ export const UI_DE: Dict = {
   hero: {
     badgeBrand: "Lapland Stays",
     badgeKp: "KP-Index live",
-    titlePre: "Wo übernachten, um die",
-    titleHighlight: "Polarlichter",
-    titlePost: "in Lappland zu sehen",
+    titlePre: "",
+    titleHighlight: "Lappland",
+    titlePost: ": der Himmel entflammt, die Hunde ziehen den Schlitten, der Weihnachtsmann hat eine Adresse.",
     lede: "Ein unabhängiger Ratgeber, um das richtige Dorf, das richtige Datumsfenster und die richtige Unterkunft zu wählen, Glasiglu, Eishotel oder Glashütte, zwischen September und März. Lappland ist aber nicht nur Polarlichter: Das Weihnachtsmanndorf und Huskyschlittenfahrten gehören genauso zur Reise.",
     ctaPrimary: "Unterkünfte vergleichen",
     ctaSecondary: "Alle 5 Reiseziele ansehen",

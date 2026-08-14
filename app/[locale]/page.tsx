@@ -38,21 +38,10 @@ export default async function HomePage({
       <section className="relative overflow-hidden pb-24 pt-14">
         <div className="mx-auto grid max-w-(--spacing-maxw) gap-10 px-6 lg:grid-cols-2 lg:items-center lg:gap-16">
           <div>
-            <div className="flex flex-wrap items-center gap-2">
-              <span className="rounded-full bg-copper/10 px-3 py-1 text-xs font-semibold text-copper">
-                {t.hero.badgeBrand}
-              </span>
-              <span className="flex items-center gap-1.5 rounded-full bg-spruce/10 px-3 py-1 text-xs font-semibold text-spruce">
-                <span aria-hidden className="h-1.5 w-1.5 rounded-full bg-spruce" />
-                {t.hero.badgeKp}
-              </span>
-            </div>
-
-            <h1 className="mt-5 text-4xl font-semibold leading-[1.1] tracking-tight text-ink sm:text-5xl">
-              {t.hero.titlePre}{" "}
+            <h1 className="text-4xl font-semibold leading-[1.1] tracking-tight text-ink sm:text-5xl">
               <span className="font-display text-gradient-brand">
                 {t.hero.titleHighlight}
-              </span>{" "}
+              </span>
               {t.hero.titlePost}
             </h1>
 
