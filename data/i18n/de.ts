@@ -25,7 +25,7 @@ export const UI_DE: Dict = {
     badgeKp: "KP-Index live",
     titlePre: "",
     titleHighlight: "Lappland",
-    titlePost: ": der Himmel entflammt, die Hunde ziehen den Schlitten, der Weihnachtsmann hat eine Adresse.",
+    titlePost: ", Land der Polarlichter, des Weihnachtsmanns und der Hundeschlittentouren.",
     lede: "Ein unabhängiger Ratgeber, um das richtige Dorf, das richtige Datumsfenster und die richtige Unterkunft zu wählen, Glasiglu, Eishotel oder Glashütte, zwischen September und März. Lappland ist aber nicht nur Polarlichter: Das Weihnachtsmanndorf und Huskyschlittenfahrten gehören genauso zur Reise.",
     ctaPrimary: "Unterkünfte vergleichen",
     ctaSecondary: "Alle 5 Reiseziele ansehen",

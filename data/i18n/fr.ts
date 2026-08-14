@@ -25,7 +25,7 @@ export const UI_FR: Dict = {
     badgeKp: "Indice KP en direct",
     titlePre: "",
     titleHighlight: "La Laponie",
-    titlePost: ": le ciel s'embrase, les chiens tirent le traîneau, le Père Noël a une adresse.",
+    titlePost: ", terre des aurores boréales, du Père Noël et des chiens de traîneau.",
     lede: "Guide indépendant pour choisir le bon village, la bonne fenêtre de dates et le bon hébergement, igloo de verre, hôtel de glace ou cabane vitrée, entre septembre et mars. Ici, la Laponie ne se résume pas aux aurores : Village du Père Noël et traîneaux à chiens font aussi partie du voyage.",
     ctaPrimary: "Comparer les hébergements",
     ctaSecondary: "Voir les 5 destinations",

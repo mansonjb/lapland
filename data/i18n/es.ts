@@ -25,7 +25,7 @@ export const UI_ES: Dict = {
     badgeKp: "Índice KP en vivo",
     titlePre: "",
     titleHighlight: "Laponia",
-    titlePost: ": el cielo se enciende, los perros tiran del trineo, Papá Noel tiene una dirección.",
+    titlePost: ", tierra de la aurora boreal, Papá Noel y los trineos de perros.",
     lede: "Una guía independiente para elegir el pueblo adecuado, la fecha adecuada y el alojamiento adecuado, iglu de cristal, hotel de hielo o cabaña acristalada, entre septiembre y marzo. Laponia tampoco se limita a las auroras: el Pueblo de Papá Noel y los trineos de huskies también forman parte del viaje.",
     ctaPrimary: "Comparar alojamientos",
     ctaSecondary: "Ver los 5 destinos",

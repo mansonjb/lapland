@@ -25,7 +25,7 @@ export const UI_EN: Dict = {
     badgeKp: "Live KP index",
     titlePre: "",
     titleHighlight: "Lapland",
-    titlePost: ": the sky catches fire, the dogs pull the sled, Santa has an address.",
+    titlePost: ", land of the northern lights, Santa Claus and husky sledding.",
     lede: "An independent guide to picking the right village, the right date window, and the right stay, glass igloo, ice hotel or glazed cabin, between September and March. Lapland isn't only about the lights either: Santa Claus Village and husky sledding are part of the trip too.",
     ctaPrimary: "Compare stays",
     ctaSecondary: "See all 5 destinations",

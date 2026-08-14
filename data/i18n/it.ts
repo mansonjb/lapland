@@ -25,7 +25,7 @@ export const UI_IT: Dict = {
     badgeKp: "Indice KP in diretta",
     titlePre: "",
     titleHighlight: "Lapponia",
-    titlePost: ": il cielo si accende, i cani tirano la slitta, Babbo Natale ha un indirizzo.",
+    titlePost: ", terra dell'aurora boreale, di Babbo Natale e delle slitte trainate dai cani.",
     lede: "Una guida indipendente per scegliere il villaggio giusto, il periodo giusto e l'alloggio giusto, iglu di vetro, hotel di ghiaccio o baita vetrata, tra settembre e marzo. La Lapponia non si limita alle aurore: anche il Villaggio di Babbo Natale e le slitte trainate dagli husky fanno parte del viaggio.",
     ctaPrimary: "Confronta gli alloggi",
     ctaSecondary: "Vedi tutte le 5 destinazioni",
