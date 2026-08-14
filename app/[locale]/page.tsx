@@ -106,7 +106,7 @@ export default async function HomePage({
           </div>
         </div>
 
-        <div className="mx-auto max-w-(--spacing-maxw) px-6">
+        <div className="mx-auto mt-10 max-w-(--spacing-maxw) px-6 sm:mt-14">
           <PlanningBar
             locale={lang}
             heading={t.planning.heading}
@@ -119,20 +119,8 @@ export default async function HomePage({
         </div>
       </section>
 
-      {/* ---------- MANIFESTO ---------- */}
-      <section className="bg-paper-2 pb-16 pt-24">
-        <div className="mx-auto max-w-2xl px-6 text-center">
-          <p className="font-display text-xl leading-relaxed text-ink sm:text-2xl">
-            &ldquo;{t.manifesto.quote}&rdquo;
-          </p>
-          <p className="mt-4 text-sm font-medium uppercase tracking-wide text-ink-soft">
-            {t.manifesto.attribution}
-          </p>
-        </div>
-      </section>
-
       {/* ---------- INTRO EDITORIAL ---------- */}
-      <section id="intro" className="py-16">
+      <section id="intro" className="pb-16 pt-20">
         <div className="mx-auto max-w-(--spacing-maxw) px-6">
           <h2 className="font-display text-3xl text-ink">{t.intro.heading}</h2>
           <div className="mt-6 grid gap-8 md:grid-cols-2">
