@@ -140,6 +140,12 @@ export const UI_DE: Dict = {
     mapHeading: "Unterkünfte auf der Karte",
     backToDestinations: "Alle Reiseziele",
     seasonLabel: "Polarlicht-Saison: {start} - {end}",
+    practicalHeading: "Praktische Infos",
+    practicalPopulation: "Einwohnerzahl",
+    practicalAirport: "Flughafen",
+    practicalTrain: "Zug",
+    practicalCarRental: "Auto",
+    practicalWinterTemp: "Temperaturen",
   },
   stay22: {
     sponsored: "Partner-Buchung",

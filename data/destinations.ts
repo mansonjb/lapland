@@ -83,6 +83,14 @@ export type Destination = {
     it: string[];
     ja: string[];
   };
+  /** Bloc court label:valeur pour l'orientation pratique (population, aeroport, train, voiture, temperatures). */
+  practicalInfo: {
+    population: { fr: string; en: string; de: string; nl: string; es: string; it: string; ja: string };
+    airport: { fr: string; en: string; de: string; nl: string; es: string; it: string; ja: string };
+    train: { fr: string; en: string; de: string; nl: string; es: string; it: string; ja: string };
+    carRental: { fr: string; en: string; de: string; nl: string; es: string; it: string; ja: string };
+    winterTemp: { fr: string; en: string; de: string; nl: string; es: string; it: string; ja: string };
+  };
   faq: {
     question: { fr: string; en: string; de: string; nl: string; es: string; it: string; ja: string };
     answer: { fr: string; en: string; de: string; nl: string; es: string; it: string; ja: string };
@@ -171,6 +179,53 @@ export const DESTINATIONS: Destination[] = [
       es: ["Aeropuerto a 10 min del centro", "Situado en el círculo polar ártico", "Vuelos directos de temporada desde París, Londres, Bruselas"],
       it: ["Aeroporto a 10 min dal centro", "Si trova sul circolo polare artico", "Voli diretti stagionali da Parigi, Londra, Bruxelles"],
       ja: ["空港は中心部から10分", "北極線上に位置", "パリ・ロンドン・ブリュッセルからの季節直行便"],
+    },
+    practicalInfo: {
+      population: {
+        fr: "Environ 66 000 habitants (ville de Rovaniemi)",
+        en: "About 66,000 residents (Rovaniemi town)",
+        de: "Rund 66.000 Einwohner (Stadt Rovaniemi)",
+        nl: "Ongeveer 66.000 inwoners (stad Rovaniemi)",
+        es: "Unos 66.000 habitantes (ciudad de Rovaniemi)",
+        it: "Circa 66.000 abitanti (città di Rovaniemi)",
+        ja: "約66,000人（ロヴァニエミ市）",
+      },
+      airport: {
+        fr: "Aéroport de Rovaniemi (RVN), à 10 min du centre, vols directs saisonniers depuis plus de 20 villes européennes (nov.-mars)",
+        en: "Rovaniemi Airport (RVN), 10 min from downtown, direct seasonal flights from 20+ European cities (Nov-Mar)",
+        de: "Flughafen Rovaniemi (RVN), 10 Min vom Zentrum, saisonale Direktflüge aus über 20 europäischen Städten (Nov.-März)",
+        nl: "Luchthaven Rovaniemi (RVN), 10 min van het centrum, seizoensgebonden directe vluchten vanuit 20+ Europese steden (nov.-mrt.)",
+        es: "Aeropuerto de Rovaniemi (RVN), a 10 min del centro, vuelos directos de temporada desde más de 20 ciudades europeas (nov.-mar.)",
+        it: "Aeroporto di Rovaniemi (RVN), a 10 min dal centro, voli diretti stagionali da oltre 20 città europee (nov.-mar.)",
+        ja: "ロヴァニエミ空港（RVN）、市街中心部から10分、欧州20都市以上から季節直行便あり（11月〜3月）",
+      },
+      train: {
+        fr: "Oui, train de nuit direct depuis Helsinki (Santa Claus Express, environ 12h)",
+        en: "Yes, direct night train from Helsinki (Santa Claus Express, about 12h)",
+        de: "Ja, direkter Nachtzug ab Helsinki (Santa Claus Express, ca. 12 Std.)",
+        nl: "Ja, directe nachttrein vanuit Helsinki (Santa Claus Express, ca. 12 uur)",
+        es: "Sí, tren nocturno directo desde Helsinki (Santa Claus Express, unas 12 h)",
+        it: "Sì, treno notturno diretto da Helsinki (Santa Claus Express, circa 12 ore)",
+        ja: "あり。ヘルシンキから直通の夜行列車（サンタクロース・エクスプレス、所要約12時間）",
+      },
+      carRental: {
+        fr: "Pas indispensable : navettes et excursions organisées couvrent l'essentiel, utile pour explorer au-delà du centre",
+        en: "Not essential: shuttles and organised tours cover the basics, useful for exploring beyond the centre",
+        de: "Nicht unbedingt nötig: Shuttles und organisierte Touren decken das Wesentliche ab, nützlich für Ausflüge über das Zentrum hinaus",
+        nl: "Niet noodzakelijk: shuttles en georganiseerde tochten dekken het meeste, handig om verder dan het centrum te verkennen",
+        es: "No imprescindible: los traslados y las excursiones organizadas cubren lo esencial, útil para explorar más allá del centro",
+        it: "Non indispensabile: navette ed escursioni organizzate coprono l'essenziale, utile per esplorare oltre il centro",
+        ja: "必須ではありません。シャトルバスや催行ツアーで基本はカバーでき、中心部より先を回るなら車が便利です",
+      },
+      winterTemp: {
+        fr: "-15°C à -5°C en moyenne (jusqu'à -20°C possible)",
+        en: "-15°C to -5°C on average (down to -20°C possible)",
+        de: "-15°C bis -5°C im Durchschnitt (bis zu -20°C möglich)",
+        nl: "-15°C tot -5°C gemiddeld (tot -20°C mogelijk)",
+        es: "-15°C a -5°C de media (hasta -20°C es posible)",
+        it: "Da -15°C a -5°C in media (fino a -20°C possibile)",
+        ja: "平均マイナス15度からマイナス5度（マイナス20度まで下がることもあります）",
+      },
     },
     faq: [
       {
@@ -354,6 +409,53 @@ export const DESTINATIONS: Destination[] = [
       it: ["La più grande stazione sciistica della Finlandia", "Villaggio compatto e pedonale", "Aeroporto di Kittilä a 15 min"],
       ja: ["フィンランド最大のスキーリゾート", "コンパクトで歩きやすい村", "キッティラ空港まで15分"],
     },
+    practicalInfo: {
+      population: {
+        fr: "Environ 7 000 habitants (municipalité de Kittilä, Levi n'est pas une ville en soi)",
+        en: "About 7,000 residents (Kittilä municipality, Levi itself is not a town)",
+        de: "Rund 7.000 Einwohner (Gemeinde Kittilä, Levi selbst ist keine Stadt)",
+        nl: "Ongeveer 7.000 inwoners (gemeente Kittilä, Levi zelf is geen stad)",
+        es: "Unos 7.000 habitantes (municipio de Kittilä, Levi en sí no es una ciudad)",
+        it: "Circa 7.000 abitanti (comune di Kittilä, Levi in sé non è una città)",
+        ja: "約7,000人（キッティラ自治体、レヴィ自体は市ではありません）",
+      },
+      airport: {
+        fr: "Aéroport de Kittilä (KTT), à 15 km de Levi, vols directs saisonniers depuis Londres, Vienne et les pays baltes (déc.-mars)",
+        en: "Kittilä Airport (KTT), 15 km from Levi, direct seasonal flights from London, Vienna and the Baltics (Dec-Mar)",
+        de: "Flughafen Kittilä (KTT), 15 km von Levi entfernt, saisonale Direktflüge aus London, Wien und dem Baltikum (Dez.-März)",
+        nl: "Luchthaven Kittilä (KTT), 15 km van Levi, seizoensgebonden directe vluchten vanuit Londen, Wenen en de Baltische staten (dec.-mrt.)",
+        es: "Aeropuerto de Kittilä (KTT), a 15 km de Levi, vuelos directos de temporada desde Londres, Viena y los países bálticos (dic.-mar.)",
+        it: "Aeroporto di Kittilä (KTT), a 15 km da Levi, voli diretti stagionali da Londra, Vienna e Paesi baltici (dic.-mar.)",
+        ja: "キッティラ空港（KTT）、レヴィから15km、ロンドン・ウィーン・バルト諸国から季節直行便あり（12月〜3月）",
+      },
+      train: {
+        fr: "Oui mais indirect : la gare de Kolari est à environ 80 km, puis navette d'environ 1h15",
+        en: "Yes but indirect: Kolari station is about 80 km away, then a shuttle of roughly 1h15",
+        de: "Ja, aber indirekt: Bahnhof Kolari liegt etwa 80 km entfernt, danach ein Shuttle von rund 1 Std. 15 Min.",
+        nl: "Ja maar indirect: station Kolari ligt op ongeveer 80 km, daarna een shuttle van circa 1 uur 15",
+        es: "Sí pero indirecto: la estación de Kolari está a unos 80 km, seguida de un traslado de aproximadamente 1h15",
+        it: "Sì ma indiretto: la stazione di Kolari è a circa 80 km, seguita da una navetta di circa 1h15",
+        ja: "ありますが乗り継ぎが必要です。コラリ駅から約80km、そこからシャトルバスで約1時間15分",
+      },
+      carRental: {
+        fr: "Pas nécessaire sur place : station piétonne, navettes vers l'aéroport et la gare de Kolari",
+        en: "Not needed on site: walkable resort, shuttles run to the airport and Kolari station",
+        de: "Vor Ort nicht nötig: fußgängerfreundlicher Ort, Shuttles zum Flughafen und zum Bahnhof Kolari",
+        nl: "Ter plaatse niet nodig: voetgangersvriendelijk dorp, shuttles naar de luchthaven en station Kolari",
+        es: "No hace falta en el propio destino: estación peatonal, con traslados al aeropuerto y a la estación de Kolari",
+        it: "Non necessaria sul posto: villaggio pedonale, navette verso l'aeroporto e la stazione di Kolari",
+        ja: "現地では不要です。徒歩移動可能な村で、空港とコラリ駅へのシャトルバスがあります",
+      },
+      winterTemp: {
+        fr: "-20°C à -7°C en moyenne, nuits parfois sous -20°C",
+        en: "-20°C to -7°C on average, nights sometimes below -20°C",
+        de: "-20°C bis -7°C im Durchschnitt, nachts teils unter -20°C",
+        nl: "-20°C tot -7°C gemiddeld, 's nachts soms onder de -20°C",
+        es: "-20°C a -7°C de media, por la noche a veces por debajo de -20°C",
+        it: "Da -20°C a -7°C in media, di notte a volte sotto i -20°C",
+        ja: "平均マイナス20度からマイナス7度、夜間はマイナス20度を下回ることもあります",
+      },
+    },
     faq: [
       {
         question: {
@@ -535,6 +637,53 @@ export const DESTINATIONS: Destination[] = [
       es: ["En el borde de un parque nacional", "Mayor concentración de iglus de cristal", "Aeropuerto de Ivalo a 30 min"],
       it: ["Ai margini di un parco nazionale", "Massima concentrazione di iglu di vetro", "Aeroporto di Ivalo a 30 min"],
       ja: ["国立公園のそばに位置", "ガラスイグルーの集積度が最も高い", "イヴァロ空港まで30分"],
+    },
+    practicalInfo: {
+      population: {
+        fr: "Environ 7 200 habitants (municipalité d'Inari, très étendue et peu peuplée)",
+        en: "About 7,200 residents (Inari municipality, vast and sparsely populated)",
+        de: "Rund 7.200 Einwohner (Gemeinde Inari, sehr groß und dünn besiedelt)",
+        nl: "Ongeveer 7.200 inwoners (gemeente Inari, zeer uitgestrekt en dunbevolkt)",
+        es: "Unos 7.200 habitantes (municipio de Inari, muy extenso y poco poblado)",
+        it: "Circa 7.200 abitanti (comune di Inari, molto vasto e poco popolato)",
+        ja: "約7,200人（イナリ自治体、面積が広く人口密度は低い）",
+      },
+      airport: {
+        fr: "Aéroport d'Ivalo (IVL), à 30 min de route, vols directs saisonniers depuis Londres, Paris, Francfort, Amsterdam, Zurich (déc.-mars)",
+        en: "Ivalo Airport (IVL), 30 min by road, direct seasonal flights from London, Paris, Frankfurt, Amsterdam, Zurich (Dec-Mar)",
+        de: "Flughafen Ivalo (IVL), 30 Min. Fahrt entfernt, saisonale Direktflüge aus London, Paris, Frankfurt, Amsterdam, Zürich (Dez.-März)",
+        nl: "Luchthaven Ivalo (IVL), 30 min rijden, seizoensgebonden directe vluchten vanuit Londen, Parijs, Frankfurt, Amsterdam, Zürich (dec.-mrt.)",
+        es: "Aeropuerto de Ivalo (IVL), a 30 min en coche, vuelos directos de temporada desde Londres, París, Fráncfort, Ámsterdam, Zúrich (dic.-mar.)",
+        it: "Aeroporto di Ivalo (IVL), a 30 min di auto, voli diretti stagionali da Londra, Parigi, Francoforte, Amsterdam, Zurigo (dic.-mar.)",
+        ja: "イヴァロ空港（IVL）、車で30分、ロンドン・パリ・フランクフルト・アムステルダム・チューリッヒから季節直行便あり（12月〜3月）",
+      },
+      train: {
+        fr: "Non : pas de gare sur place, la plus proche est à Rovaniemi (environ 3-4h de route/bus)",
+        en: "No: no station on site, the nearest is Rovaniemi (about 3-4h by road/bus)",
+        de: "Nein: kein Bahnhof vor Ort, der nächste liegt in Rovaniemi (ca. 3-4 Std. mit Auto/Bus)",
+        nl: "Nee: geen station ter plaatse, het dichtstbijzijnde is Rovaniemi (ca. 3-4 uur met auto/bus)",
+        es: "No: no hay estación en el lugar, la más cercana está en Rovaniemi (unas 3-4 h en coche/autobús)",
+        it: "No: nessuna stazione sul posto, la più vicina è a Rovaniemi (circa 3-4 ore di auto/bus)",
+        ja: "ありません。現地に駅はなく、最寄りはロヴァニエミ（車・バスで約3〜4時間）です",
+      },
+      carRental: {
+        fr: "Utile mais pas obligatoire : navettes depuis l'aéroport et excursions organisées existent, une voiture facilite l'exploration du parc national",
+        en: "Useful but not mandatory: airport shuttles and organised tours exist, a car helps explore the national park",
+        de: "Nützlich, aber nicht zwingend: Flughafen-Shuttles und organisierte Touren gibt es, ein Auto erleichtert die Erkundung des Nationalparks",
+        nl: "Handig maar niet verplicht: luchthavenshuttles en georganiseerde tochten bestaan, een auto maakt het verkennen van het nationaal park makkelijker",
+        es: "Útil pero no obligatorio: existen traslados desde el aeropuerto y excursiones organizadas, un coche facilita explorar el parque nacional",
+        it: "Utile ma non obbligatoria: esistono navette dall'aeroporto ed escursioni organizzate, un'auto facilita l'esplorazione del parco nazionale",
+        ja: "必須ではありませんが便利です。空港シャトルや催行ツアーはありますが、国立公園を回るなら車があると自由が利きます",
+      },
+      winterTemp: {
+        fr: "-20°C à -8°C en moyenne, parmi les plus froides de la sélection",
+        en: "-20°C to -8°C on average, among the coldest in this selection",
+        de: "-20°C bis -8°C im Durchschnitt, mit die kältesten Werte dieser Auswahl",
+        nl: "-20°C tot -8°C gemiddeld, een van de koudste in deze selectie",
+        es: "-20°C a -8°C de media, de las más frías de esta selección",
+        it: "Da -20°C a -8°C in media, tra le più fredde di questa selezione",
+        ja: "平均マイナス20度からマイナス8度、このリストの中でも特に寒い部類です",
+      },
     },
     faq: [
       {
@@ -718,6 +867,53 @@ export const DESTINATIONS: Destination[] = [
       it: ["Microclima noto per i cieli limpidi", "Aurora Sky Station ad Abisko", "Icehotel originale a Kiruna"],
       ja: ["晴天率の高さで知られる微気候", "アビスコのオーロラスカイステーション", "キルナの元祖アイスホテル"],
     },
+    practicalInfo: {
+      population: {
+        fr: "Environ 22 000 habitants (commune de Kiruna)",
+        en: "About 22,000 residents (Kiruna municipality)",
+        de: "Rund 22.000 Einwohner (Gemeinde Kiruna)",
+        nl: "Ongeveer 22.000 inwoners (gemeente Kiruna)",
+        es: "Unos 22.000 habitantes (municipio de Kiruna)",
+        it: "Circa 22.000 abitanti (comune di Kiruna)",
+        ja: "約22,000人（キルナ自治体）",
+      },
+      airport: {
+        fr: "Aéroport de Kiruna (KRN), vols directs saisonniers depuis Copenhague (déc.-mars) et Düsseldorf (fév.-mars), liaison quotidienne avec Stockholm",
+        en: "Kiruna Airport (KRN), direct seasonal flights from Copenhagen (Dec-Mar) and Düsseldorf (Feb-Mar), daily link to Stockholm",
+        de: "Flughafen Kiruna (KRN), saisonale Direktflüge aus Kopenhagen (Dez.-März) und Düsseldorf (Feb.-März), tägliche Verbindung nach Stockholm",
+        nl: "Luchthaven Kiruna (KRN), seizoensgebonden directe vluchten vanuit Kopenhagen (dec.-mrt.) en Düsseldorf (feb.-mrt.), dagelijkse verbinding met Stockholm",
+        es: "Aeropuerto de Kiruna (KRN), vuelos directos de temporada desde Copenhague (dic.-mar.) y Düsseldorf (feb.-mar.), conexión diaria con Estocolmo",
+        it: "Aeroporto di Kiruna (KRN), voli diretti stagionali da Copenaghen (dic.-mar.) e Düsseldorf (feb.-mar.), collegamento giornaliero con Stoccolma",
+        ja: "キルナ空港（KRN）、コペンハーゲンから季節直行便あり（12月〜3月）、デュッセルドルフからも運航（2月〜3月）、ストックホルムとは毎日運航",
+      },
+      train: {
+        fr: "Oui : Kiruna et la gare d'Abisko Östra sont toutes deux sur la ligne du train de nuit depuis Stockholm (environ 17h)",
+        en: "Yes: Kiruna and Abisko Östra station both sit on the Stockholm night train line (about 17h)",
+        de: "Ja: Kiruna und der Bahnhof Abisko Östra liegen beide an der Nachtzuglinie ab Stockholm (ca. 17 Std.)",
+        nl: "Ja: Kiruna en station Abisko Östra liggen beide aan de nachttreinlijn vanuit Stockholm (ca. 17 uur)",
+        es: "Sí: Kiruna y la estación de Abisko Östra están ambas en la línea del tren nocturno desde Estocolmo (unas 17 h)",
+        it: "Sì: Kiruna e la stazione di Abisko Östra si trovano entrambe sulla linea del treno notturno da Stoccolma (circa 17 ore)",
+        ja: "あります。キルナとアビスコ・オストラ駅はどちらもストックホルムからの夜行列車の路線上にあります（所要約17時間）",
+      },
+      carRental: {
+        fr: "Pas indispensable entre les deux : train et bus locaux relient Kiruna et Abisko en un peu plus d'une heure",
+        en: "Not essential between the two: train and local buses connect Kiruna and Abisko in just over an hour",
+        de: "Zwischen beiden Orten nicht unbedingt nötig: Zug und lokale Busse verbinden Kiruna und Abisko in gut einer Stunde",
+        nl: "Tussen beide niet noodzakelijk: trein en lokale bussen verbinden Kiruna en Abisko in iets meer dan een uur",
+        es: "No imprescindible entre ambos: tren y autobuses locales conectan Kiruna y Abisko en poco más de una hora",
+        it: "Non indispensabile tra le due località: treno e autobus locali collegano Kiruna e Abisko in poco più di un'ora",
+        ja: "両地点間では必須ではありません。列車と地元バスでキルナとアビスコは1時間強で結ばれています",
+      },
+      winterTemp: {
+        fr: "-20°C à -7°C en moyenne, nuits pouvant descendre sous -25°C",
+        en: "-20°C to -7°C on average, nights can drop below -25°C",
+        de: "-20°C bis -7°C im Durchschnitt, nachts teils unter -25°C",
+        nl: "-20°C tot -7°C gemiddeld, 's nachts soms onder de -25°C",
+        es: "-20°C a -7°C de media, por la noche puede bajar de -25°C",
+        it: "Da -20°C a -7°C in media, di notte può scendere sotto i -25°C",
+        ja: "平均マイナス20度からマイナス7度、夜間はマイナス25度を下回ることもあります",
+      },
+    },
     faq: [
       {
         question: {
@@ -899,6 +1095,53 @@ export const DESTINATIONS: Destination[] = [
       es: ["Vida urbana real (restaurantes, bares, museos)", "Excursiones de auroras en barco y minibús", "Vuelos directos desde Oslo todo el año"],
       it: ["Vera vita cittadina (ristoranti, bar, musei)", "Escursioni per le aurore in barca e minibus", "Voli diretti da Oslo tutto l'anno"],
       ja: ["本格的な都市生活（レストラン・バー・美術館）", "ボートとミニバスによるオーロラツアー", "オスロからの通年直行便"],
+    },
+    practicalInfo: {
+      population: {
+        fr: "Environ 59 000 habitants (Tromsø, la plus peuplée de la sélection)",
+        en: "About 59,000 residents (Tromsø, the largest in this selection)",
+        de: "Rund 59.000 Einwohner (Tromsø, die größte Stadt dieser Auswahl)",
+        nl: "Ongeveer 59.000 inwoners (Tromsø, de grootste stad in deze selectie)",
+        es: "Unos 59.000 habitantes (Tromsø, la más poblada de esta selección)",
+        it: "Circa 59.000 abitanti (Tromsø, la più popolosa di questa selezione)",
+        ja: "約59,000人（トロムソ、このリストの中で最も人口が多い）",
+      },
+      airport: {
+        fr: "Aéroport de Tromsø (TOS), vols directs toute l'année depuis Oslo et en saison depuis Londres, Francfort, Amsterdam, Bruxelles, Munich",
+        en: "Tromsø Airport (TOS), year-round direct flights from Oslo and seasonal ones from London, Frankfurt, Amsterdam, Brussels, Munich",
+        de: "Flughafen Tromsø (TOS), ganzjährige Direktflüge ab Oslo, saisonal auch aus London, Frankfurt, Amsterdam, Brüssel, München",
+        nl: "Luchthaven Tromsø (TOS), het hele jaar directe vluchten vanuit Oslo, seizoensgebonden ook vanuit Londen, Frankfurt, Amsterdam, Brussel, München",
+        es: "Aeropuerto de Tromsø (TOS), vuelos directos todo el año desde Oslo y de temporada desde Londres, Fráncfort, Ámsterdam, Bruselas, Múnich",
+        it: "Aeroporto di Tromsø (TOS), voli diretti tutto l'anno da Oslo e stagionali da Londra, Francoforte, Amsterdam, Bruxelles, Monaco",
+        ja: "トロムソ空港（TOS）、オスロとは通年直行便、季節便としてロンドン・フランクフルト・アムステルダム・ブリュッセル・ミュンヘンからも運航",
+      },
+      train: {
+        fr: "Non : le réseau ferré norvégien s'arrête à Bodø, bien plus au sud",
+        en: "No: Norway's rail network ends at Bodø, well to the south",
+        de: "Nein: Das norwegische Bahnnetz endet in Bodø, deutlich weiter südlich",
+        nl: "Nee: het Noorse spoornet eindigt in Bodø, veel verder naar het zuiden",
+        es: "No: la red ferroviaria noruega termina en Bodø, bastante más al sur",
+        it: "No: la rete ferroviaria norvegese termina a Bodø, molto più a sud",
+        ja: "ありません。ノルウェーの鉄道網はずっと南のボードーで終わっています",
+      },
+      carRental: {
+        fr: "Pas nécessaire en ville : tout se fait à pied, une voiture n'apporte pas grand-chose car la chasse aux aurores s'organise en excursion",
+        en: "Not needed in town: everything is walkable, a car adds little since aurora hunting runs as organised tours",
+        de: "In der Stadt nicht nötig: alles ist zu Fuß erreichbar, ein Auto bringt wenig, da die Polarlichtjagd als organisierte Tour stattfindet",
+        nl: "In de stad niet nodig: alles is te voet bereikbaar, een auto heeft weinig nut omdat het noorderlicht spotten als georganiseerde tocht verloopt",
+        es: "No hace falta en la ciudad: todo se recorre a pie, un coche aporta poco porque la caza de auroras se organiza como excursión",
+        it: "Non necessaria in città: tutto è raggiungibile a piedi, un'auto serve a poco perché la caccia alle aurore si svolge come escursione organizzata",
+        ja: "市内では不要です。すべて徒歩圏内で、オーロラ観賞は催行ツアーが中心のため車の出番はあまりありません",
+      },
+      winterTemp: {
+        fr: "-5°C à 0°C en moyenne grâce au Gulf Stream, nettement plus doux que la Laponie finlandaise ou suédoise",
+        en: "-5°C to 0°C on average thanks to the Gulf Stream, notably milder than Finnish or Swedish Lapland",
+        de: "-5°C bis 0°C im Durchschnitt dank Golfstrom, deutlich milder als finnisch oder schwedisch Lappland",
+        nl: "-5°C tot 0°C gemiddeld dankzij de Golfstroom, merkbaar milder dan Fins of Zweeds Lapland",
+        es: "-5°C a 0°C de media gracias a la Corriente del Golfo, notablemente más templado que la Laponia finlandesa o sueca",
+        it: "Da -5°C a 0°C in media grazie alla Corrente del Golfo, nettamente più mite della Lapponia finlandese o svedese",
+        ja: "メキシコ湾流の影響で平均マイナス5度から0度、フィンランドやスウェーデンのラップランドよりかなり温暖です",
+      },
     },
     faq: [
       {

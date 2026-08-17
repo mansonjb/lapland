@@ -140,6 +140,12 @@ export const UI_JA: Dict = {
     mapHeading: "地図で見る宿泊施設",
     backToDestinations: "すべての目的地に戻る",
     seasonLabel: "オーロラシーズン：{start}〜{end}",
+    practicalHeading: "現地情報",
+    practicalPopulation: "人口",
+    practicalAirport: "空港",
+    practicalTrain: "鉄道",
+    practicalCarRental: "レンタカー",
+    practicalWinterTemp: "冬の気温",
   },
   stay22: {
     sponsored: "提携予約",

@@ -140,6 +140,12 @@ export const UI_NL: Dict = {
     mapHeading: "Verblijven op de kaart",
     backToDestinations: "Alle bestemmingen",
     seasonLabel: "Noorderlichtseizoen: {start} - {end}",
+    practicalHeading: "Praktische info",
+    practicalPopulation: "Inwoners",
+    practicalAirport: "Luchthaven",
+    practicalTrain: "Trein",
+    practicalCarRental: "Auto",
+    practicalWinterTemp: "Temperaturen",
   },
   stay22: {
     sponsored: "Partnerboeking",

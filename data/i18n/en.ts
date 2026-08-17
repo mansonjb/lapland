@@ -140,6 +140,12 @@ export const UI_EN: Dict = {
     mapHeading: "Stays on the map",
     backToDestinations: "All destinations",
     seasonLabel: "Aurora season: {start} - {end}",
+    practicalHeading: "Practical info",
+    practicalPopulation: "Population",
+    practicalAirport: "Airport",
+    practicalTrain: "Train",
+    practicalCarRental: "Car",
+    practicalWinterTemp: "Temperatures",
   },
   stay22: {
     sponsored: "Partner booking",

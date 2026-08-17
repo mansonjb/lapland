@@ -140,6 +140,12 @@ export const UI_ES: Dict = {
     mapHeading: "Alojamientos en el mapa",
     backToDestinations: "Todos los destinos",
     seasonLabel: "Temporada de auroras: {start} - {end}",
+    practicalHeading: "Información práctica",
+    practicalPopulation: "Población",
+    practicalAirport: "Aeropuerto",
+    practicalTrain: "Tren",
+    practicalCarRental: "Coche",
+    practicalWinterTemp: "Temperaturas",
   },
   stay22: {
     sponsored: "Reserva con socio",

@@ -140,6 +140,12 @@ export const UI_IT: Dict = {
     mapHeading: "Alloggi sulla mappa",
     backToDestinations: "Tutte le destinazioni",
     seasonLabel: "Stagione delle aurore: {start} - {end}",
+    practicalHeading: "Informazioni pratiche",
+    practicalPopulation: "Popolazione",
+    practicalAirport: "Aeroporto",
+    practicalTrain: "Treno",
+    practicalCarRental: "Auto",
+    practicalWinterTemp: "Temperature",
   },
   stay22: {
     sponsored: "Prenotazione partner",

@@ -103,6 +103,12 @@ export type Dict = {
     mapHeading: string;
     backToDestinations: string;
     seasonLabel: string; // gabarit avec {start} et {end}
+    practicalHeading: string;
+    practicalPopulation: string;
+    practicalAirport: string;
+    practicalTrain: string;
+    practicalCarRental: string;
+    practicalWinterTemp: string;
   };
   stay22: {
     sponsored: string;
