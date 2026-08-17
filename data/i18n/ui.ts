@@ -87,6 +87,10 @@ export type Dict = {
     guideFaq: string;
     guideMap: string;
     columnAbout: string;
+    columnLegal: string;
+    legalLink: string;
+    privacyLink: string;
+    affiliateLink: string;
     disclosureHeading: string;
     disclosure: string;
     rights: string;
@@ -115,5 +119,55 @@ export type Dict = {
   stay22: {
     sponsored: string;
     browse: string; // gabarit avec {name}
+  };
+  legal: {
+    title: string;
+    updated: string;
+    publisherHeading: string;
+    publisherLines: string[]; // dernier element contient le gabarit {email}
+    directorHeading: string;
+    directorText: string;
+    hostHeading: string;
+    hostLines: string[];
+    ipHeading: string;
+    ipText: string;
+    liabilityHeading: string;
+    liabilityText: string;
+  };
+  privacy: {
+    title: string;
+    updated: string;
+    intro: string;
+    dataHeading: string;
+    dataItems: string[];
+    purposesHeading: string;
+    purposesText: string;
+    legalBasisHeading: string;
+    legalBasisText: string;
+    retentionHeading: string;
+    retentionText: string;
+    sharingHeading: string;
+    sharingText: string;
+    rightsHeading: string;
+    rightsText: string; // gabarit avec {email}
+  };
+  affiliate: {
+    title: string;
+    updated: string;
+    intro: string;
+    howHeading: string;
+    howText: string;
+    editorialHeading: string;
+    editorialText: string;
+    partnersHeading: string;
+    partnersText: string;
+    contactText: string; // gabarit avec {email}
+  };
+  cookieConsent: {
+    message: string;
+    accept: string;
+    decline: string;
+    learnMore: string;
+    mapPlaceholderText: string;
   };
 };
