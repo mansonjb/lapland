@@ -19,6 +19,7 @@ export const UI_ES: Dict = {
     langNl: "NL",
     langEs: "ES",
     langIt: "IT",
+    langJa: "JA",
   },
   hero: {
     badgeBrand: "Lapland Stays",
