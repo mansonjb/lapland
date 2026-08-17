@@ -123,6 +123,24 @@ export default async function CityPage({
         </div>
       </section>
 
+      {/* ---------- WHERE TO STAY / WHAT TO DO ---------- */}
+      <section className="py-14">
+        <div className="mx-auto grid max-w-(--spacing-maxw) gap-10 px-6 sm:grid-cols-2">
+          <div>
+            <h2 className="font-display text-xl text-ink">{t.city.whereToStayHeading}</h2>
+            <p className="mt-3 text-base leading-relaxed text-ink-soft">
+              {destination.whereToStay[lang]}
+            </p>
+          </div>
+          <div>
+            <h2 className="font-display text-xl text-ink">{t.city.whatToDoHeading}</h2>
+            <p className="mt-3 text-base leading-relaxed text-ink-soft">
+              {destination.whatToDo[lang]}
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* ---------- MAP ---------- */}
       <section id="carte" className="py-14">
         <div className="mx-auto max-w-(--spacing-maxw) px-6">
