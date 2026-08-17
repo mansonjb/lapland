@@ -23,6 +23,7 @@ export type Hotel = {
     nl: string;
     es: string;
     it: string;
+    ja: string;
   };
   highlights: {
     fr: string[];
@@ -31,14 +32,15 @@ export type Hotel = {
     nl: string[];
     es: string[];
     it: string[];
+    ja: string[];
   };
 };
 
 export const HOTEL_TYPE_LABEL: Record<
   HotelType,
-  { fr: string; en: string; de: string; nl: string; es: string; it: string }
+  { fr: string; en: string; de: string; nl: string; es: string; it: string; ja: string }
 > = {
-  hotel: { fr: "Hôtel", en: "Hotel", de: "Hotel", nl: "Hotel", es: "Hotel", it: "Hotel" },
+  hotel: { fr: "Hôtel", en: "Hotel", de: "Hotel", nl: "Hotel", es: "Hotel", it: "Hotel", ja: "ホテル" },
   "glass-igloo": {
     fr: "Igloo de verre",
     en: "Glass igloo",
@@ -46,6 +48,7 @@ export const HOTEL_TYPE_LABEL: Record<
     nl: "Glazen iglo",
     es: "Iglu de cristal",
     it: "Iglu di vetro",
+    ja: "ガラスイグルー",
   },
   "ice-hotel": {
     fr: "Hôtel de glace",
@@ -54,6 +57,7 @@ export const HOTEL_TYPE_LABEL: Record<
     nl: "IJshotel",
     es: "Hotel de hielo",
     it: "Hotel di ghiaccio",
+    ja: "アイスホテル",
   },
   cabin: {
     fr: "Cabane / chalet",
@@ -62,6 +66,7 @@ export const HOTEL_TYPE_LABEL: Record<
     nl: "Hut / chalet",
     es: "Cabaña / chalet",
     it: "Baita / chalet",
+    ja: "キャビン / シャレー",
   },
 };
 
@@ -84,6 +89,7 @@ export const HOTELS: Hotel[] = [
       nl: "Boomhut-cabines volledig van glas, met naar het noorden gerichte ramen om het noorderlicht vanuit bed te bekijken, vlak bij het Kerstman Dorp.",
       es: "Cabañas elevadas totalmente acristaladas, con ventanas orientadas al norte para observar las auroras desde la cama, justo al lado del Pueblo de Papá Noel.",
       it: "Baite sopraelevate interamente in vetro, con finestre orientate a nord per osservare le aurore dal letto, a pochi passi dal Villaggio di Babbo Natale.",
+      ja: "全面ガラス張りのツリーハウス型キャビン。北向きの窓があり、ベッドに横になったままオーロラを観察できます。サンタクロース村のすぐそばに位置しています。",
     },
     highlights: {
       fr: ["Murs vitrés orientés nord", "Cuisine nordique sur place", "À 10 min de l'aéroport"],
@@ -92,6 +98,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Naar het noorden gerichte glazen wanden", "Noordse keuken ter plaatse", "10 min van de luchthaven"],
       es: ["Paredes de cristal orientadas al norte", "Cocina nórdica en el propio hotel", "A 10 min del aeropuerto"],
       it: ["Pareti di vetro orientate a nord", "Cucina nordica in loco", "A 10 min dall'aeroporto"],
+      ja: ["北向きのガラス壁", "館内に北欧料理レストラン", "空港から車で10分"],
     },
   },
   {
@@ -111,6 +118,7 @@ export const HOTELS: Hotel[] = [
       nl: "Verwarmde glazen iglos midden in het Kerstman Dorp, op de poolcirkellijn.",
       es: "Iglus de cristal climatizados situados dentro del Pueblo de Papá Noel, sobre la línea del círculo polar ártico.",
       it: "Iglu di vetro riscaldati proprio all'interno del Villaggio di Babbo Natale, sulla linea del circolo polare artico.",
+      ja: "サンタクロース村内、北極線上に位置する暖房付きガラスイグルー。",
     },
     highlights: {
       fr: ["Sur le cercle polaire", "Igloo chauffé individuel", "Activités Père Noël sur place"],
@@ -119,6 +127,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Direct op de poolcirkel", "Individueel verwarmde iglo", "Kerstman-activiteiten ter plaatse"],
       es: ["Justo en el círculo polar ártico", "Iglu con calefacción individual", "Actividades de Papá Noel en el mismo lugar"],
       it: ["Proprio sul circolo polare artico", "Iglu con riscaldamento individuale", "Attività di Babbo Natale in loco"],
+      ja: ["北極線上に立地", "各イグルーに個別暖房", "サンタクロース関連アクティビティが館内に"],
     },
   },
   {
@@ -138,6 +147,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een sneeuw- en ijshotel dat elke winter volledig opnieuw wordt gebouwd, met verwarmde glazen iglos vlak ernaast.",
       es: "Un hotel de nieve y hielo reconstruido desde cero cada invierno, con iglus de cristal climatizados justo al lado.",
       it: "Un hotel di neve e ghiaccio ricostruito da zero ogni inverno, con iglu di vetro riscaldati proprio accanto.",
+      ja: "毎冬ゼロから作り直される雪と氷のホテル。すぐ隣には暖房付きガラスイグルーもあります。",
     },
     highlights: {
       fr: ["Chambres sculptées dans la glace", "Sacs de couchage thermiques fournis", "Jacuzzi extérieur"],
@@ -146,6 +156,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Kamers gebeeldhouwd uit ijs", "Thermische slaapzakken inbegrepen", "Buiten jacuzzi"],
       es: ["Habitaciones talladas en hielo", "Sacos de dormir térmicos incluidos", "Jacuzzi exterior"],
       it: ["Camere scolpite nel ghiaccio", "Sacchi a pelo termici inclusi", "Vasca idromassaggio esterna"],
+      ja: ["氷を彫って作られた客室", "防寒寝袋を貸し出し", "屋外ジャグジー"],
     },
   },
 
@@ -167,6 +178,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een 4-sterren ketenhotel aan de Koskikatu, 2 minuten van Lordi's Square en 600 m van het Arktikum. Gratis Finse sauna en fitnessruimte, restaurant en bar ter plaatse.",
       es: "Hotel de cadena de 4 estrellas en Koskikatu, a 2 minutos de Lordi's Square y 600 m del Arktikum. Sauna finlandesa y gimnasio gratuitos, restaurante y bar en el hotel.",
       it: "Hotel di catena 4 stelle su Koskikatu, a 2 minuti da Lordi's Square e 600 m dall'Arktikum. Sauna finlandese e palestra gratuite, ristorante e bar in loco.",
+      ja: "コスキカトゥ通りに位置する4つ星チェーンホテル。ロルディ広場まで徒歩2分、アルクティクム博物館まで600m。フィンランド式サウナとジムは無料、館内にレストランとバーあり。",
     },
     highlights: {
       fr: ["Sauna finlandais et salle de sport gratuits", "2 min de Lordi's Square", "600 m de l'Arktikum"],
@@ -175,6 +187,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Gratis Finse sauna en fitnessruimte", "2 min van Lordi's Square", "600 m van het Arktikum"],
       es: ["Sauna finlandesa y gimnasio gratuitos", "A 2 min de Lordi's Square", "A 600 m del Arktikum"],
       it: ["Sauna finlandese e palestra gratuite", "A 2 min da Lordi's Square", "A 600 m dall'Arktikum"],
+      ja: ["フィンランド式サウナとジムが無料", "ロルディ広場まで徒歩2分", "アルクティクム博物館まで600m"],
     },
   },
   {
@@ -194,6 +207,7 @@ export const HOTELS: Hotel[] = [
       nl: "In het stadscentrum, 2 minuten van winkelcentrum Sampokeskus. 90 kamers, twee sauna's en restaurant Monte Rosa met Laplandse en internationale keuken.",
       es: "En el centro de la ciudad, a 2 minutos del centro comercial Sampokeskus. 90 habitaciones, dos saunas y el restaurante Monte Rosa con cocina lapona e internacional.",
       it: "Nel centro città, a 2 minuti dal centro commerciale Sampokeskus. 90 camere, due saune e il ristorante Monte Rosa con cucina lappone e internazionale.",
+      ja: "市街中心部に位置し、サンポケスクスショッピングセンターまで徒歩2分。客室90室、サウナ2つ、ラップランド料理と各国料理を提供するレストラン「モンテローザ」を併設。",
     },
     highlights: {
       fr: ["2 min du centre commercial Sampokeskus", "Deux saunas sur place", "Parking gratuit"],
@@ -202,6 +216,7 @@ export const HOTELS: Hotel[] = [
       nl: ["2 min van winkelcentrum Sampokeskus", "Twee sauna's ter plaatse", "Gratis parkeren"],
       es: ["A 2 min del centro comercial Sampokeskus", "Dos saunas en el hotel", "Aparcamiento gratuito"],
       it: ["A 2 min dal centro commerciale Sampokeskus", "Due saune in loco", "Parcheggio gratuito"],
+      ja: ["サンポケスクスまで徒歩2分", "館内にサウナ2つ", "無料駐車場あり"],
     },
   },
   {
@@ -221,6 +236,7 @@ export const HOTELS: Hotel[] = [
       nl: "159 kamers aan de Koskikatu, 150 m van de rivier de Kemijoki en 200 m van de brug Jätkänkynttilä. Saunatoegang en twee restaurants ter plaatse.",
       es: "159 habitaciones en Koskikatu, a 150 m del río Kemijoki y 200 m del puente Jätkänkynttilä. Acceso a sauna y dos restaurantes en el hotel.",
       it: "159 camere su Koskikatu, a 150 m dal fiume Kemijoki e 200 m dal ponte Jätkänkynttilä. Accesso alla sauna e due ristoranti in loco.",
+      ja: "コスキカトゥ通りに客室159室。ケミ川まで150m、ヤトカンキュンティラ橋まで200m。サウナ利用可、レストラン2軒を併設。",
     },
     highlights: {
       fr: ["150 m de la rivière Kemijoki", "Deux restaurants sur place", "Accès sauna inclus"],
@@ -229,6 +245,7 @@ export const HOTELS: Hotel[] = [
       nl: ["150 m van de rivier de Kemijoki", "Twee restaurants ter plaatse", "Saunatoegang inbegrepen"],
       es: ["A 150 m del río Kemijoki", "Dos restaurantes en el hotel", "Acceso a sauna incluido"],
       it: ["A 150 m dal fiume Kemijoki", "Due ristoranti in loco", "Accesso alla sauna incluso"],
+      ja: ["ケミ川まで150m", "館内にレストラン2軒", "サウナ利用込み"],
     },
   },
   {
@@ -248,6 +265,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een budgetoptie aan de Koskikatu, 600 m van Lordi's Square. Inchecken en ontbijt vinden plaats bij het naastgelegen partnerhotel Santa's Hotel Santa Claus.",
       es: "Una opción económica en Koskikatu, a 600 m de Lordi's Square. El check-in y el desayuno se realizan en el hotel asociado vecino, Santa's Hotel Santa Claus.",
       it: "Un'opzione economica su Koskikatu, a 600 m da Lordi's Square. Il check-in e la colazione si svolgono presso l'hotel partner adiacente, Santa's Hotel Santa Claus.",
+      ja: "コスキカトゥ通りにあるお手頃な宿。ロルディ広場まで600m。チェックインと朝食は隣接する系列ホテル「サンタズホテル・サンタクロース」で。",
     },
     highlights: {
       fr: ["Une des options les moins chères du centre", "600 m de Lordi's Square", "Parking gratuit"],
@@ -256,6 +274,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Een van de goedkoopste opties in het centrum", "600 m van Lordi's Square", "Gratis parkeren"],
       es: ["Una de las opciones más económicas del centro", "A 600 m de Lordi's Square", "Aparcamiento gratuito"],
       it: ["Una delle opzioni più economiche del centro", "A 600 m da Lordi's Square", "Parcheggio gratuito"],
+      ja: ["中心部で最も手頃な宿の一つ", "ロルディ広場まで600m", "無料駐車場あり"],
     },
   },
   {
@@ -275,6 +294,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een Scandinavisch ingericht adres aan de Valtakatu, 500 m van winkelcentrum Sampokeskus. Gedeelde keuken, gemeenschappelijke lounge en Finse sauna.",
       es: "Un alojamiento de estilo escandinavo en Valtakatu, a 500 m del centro comercial Sampokeskus. Cocina compartida, salón común y sauna finlandesa.",
       it: "Un indirizzo dall'arredamento scandinavo su Valtakatu, a 500 m dal centro commerciale Sampokeskus. Cucina condivisa, salotto comune e sauna finlandese.",
+      ja: "ヴァルタカトゥ通りにある北欧スタイルの宿。サンポケスクスまで500m。共用キッチン、共用ラウンジ、フィンランド式サウナを完備。",
     },
     highlights: {
       fr: ["Cuisine partagée équipée", "500 m de Sampokeskus", "Sauna finlandais sur place"],
@@ -283,6 +303,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Volledig uitgeruste gedeelde keuken", "500 m van Sampokeskus", "Finse sauna ter plaatse"],
       es: ["Cocina compartida totalmente equipada", "A 500 m de Sampokeskus", "Sauna finlandesa en el alojamiento"],
       it: ["Cucina condivisa completamente attrezzata", "A 500 m da Sampokeskus", "Sauna finlandese in loco"],
+      ja: ["設備の整った共用キッチン", "サンポケスクスまで500m", "館内にフィンランド式サウナ"],
     },
   },
   {
@@ -302,6 +323,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een compleet blokhut aan de Vartioniementie, 10 km van het Kerstman Dorp. Drie slaapkamers voor maximaal 6 gasten, privésauna en uitgeruste keuken; de prijs geldt voor de hele hut (minimaal 2 nachten).",
       es: "Una cabaña de madera completa en Vartioniementie, a 10 km del Pueblo de Papá Noel. Tres dormitorios para hasta 6 personas, sauna privada y cocina equipada; el precio corresponde al alquiler de toda la cabaña (mínimo 2 noches).",
       it: "Una baita in legno intera su Vartioniementie, a 10 km dal Villaggio di Babbo Natale. Tre camere per un massimo di 6 ospiti, sauna privata e cucina attrezzata; il prezzo è per l'intera baita (minimo 2 notti).",
+      ja: "ヴァルティオニエメンティエ通りにある丸太小屋一棟貸し。サンタクロース村まで10km。寝室3室で最大6名まで宿泊可、専用サウナと設備の整ったキッチンあり。表示価格はコテージ一棟分（最低2泊から）。",
     },
     highlights: {
       fr: ["10 km du Village du Père Noël", "Sauna privé et cheminée", "Cuisine équipée pour 6 personnes"],
@@ -310,6 +332,7 @@ export const HOTELS: Hotel[] = [
       nl: ["10 km van het Kerstman Dorp", "Privésauna en open haard", "Uitgeruste keuken voor 6 gasten"],
       es: ["A 10 km del Pueblo de Papá Noel", "Sauna privada y chimenea", "Cocina equipada para 6 personas"],
       it: ["A 10 km dal Villaggio di Babbo Natale", "Sauna privata e camino", "Cucina attrezzata per 6 ospiti"],
+      ja: ["サンタクロース村まで10km", "専用サウナと暖炉", "6名分の設備を備えたキッチン"],
     },
   },
   {
@@ -329,6 +352,7 @@ export const HOTELS: Hotel[] = [
       nl: "Cottages midden in het Kerstman Dorp, op de poolcirkel, elk met eigen sauna. De weergegeven prijs geldt voor de categorie Glass Igloo Cottage, de duurste van het verblijf; eenvoudigere familiecottages zijn ook beschikbaar.",
       es: "Cabañas situadas dentro del Pueblo de Papá Noel, sobre el círculo polar ártico, cada una con su propia sauna. El precio indicado corresponde a la categoría Glass Igloo Cottage, la más cara del establecimiento; también existen cabañas familiares más sencillas.",
       it: "Cottage situati proprio all'interno del Villaggio di Babbo Natale, sul circolo polare artico, ciascuno con sauna privata. Il prezzo indicato si riferisce alla categoria Glass Igloo Cottage, la più costosa della struttura; sono disponibili anche cottage familiari più semplici.",
+      ja: "サンタクロース村内、北極線上にあるコテージ。各棟に専用サウナ付き。表示価格は施設内で最も高額な「グラスイグルー・コテージ」カテゴリーのもので、よりシンプルなファミリー向けコテージもあります。",
     },
     highlights: {
       fr: ["Dans le Village du Père Noël", "Sauna privé dans chaque cottage", "Sur le cercle polaire arctique"],
@@ -337,6 +361,7 @@ export const HOTELS: Hotel[] = [
       nl: ["In het Kerstman Dorp", "Privésauna in elke cottage", "Op de poolcirkel"],
       es: ["Dentro del Pueblo de Papá Noel", "Sauna privada en cada cabaña", "Sobre el círculo polar ártico"],
       it: ["All'interno del Villaggio di Babbo Natale", "Sauna privata in ogni cottage", "Sul circolo polare artico"],
+      ja: ["サンタクロース村内に位置", "全コテージに専用サウナ", "北極線上に立地"],
     },
   },
   {
@@ -356,6 +381,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een eind 2025 geopend 5-sterrenresort aan de Olleronvaarantie, met tweeverdiepingssuites en een slaapkamer met glazen dak. Privéjacuzzi en sauna, luchthaventransfer beschikbaar.",
       es: "Un resort de 5 estrellas abierto a finales de 2025 en Olleronvaarantie, con suites de dos plantas y dormitorio con techo acristalado. Jacuzzi y sauna privados, traslado al aeropuerto disponible.",
       it: "Un resort 5 stelle aperto alla fine del 2025 su Olleronvaarantie, con suite su due piani e camera da letto con tetto in vetro. Jacuzzi e sauna privati, transfer aeroportuale disponibile.",
+      ja: "2025年末にオレロンヴァーランティエ通りに開業した5つ星リゾート。2階建てのスイートにガラス屋根の寝室を備えます。専用ジャグジーとサウナ完備、空港送迎あり。",
     },
     highlights: {
       fr: ["Ouvert fin 2025", "Jacuzzi et sauna privés", "Suites sur deux étages"],
@@ -364,6 +390,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Geopend eind 2025", "Privéjacuzzi en sauna", "Tweeverdiepingssuites"],
       es: ["Abierto a finales de 2025", "Jacuzzi y sauna privados", "Suites de dos plantas"],
       it: ["Aperto alla fine del 2025", "Jacuzzi e sauna privati", "Suite su due piani"],
+      ja: ["2025年末に開業", "専用ジャグジーとサウナ", "2階建てのスイート"],
     },
   },
 
@@ -385,6 +412,7 @@ export const HOTELS: Hotel[] = [
       nl: "Vrijstaande glazen iglos op de fjell van Levi, met vrij uitzicht over de pistes en de hemel.",
       es: "Iglus de cristal independientes en la colina de Levi, con vistas despejadas a las pistas y al cielo.",
       it: "Iglu di vetro indipendenti sulla collina di Levi, con vista libera sulle piste e sul cielo.",
+      ja: "レヴィの丘に立つ独立型ガラスイグルー。ゲレンデと空を見渡す開けた眺望。",
     },
     highlights: {
       fr: ["Vue panoramique sur la colline", "Sauna privé dans certains igloos", "À 5 min du centre de Levi"],
@@ -393,6 +421,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Panoramisch uitzicht over de fjell", "Privésauna in sommige iglos", "5 min van het centrum van Levi"],
       es: ["Vistas panorámicas de la colina", "Sauna privada en algunos iglus", "A 5 min del centro de Levi"],
       it: ["Vista panoramica sulla collina", "Sauna privata in alcuni iglu", "A 5 min dal centro di Levi"],
+      ja: ["丘からのパノラマビュー", "一部のイグルーに専用サウナ", "レヴィ中心部まで5分"],
     },
   },
   {
@@ -412,6 +441,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een groot familiehotel in het hart van het dorp Levi, een praktische uitvalsbasis om te skien en noorderlichttochten te maken.",
       es: "Un gran hotel familiar en el corazón del pueblo de Levi, una base práctica para esquiar y encadenar excursiones de auroras.",
       it: "Un grande hotel per famiglie nel cuore del villaggio di Levi, una base pratica per sciare e per le escursioni alle aurore.",
+      ja: "レヴィ村の中心にある大型ファミリーホテル。スキーとオーロラツアーの拠点として便利な立地。",
     },
     highlights: {
       fr: ["Au centre du village", "Piscine et spa", "Adapté aux familles"],
@@ -420,6 +450,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Ligging in het dorpscentrum", "Zwembad en spa", "Geschikt voor gezinnen"],
       es: ["Ubicación en el centro del pueblo", "Piscina y spa", "Apto para familias"],
       it: ["Posizione nel centro del villaggio", "Piscina e spa", "Adatto alle famiglie"],
+      ja: ["村の中心部に立地", "プールとスパ完備", "家族連れに好適"],
     },
   },
   {
@@ -439,6 +470,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een designhotel, de best beoordeelde accommodatie in de omgeving, op loopafstand van de skiliften.",
       es: "Un hotel de diseño, el mejor valorado de la zona, a poca distancia a pie de los remontes.",
       it: "Un hotel di design, la struttura meglio valutata della zona, a pochi passi dagli impianti di risalita.",
+      ja: "エリアで最も評価の高いデザインホテル。スキーリフトまで徒歩圏内。",
     },
     highlights: {
       fr: ["Meilleure note du secteur", "À pied des remontées", "Restaurant reconnu sur place"],
@@ -447,6 +479,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Best beoordeeld in de omgeving", "Loopafstand tot de liften", "Gerenommeerd restaurant ter plaatse"],
       es: ["El mejor valorado de la zona", "A pie de los remontes", "Restaurante de prestigio en el hotel"],
       it: ["Il migliore valutato della zona", "A piedi dagli impianti", "Ristorante rinomato in loco"],
+      ja: ["エリア内で最高評価", "リフトまで徒歩圏内", "評判の良いレストランを併設"],
     },
   },
 
@@ -468,6 +501,7 @@ export const HOTELS: Hotel[] = [
       nl: "Op 5 minuten lopen van de pistes, met toegang tot Spa Water World: 17 binnen- en buitenbaden en een glijbaan. Vier restaurants ter plaatse.",
       es: "A 5 minutos a pie de las pistas, con acceso al Spa Water World: 17 piscinas interiores y exteriores y un tobogán. Cuatro restaurantes en el hotel.",
       it: "A 5 minuti a piedi dalle piste, con accesso allo Spa Water World: 17 piscine interne ed esterne e uno scivolo. Quattro ristoranti in loco.",
+      ja: "ゲレンデまで徒歩5分。屋内外17のプールとウォータースライダーを備えたスパ「Water World」を利用可能。館内にレストラン4軒。",
     },
     highlights: {
       fr: ["5 min à pied des pistes", "17 bassins au Spa Water World", "Quatre restaurants sur place"],
@@ -476,6 +510,7 @@ export const HOTELS: Hotel[] = [
       nl: ["5 min lopen naar de pistes", "17 baden bij Spa Water World", "Vier restaurants ter plaatse"],
       es: ["A 5 min a pie de las pistas", "17 piscinas en el Spa Water World", "Cuatro restaurantes en el hotel"],
       it: ["A 5 min a piedi dalle piste", "17 piscine allo Spa Water World", "Quattro ristoranti in loco"],
+      ja: ["ゲレンデまで徒歩5分", "スパ「Water World」に17のプール", "館内にレストラン4軒"],
     },
   },
   {
@@ -495,6 +530,7 @@ export const HOTELS: Hotel[] = [
       nl: "In het hart van de badplaats, 5 minuten van Sirkka, met een volledig houten interieur. Veel kamers hebben een privésauna, en er zijn 13 restaurants plus een nightlifegebied met tien bars (Hullu Poro Areena).",
       es: "En el corazón de la estación, a 5 minutos de Sirkka, con una decoración toda en madera. Muchas habitaciones tienen sauna privada, y hay 13 restaurantes además de una zona de ocio nocturno con diez bares (Hullu Poro Areena).",
       it: "Nel cuore della località, a 5 minuti da Sirkka, con un arredamento interamente in legno. Molte camere hanno la sauna privata, e ci sono 13 ristoranti oltre a una zona nightlife con dieci bar (Hullu Poro Areena).",
+      ja: "リゾートの中心部、シルッカから5分の場所にある、木を基調とした内装のホテル。専用サウナ付きの客室が多く、レストランは13軒、さらにバー10軒が集まるナイトライフエリア「フル・ポロ・アリーナ」もあります。",
     },
     highlights: {
       fr: ["Sauna privé dans de nombreuses chambres", "13 restaurants sur place", "Zone nightlife à dix bars"],
@@ -503,6 +539,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Privésauna in veel kamers", "13 restaurants ter plaatse", "Nightlifegebied met tien bars"],
       es: ["Sauna privada en muchas habitaciones", "13 restaurantes en el hotel", "Zona de ocio nocturno con diez bares"],
       it: ["Sauna privata in molte camere", "13 ristoranti in loco", "Zona nightlife con dieci bar"],
+      ja: ["多くの客室に専用サウナ", "館内にレストラン13軒", "バー10軒のナイトライフエリア"],
     },
   },
   {
@@ -522,6 +559,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een ski-in/ski-outhotel vlak naast de expresgondel. Panoramasauna en sky bar op de 7e verdieping, ontbijt wordt door reizigers erg goed beoordeeld.",
       es: "Un hotel ski-in/ski-out justo al lado de la telecabina exprés. Sauna panorámica y sky bar en la 7ª planta, desayuno muy bien valorado por los viajeros.",
       it: "Un hotel ski-in/ski-out proprio accanto alla cabinovia express. Sauna panoramica e sky bar al 7° piano, colazione molto apprezzata dai viaggiatori.",
+      ja: "エクスプレスゴンドラのすぐそばにあるスキーイン・スキーアウトホテル。7階にパノラマサウナとスカイバーがあり、朝食は旅行者から高評価。",
     },
     highlights: {
       fr: ["Ski-in/ski-out", "Sauna panoramique au 7e étage", "Petit-déjeuner très bien noté"],
@@ -530,6 +568,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Ski-in/ski-out", "Panoramasauna op de 7e verdieping", "Zeer goed beoordeeld ontbijt"],
       es: ["Ski-in/ski-out", "Sauna panorámica en la 7ª planta", "Desayuno muy bien valorado"],
       it: ["Ski-in/ski-out", "Sauna panoramica al 7° piano", "Colazione molto apprezzata"],
+      ja: ["スキーイン・スキーアウト", "7階のパノラマサウナ", "高評価の朝食"],
     },
   },
   {
@@ -549,6 +588,7 @@ export const HOTELS: Hotel[] = [
       nl: "Zelfverzorgingsstudio's en appartementen in het centrum van Levi, 300 m van de rivier de Myllyjoki en 400 m van de pistes. Privésauna, volledige keuken en wasmachine.",
       es: "Estudios y apartamentos con autoservicio en el centro de Levi, a 300 m del río Myllyjoki y 400 m de las pistas. Sauna privada, cocina completa y lavadora.",
       it: "Monolocali e appartamenti self-catering nel centro di Levi, a 300 m dal fiume Myllyjoki e 400 m dalle piste. Sauna privata, cucina completa e lavatrice.",
+      ja: "レヴィ中心部にあるセルフケータリング式のスタジオ・アパートメント。ミュリヨキ川まで300m、ゲレンデまで400m。専用サウナ、フルキッチン、洗濯機を完備。",
     },
     highlights: {
       fr: ["Cuisine complète et lave-linge", "400 m des pistes", "Sauna privé inclus"],
@@ -557,6 +597,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Volledige keuken en wasmachine", "400 m van de pistes", "Privésauna inbegrepen"],
       es: ["Cocina completa y lavadora", "A 400 m de las pistas", "Sauna privada incluida"],
       it: ["Cucina completa e lavatrice", "A 400 m dalle piste", "Sauna privata inclusa"],
+      ja: ["フルキッチンと洗濯機", "ゲレンデまで400m", "専用サウナ付き"],
     },
   },
   {
@@ -576,6 +617,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een blokhut van 100 m² met vier slaapkamers, plaats voor maximaal 6 personen, op 1,1 km van Spa Water World. Privésauna, open haard en uitgeruste keuken; de prijs geldt voor de hele hut.",
       es: "Una cabaña de troncos de 100 m² con cuatro dormitorios, hasta 6 personas, a 1,1 km del Spa Water World. Sauna privada, chimenea y cocina equipada; el precio corresponde a la cabaña completa.",
       it: "Una baita in tronchi di 100 m² con quattro camere, fino a 6 persone, a 1,1 km dallo Spa Water World. Sauna privata, camino e cucina attrezzata; il prezzo è per l'intera baita.",
+      ja: "100平米、寝室4室のログキャビンで最大6名宿泊可。スパ「Water World」まで1.1km。専用サウナ、暖炉、設備の整ったキッチンあり。表示価格はキャビン一棟分。",
     },
     highlights: {
       fr: ["100 m², quatre chambres", "1,1 km du Spa Water World", "Sauna privé et cheminée"],
@@ -584,6 +626,7 @@ export const HOTELS: Hotel[] = [
       nl: ["100 m², vier slaapkamers", "1,1 km van Spa Water World", "Privésauna en open haard"],
       es: ["100 m², cuatro dormitorios", "A 1,1 km del Spa Water World", "Sauna privada y chimenea"],
       it: ["100 m², quattro camere", "A 1,1 km dallo Spa Water World", "Sauna privata e camino"],
+      ja: ["100平米、寝室4室", "スパ「Water World」まで1.1km", "専用サウナと暖炉"],
     },
   },
   {
@@ -603,6 +646,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een ski-in/ski-outappartement van 56 m² met twee slaapkamers, plaats voor maximaal 6 personen. Privégarage, sauna en twee badkamers; de prijs geldt voor het hele appartement.",
       es: "Un apartamento ski-in/ski-out de 56 m² con dos dormitorios, hasta 6 personas. Garaje privado, sauna y dos baños; el precio corresponde al apartamento completo.",
       it: "Un appartamento ski-in/ski-out di 56 m² con due camere, fino a 6 persone. Garage privato, sauna e due bagni; il prezzo è per l'intero appartamento.",
+      ja: "56平米、寝室2室のスキーイン・スキーアウトアパートメントで最大6名宿泊可。専用ガレージ、サウナ、バスルーム2室あり。表示価格はアパートメント一室分。",
     },
     highlights: {
       fr: ["Ski-in/ski-out", "Garage privé", "Sauna et deux salles de bains"],
@@ -611,6 +655,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Ski-in/ski-out", "Privégarage", "Sauna en twee badkamers"],
       es: ["Ski-in/ski-out", "Garaje privado", "Sauna y dos baños"],
       it: ["Ski-in/ski-out", "Garage privato", "Sauna e due bagni"],
+      ja: ["スキーイン・スキーアウト", "専用ガレージ", "サウナとバスルーム2室"],
     },
   },
   {
@@ -630,6 +675,7 @@ export const HOTELS: Hotel[] = [
       nl: "Piramidevormige iglos met glazen dak in Elves Village Levi, op 7,6 km van Spa Water World. Ontbijt inbegrepen.",
       es: "Iglús en forma de pirámide con techo acristalado en Elves Village Levi, a 7,6 km del Spa Water World. Desayuno incluido.",
       it: "Iglu a forma di piramide con tetto in vetro nell'Elves Village Levi, a 7,6 km dallo Spa Water World. Colazione inclusa.",
+      ja: "エルヴズ・ヴィレッジ・レヴィにあるピラミッド型ガラス屋根のイグルー。スパ「Water World」まで7.6km。朝食込み。",
     },
     highlights: {
       fr: ["Toit vitré en forme de pyramide", "Petit-déjeuner inclus", "Elves Village Levi"],
@@ -638,6 +684,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Piramidevormig glazen dak", "Ontbijt inbegrepen", "Elves Village Levi"],
       es: ["Techo acristalado en forma de pirámide", "Desayuno incluido", "Elves Village Levi"],
       it: ["Tetto in vetro a forma di piramide", "Colazione inclusa", "Elves Village Levi"],
+      ja: ["ピラミッド型ガラス屋根", "朝食込み", "エルヴズ・ヴィレッジ・レヴィ"],
     },
   },
   {
@@ -657,6 +704,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een vrijstaande villa van 38 m² in het Utsunkulma-gebied van Levi, met glazen dak boven het bed. Privéjacuzzi en sauna; verhuur van de hele unit.",
       es: "Una villa independiente de 38 m² en la zona de Utsunkulma en Levi, con techo acristalado sobre la cama. Jacuzzi y sauna privados; alquiler de la unidad completa.",
       it: "Una villa indipendente di 38 m² nella zona di Utsunkulma a Levi, con tetto in vetro sopra il letto. Jacuzzi e sauna privati; affitto dell'intera unità.",
+      ja: "レヴィのウツンクルマ地区にある38平米の独立型ヴィラ。ベッドの上にガラス屋根を備えます。専用ジャグジーとサウナ付き、一棟貸し。",
     },
     highlights: {
       fr: ["38 m², unité autonome", "Toit vitré au-dessus du lit", "Jacuzzi et sauna privés"],
@@ -665,6 +713,7 @@ export const HOTELS: Hotel[] = [
       nl: ["38 m², vrijstaande unit", "Glazen dak boven het bed", "Privéjacuzzi en sauna"],
       es: ["38 m², unidad independiente", "Techo acristalado sobre la cama", "Jacuzzi y sauna privados"],
       it: ["38 m², unità indipendente", "Tetto in vetro sopra il letto", "Jacuzzi e sauna privati"],
+      ja: ["38平米の独立型ユニット", "ベッド上にガラス屋根", "専用ジャグジーとサウナ"],
     },
   },
 
@@ -686,6 +735,7 @@ export const HOTELS: Hotel[] = [
       nl: "Het bekendste glazen iglo-resort van Lapland, aan de rand van het Urho Kekkonen Nationaal Park.",
       es: "El complejo de iglus de cristal más conocido de Laponia, al borde del Parque Nacional de Urho Kekkonen.",
       it: "Il resort di iglu di vetro più famoso della Lapponia, ai margini del Parco Nazionale di Urho Kekkonen.",
+      ja: "ラップランドで最も知られるガラスイグルーリゾート。ウルホ・ケッコネン国立公園の縁に位置します。",
     },
     highlights: {
       fr: ["Le nom le plus reconnu du secteur", "Chalets et igloos de verre", "Accès direct au parc national"],
@@ -694,6 +744,7 @@ export const HOTELS: Hotel[] = [
       nl: ["De meest bekende naam in de regio", "Chalets en glazen iglos", "Directe toegang tot het nationaal park"],
       es: ["El nombre más reconocido de la región", "Chalets e iglus de cristal", "Acceso directo al parque nacional"],
       it: ["Il nome più riconosciuto della regione", "Chalet e iglu di vetro", "Accesso diretto al parco nazionale"],
+      ja: ["地域で最も知名度の高い宿", "シャレーとガラスイグルー", "国立公園への直接アクセス"],
     },
   },
   {
@@ -713,6 +764,7 @@ export const HOTELS: Hotel[] = [
       nl: "Hutten met een volledig glazen dak, ontworpen om het noorderlicht te bekijken zonder het bed te verlaten.",
       es: "Cabañas con techo totalmente acristalado, pensadas para observar las auroras sin salir de la cama.",
       it: "Baite con soffitto interamente in vetro, pensate per osservare le aurore senza uscire dal letto.",
+      ja: "天井全面がガラス張りのキャビン。ベッドから出ることなくオーロラを観察できるよう設計されています。",
     },
     highlights: {
       fr: ["Toit intégralement vitré", "Sauna et restaurant sur place", "Navette depuis Ivalo"],
@@ -721,6 +773,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Volledig glazen dak", "Sauna en restaurant ter plaatse", "Shuttle vanaf Ivalo"],
       es: ["Techo totalmente acristalado", "Sauna y restaurante en el mismo lugar", "Traslado desde Ivalo"],
       it: ["Soffitto interamente vetrato", "Sauna e ristorante in loco", "Navetta da Ivalo"],
+      ja: ["天井全面がガラス張り", "館内にサウナとレストラン", "イヴァロからのシャトルあり"],
     },
   },
   {
@@ -742,6 +795,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een breed scala aan verblijfsopties in het gebied van Saariselkä, van standaardkamers tot glazen iglos.",
       es: "Una amplia variedad de tipos de alojamiento en la zona de Saariselkä, desde habitaciones clásicas hasta iglus de cristal.",
       it: "Un'ampia gamma di tipologie di soggiorno nella zona di Saariselkä, dalle camere standard agli iglu di vetro.",
+      ja: "サーリセルカエリアで、標準客室からガラスイグルーまで幅広いタイプの宿泊形態を用意。",
     },
     highlights: {
       fr: ["Plusieurs formats d'hébergement", "Restaurant lodge sur place", "Proche des pistes de ski de fond"],
@@ -750,6 +804,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Meerdere kamertypes op een locatie", "Lodge-restaurant ter plaatse", "Dicht bij langlaufpistes"],
       es: ["Varios formatos de habitación en un mismo sitio", "Restaurante lodge en el hotel", "Cerca de las pistas de esquí de fondo"],
       it: ["Diverse tipologie di camere in un unico sito", "Ristorante lodge in loco", "Vicino alle piste di sci di fondo"],
+      ja: ["同一敷地に複数タイプの客室", "館内にロッジレストラン", "クロスカントリーコースに近接"],
     },
   },
 
@@ -771,6 +826,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een 4-sterrenhotel aan de Raitopolku, direct aan de grens van het Urho Kekkonen Nationaal Park. Een recent gebouw met restaurant, bar en ontbijtbuffet.",
       es: "Un hotel de 4 estrellas en Raitopolku, justo en el límite del Parque Nacional de Urho Kekkonen. Un edificio reciente con restaurante, bar y desayuno buffet.",
       it: "Un hotel 4 stelle su Raitopolku, proprio al confine del Parco Nazionale di Urho Kekkonen. Un edificio recente con ristorante, bar e colazione a buffet.",
+      ja: "ライトポルク通りにある4つ星ホテルで、ウルホ・ケッコネン国立公園の境界に位置します。新しい建物にレストラン、バー、ビュッフェ朝食を完備。",
     },
     highlights: {
       fr: ["À la frontière du parc national", "Bâtiment récent", "Petit-déjeuner buffet inclus"],
@@ -779,6 +835,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Aan de grens van het nationaal park", "Recent gebouw", "Ontbijtbuffet inbegrepen"],
       es: ["En el límite del parque nacional", "Edificio reciente", "Desayuno buffet incluido"],
       it: ["Al confine del parco nazionale", "Edificio recente", "Colazione a buffet inclusa"],
+      ja: ["国立公園の境界に立地", "新しい建物", "ビュッフェ朝食込み"],
     },
   },
   {
@@ -798,6 +855,7 @@ export const HOTELS: Hotel[] = [
       nl: "In het centrum van Saariselkä, sommige kamers hebben een balkon en privésauna. Restaurant ter plaatse en ontbijtbuffet.",
       es: "En el centro de Saariselkä, algunas habitaciones cuentan con balcón y sauna privada. Restaurante en el hotel y desayuno buffet.",
       it: "Nel centro di Saariselkä, alcune camere dispongono di balcone e sauna privata. Ristorante in loco e colazione a buffet.",
+      ja: "サーリセルカ中心部に位置し、一部客室にはバルコニーと専用サウナ付き。館内レストランとビュッフェ朝食あり。",
     },
     highlights: {
       fr: ["Centre de Saariselkä", "Certaines chambres avec sauna privé", "Petit-déjeuner buffet"],
@@ -806,6 +864,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Centrale ligging in Saariselkä", "Sommige kamers met privésauna", "Ontbijtbuffet"],
       es: ["Ubicación céntrica en Saariselkä", "Algunas habitaciones con sauna privada", "Desayuno buffet"],
       it: ["Posizione centrale a Saariselkä", "Alcune camere con sauna privata", "Colazione a buffet"],
+      ja: ["サーリセルカ中心部に立地", "一部客室に専用サウナ", "ビュッフェ朝食"],
     },
   },
   {
@@ -825,6 +884,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een groot resorthotel in het centrum van het dorp, naast de winkels en de spa. Budgetkamercategorieën zijn beschikbaar.",
       es: "Un gran hotel-resort en el centro del pueblo, junto a las tiendas y el spa. Hay categorías de habitación económicas disponibles.",
       it: "Un grande hotel-resort nel centro del villaggio, accanto ai negozi e alla spa. Sono disponibili categorie di camere economiche.",
+      ja: "村の中心部、ショップとスパの隣にある大型リゾートホテル。手頃な料金の客室カテゴリーもあります。",
     },
     highlights: {
       fr: ["Centre du village", "À côté du spa et des commerces", "Catégories économiques disponibles"],
@@ -833,6 +893,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Ligging in het dorpscentrum", "Naast de spa en winkels", "Budgetcategorieën beschikbaar"],
       es: ["Ubicación en el centro del pueblo", "Junto al spa y las tiendas", "Categorías económicas disponibles"],
       it: ["Posizione nel centro del villaggio", "Accanto alla spa e ai negozi", "Categorie economiche disponibili"],
+      ja: ["村の中心部に立地", "スパとショップに隣接", "手頃な料金の客室あり"],
     },
   },
   {
@@ -852,6 +913,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een hostel in een voormalige school, Kirkkokuja 14 in Ivalo, 15 minuten lopen van het centrum. Gedeelde keuken, sauna en gratis ochtendpap.",
       es: "Un albergue instalado en una antigua escuela, Kirkkokuja 14 en Ivalo, a 15 minutos a pie del centro. Cocina compartida, sauna y gachas de avena gratis por la mañana.",
       it: "Un ostello in una ex scuola, Kirkkokuja 14 a Ivalo, a 15 minuti a piedi dal centro. Cucina condivisa, sauna e porridge del mattino gratuito.",
+      ja: "旧校舎を利用したホステルで、イヴァロのキルコクヤ14番地、中心部まで徒歩15分。共用キッチン、サウナ、無料の朝食用ポリッジあり。",
     },
     highlights: {
       fr: ["Installé dans une ancienne école", "Sauna et cuisine partagée", "15 min à pied du centre d'Ivalo"],
@@ -860,6 +922,7 @@ export const HOTELS: Hotel[] = [
       nl: ["In een voormalig schoolgebouw", "Sauna en gedeelde keuken", "15 min lopen van het centrum van Ivalo"],
       es: ["En un antiguo edificio escolar", "Sauna y cocina compartida", "A 15 min a pie del centro de Ivalo"],
       it: ["In un ex edificio scolastico", "Sauna e cucina condivisa", "A 15 min a piedi dal centro di Ivalo"],
+      ja: ["旧校舎を利用", "サウナと共用キッチン", "イヴァロ中心部まで徒歩15分"],
     },
   },
   {
@@ -879,6 +942,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een volledig uitgerust appartement aan de Kelotie 4 in Saariselkä, geschikt voor langere verblijven.",
       es: "Un apartamento totalmente equipado en Kelotie 4, en Saariselkä, apto para estancias más largas.",
       it: "Un appartamento completamente attrezzato al numero 4 di Kelotie, a Saariselkä, adatto a soggiorni più lunghi.",
+      ja: "サーリセルカのケロティエ4番地にある設備の整ったアパートメント。長期滞在に適しています。",
     },
     highlights: {
       fr: ["Appartement tout équipé", "Adapté aux longs séjours", "Emplacement central à Saariselkä"],
@@ -887,6 +951,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Volledig uitgerust appartement", "Geschikt voor langere verblijven", "Centrale ligging in Saariselkä"],
       es: ["Apartamento totalmente equipado", "Apto para estancias más largas", "Ubicación céntrica en Saariselkä"],
       it: ["Appartamento completamente attrezzato", "Adatto a soggiorni più lunghi", "Posizione centrale a Saariselkä"],
+      ja: ["設備の整ったアパートメント", "長期滞在に好適", "サーリセルカ中心部に立地"],
     },
   },
   {
@@ -906,6 +971,7 @@ export const HOTELS: Hotel[] = [
       nl: "Boshutten aan de Laanilantie, dicht bij het dorp, elk met eigen sauna en open haard.",
       es: "Cabañas en el bosque en Laanilantie, cerca del pueblo, cada una con su propia sauna y chimenea.",
       it: "Baite nel bosco su Laanilantie, vicino al villaggio, ciascuna con sauna e camino propri.",
+      ja: "ラーニランティエ通り、村に近い森の中のキャビン。各棟に専用サウナと暖炉付き。",
     },
     highlights: {
       fr: ["Sauna et cheminée dans chaque cabane", "En pleine forêt", "Proche du village"],
@@ -914,6 +980,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Sauna en open haard in elke hut", "Midden in het bos", "Dicht bij het dorp"],
       es: ["Sauna y chimenea en cada cabaña", "En pleno bosque", "Cerca del pueblo"],
       it: ["Sauna e camino in ogni baita", "Nel bosco", "Vicino al villaggio"],
+      ja: ["全キャビンにサウナと暖炉", "森の中に位置", "村に近接"],
     },
   },
   {
@@ -933,6 +1000,7 @@ export const HOTELS: Hotel[] = [
       nl: "Hotelkamers en chalets, 15 km van het centrum van Saariselkä (shuttle beschikbaar), direct bij de ingang van het nationaal park. Gratis sauna en zwemmen in de rivier.",
       es: "Habitaciones de hotel y chalets a 15 km del centro de Saariselkä (traslado disponible), en la misma entrada del parque nacional. Sauna gratuita y baño en el río.",
       it: "Camere d'hotel e chalet a 15 km dal centro di Saariselkä (navetta disponibile), proprio all'ingresso del parco nazionale. Sauna gratuita e bagno in fiume.",
+      ja: "サーリセルカ中心部から15km（シャトルあり）、国立公園の入口に位置するホテル客室とシャレー。無料サウナと川での水浴びが可能。",
     },
     highlights: {
       fr: ["Entrée du parc national", "Sauna gratuit", "Navette depuis Saariselkä"],
@@ -941,6 +1009,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Bij de ingang van het nationaal park", "Gratis sauna", "Shuttle vanaf Saariselkä"],
       es: ["En la entrada del parque nacional", "Sauna gratuita", "Traslado desde Saariselkä"],
       it: ["All'ingresso del parco nazionale", "Sauna gratuita", "Navetta da Saariselkä"],
+      ja: ["国立公園の入口に立地", "無料サウナ", "サーリセルカからのシャトルあり"],
     },
   },
   {
@@ -960,6 +1029,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een hotel op de heuvel van Kaunispää met 15 'Aurora Glass Cabins': een driedelig glazen dak direct boven het bed, ver van lichtvervuiling.",
       es: "Un hotel en altura en Kaunispää con 15 'Aurora Glass Cabins': techo acristalado de tres paneles justo encima de la cama, lejos de la contaminación lumínica.",
       it: "Un hotel in altura a Kaunispää con 15 'Aurora Glass Cabins': tetto in vetro a tre pannelli proprio sopra il letto, lontano dall'inquinamento luminoso.",
+      ja: "カウニスパー丘の上に建つホテルで、15室の「オーロラ・グラスキャビン」を用意。ベッドの真上に3枚パネルのガラス屋根を備え、光害の少ない立地です。",
     },
     highlights: {
       fr: ["15 Aurora Glass Cabins", "Loin de la pollution lumineuse", "Toit vitré au-dessus du lit"],
@@ -968,6 +1038,7 @@ export const HOTELS: Hotel[] = [
       nl: ["15 Aurora Glass Cabins", "Ver van lichtvervuiling", "Glazen dak boven het bed"],
       es: ["15 Aurora Glass Cabins", "Lejos de la contaminación lumínica", "Techo acristalado sobre la cama"],
       it: ["15 Aurora Glass Cabins", "Lontano dall'inquinamento luminoso", "Tetto in vetro sopra il letto"],
+      ja: ["15室のオーロラ・グラスキャビン", "光害の少ない立地", "ベッド上にガラス屋根"],
     },
   },
   {
@@ -987,6 +1058,7 @@ export const HOTELS: Hotel[] = [
       nl: "Ski-in/ski-outsuites in Inari met privésauna en jacuzzi, als premium chaletoptie.",
       es: "Suites ski-in/ski-out en Inari con sauna y jacuzzi privados, como opción de chalet premium.",
       it: "Suite ski-in/ski-out a Inari con sauna e jacuzzi privati, come opzione chalet premium.",
+      ja: "イナリにあるスキーイン・スキーアウトのスイートで、専用サウナとジャグジー付き。上級シャレーオプションも選べます。",
     },
     highlights: {
       fr: ["Sauna et jacuzzi privés", "Ski-in/ski-out", "Option chalet premium"],
@@ -995,6 +1067,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Privésauna en jacuzzi", "Ski-in/ski-out", "Premium chaletoptie"],
       es: ["Sauna y jacuzzi privados", "Ski-in/ski-out", "Opción de chalet premium"],
       it: ["Sauna e jacuzzi privati", "Ski-in/ski-out", "Opzione chalet premium"],
+      ja: ["専用サウナとジャグジー", "スキーイン・スキーアウト", "上級シャレーオプションあり"],
     },
   },
 
@@ -1016,6 +1089,7 @@ export const HOTELS: Hotel[] = [
       nl: "Het originele ijshotel, elke winter opnieuw opgebouwd door kunstenaars, met een het hele jaar verwarmde vleugel.",
       es: "El hotel de hielo original, reconstruido cada invierno por artistas, con un ala climatizada abierta todo el año.",
       it: "L'hotel di ghiaccio originale, ricostruito ogni inverno da artisti, con un'ala riscaldata aperta tutto l'anno.",
+      ja: "毎冬アーティストの手で作り直されるオリジナルの氷のホテル。年間を通じて営業する暖房棟も併設。",
     },
     highlights: {
       fr: ["Suites d'art sculptées à la main", "Aile chauffée disponible", "Sur la rivière Torne"],
@@ -1024,6 +1098,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Handgesneden kunst-suites", "Verwarmde vleugel beschikbaar", "Aan de rivier de Torne"],
       es: ["Suites artísticas talladas a mano", "Ala climatizada disponible", "A orillas del río Torne"],
       it: ["Suite artistiche scolpite a mano", "Ala riscaldata disponibile", "Sul fiume Torne"],
+      ja: ["手彫りのアートスイート", "暖房棟あり", "トルネ川沿いに位置"],
     },
   },
   {
@@ -1043,6 +1118,7 @@ export const HOTELS: Hotel[] = [
       nl: "5 minuten van het Aurora Sky Station, de meest praktische en toegankelijke uitvalsbasis om het noorderlicht in Abisko te zien.",
       es: "A 5 minutos de la Aurora Sky Station, la opción más práctica y accesible para ver auroras en Abisko.",
       it: "A 5 minuti dall'Aurora Sky Station, l'opzione più pratica e accessibile per vedere le aurore ad Abisko.",
+      ja: "オーロラスカイステーションまで5分。アビスコでオーロラを見るのに最も便利でアクセスしやすい拠点。",
     },
     highlights: {
       fr: ["À 5 min de l'Aurora Sky Station", "Ciel parmi les plus clairs de Scandinavie", "Formules auberge et chambres privées"],
@@ -1051,6 +1127,7 @@ export const HOTELS: Hotel[] = [
       nl: ["5 min van het Aurora Sky Station", "Een van de helderste luchten van Scandinavië", "Hostel- en privékameropties"],
       es: ["A 5 min de la Aurora Sky Station", "Uno de los cielos más despejados de Escandinavia", "Opciones de albergue y habitaciones privadas"],
       it: ["A 5 min dall'Aurora Sky Station", "Uno dei cieli più limpidi della Scandinavia", "Opzioni ostello e camere private"],
+      ja: ["オーロラスカイステーションまで5分", "北欧屈指の晴天率", "ホステルと個室の両方を用意"],
     },
   },
 
@@ -1072,6 +1149,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een 4-sterrenhotel in het centrum van het nieuwe Kiruna, naast het stadhuis. 231 kamers, een saunaterras op de 10e verdieping en een sky bar op de 12e.",
       es: "Un hotel de 4 estrellas en el centro del nuevo Kiruna, junto al ayuntamiento. 231 habitaciones, una terraza sauna en la 10ª planta y un sky bar en la 12ª.",
       it: "Un hotel 4 stelle nel centro della nuova Kiruna, accanto al municipio. 231 camere, una terrazza sauna al 10° piano e uno sky bar al 12°.",
+      ja: "新キルナ中心部、市庁舎の隣にある4つ星ホテル。客室231室、10階にサウナテラス、12階にスカイバーを備えます。",
     },
     highlights: {
       fr: ["231 chambres", "Terrasse sauna au 10e étage", "Sky bar au 12e étage"],
@@ -1080,6 +1158,7 @@ export const HOTELS: Hotel[] = [
       nl: ["231 kamers", "Saunaterras op de 10e verdieping", "Sky bar op de 12e verdieping"],
       es: ["231 habitaciones", "Terraza sauna en la 10ª planta", "Sky bar en la 12ª planta"],
       it: ["231 camere", "Terrazza sauna al 10° piano", "Sky bar al 12° piano"],
+      ja: ["客室231室", "10階のサウナテラス", "12階のスカイバー"],
     },
   },
   {
@@ -1099,6 +1178,7 @@ export const HOTELS: Hotel[] = [
       nl: "154 kamers in het nieuwe stadscentrum van Kiruna. Binnenzwembad, spa en drie restaurants ter plaatse.",
       es: "154 habitaciones en el nuevo centro de Kiruna. Piscina interior, spa y tres restaurantes en el hotel.",
       it: "154 camere nel nuovo centro città di Kiruna. Piscina coperta, spa e tre ristoranti in loco.",
+      ja: "キルナの新市街中心部にある客室154室のホテル。屋内プール、スパ、レストラン3軒を完備。",
     },
     highlights: {
       fr: ["154 chambres", "Piscine intérieure et spa", "Trois restaurants sur place"],
@@ -1107,6 +1187,7 @@ export const HOTELS: Hotel[] = [
       nl: ["154 kamers", "Binnenzwembad en spa", "Drie restaurants ter plaatse"],
       es: ["154 habitaciones", "Piscina interior y spa", "Tres restaurantes en el hotel"],
       it: ["154 camere", "Piscina coperta e spa", "Tre ristoranti in loco"],
+      ja: ["客室154室", "屋内プールとスパ", "館内にレストラン3軒"],
     },
   },
   {
@@ -1126,6 +1207,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een familiehotel met een op de Sami geïnspireerd ontwerp, op 10 minuten rijden van het centrum van Kiruna. Twee restaurants en twee zwembaden.",
       es: "Un hotel familiar de inspiración sami, a 10 minutos en coche del centro de Kiruna. Dos restaurantes y dos piscinas.",
       it: "Un hotel per famiglie di ispirazione sami, a 10 minuti d'auto dal centro di Kiruna. Due ristoranti e due piscine.",
+      ja: "サーミ文化にインスパイアされたデザインのファミリーホテルで、キルナ中心部から車で10分。レストラン2軒、プール2つを完備。",
     },
     highlights: {
       fr: ["Design d'inspiration same", "Deux piscines", "10 min en voiture du centre"],
@@ -1134,6 +1216,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Op de Sami geïnspireerd ontwerp", "Twee zwembaden", "10 min rijden van het centrum"],
       es: ["Diseño de inspiración sami", "Dos piscinas", "A 10 min en coche del centro"],
       it: ["Design di ispirazione sami", "Due piscine", "A 10 min d'auto dal centro"],
+      ja: ["サーミ文化にインスパイアされたデザイン", "プール2つ", "中心部から車で10分"],
     },
   },
   {
@@ -1153,6 +1236,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een budgethostel bij de berg Luossavaara, dicht bij het centrum van Kiruna. Gedeelde keuken en lounge, sauna en ontbijtbuffet inbegrepen.",
       es: "Un albergue económico cerca del monte Luossavaara, cerca del centro de Kiruna. Cocina y salón compartidos, sauna y desayuno buffet incluidos.",
       it: "Un ostello economico vicino al monte Luossavaara, vicino al centro di Kiruna. Cucina e salotto condivisi, sauna e colazione a buffet incluse.",
+      ja: "ルオッサヴァーラ山近く、キルナ中心部にほど近いお手頃なホステル。共用キッチンとラウンジ、サウナ、ビュッフェ朝食込み。",
     },
     highlights: {
       fr: ["Près du mont Luossavaara", "Cuisine et salon partagés", "Petit-déjeuner buffet inclus"],
@@ -1161,6 +1245,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Bij de berg Luossavaara", "Gedeelde keuken en lounge", "Ontbijtbuffet inbegrepen"],
       es: ["Cerca del monte Luossavaara", "Cocina y salón compartidos", "Desayuno buffet incluido"],
       it: ["Vicino al monte Luossavaara", "Cucina e salotto condivisi", "Colazione a buffet inclusa"],
+      ja: ["ルオッサヴァーラ山の近く", "共用キッチンとラウンジ", "ビュッフェ朝食込み"],
     },
   },
   {
@@ -1180,6 +1265,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een hostel in het dorp Abisko, 250 m van station Abisko Östra. Sledehondenbedrijf en sauna ter plaatse.",
       es: "Un albergue en el pueblo de Abisko, a 250 m de la estación de Abisko Östra. Operador de trineos de perros en el mismo lugar y sauna.",
       it: "Un ostello nel villaggio di Abisko, a 250 m dalla stazione di Abisko Östra. Attività di slitte trainate da cani in loco e sauna.",
+      ja: "アビスコ村にあるホステルで、アビスコ・オストラ駅まで250m。館内でハスキー犬ぞり運営、サウナも完備。",
     },
     highlights: {
       fr: ["250 m de la gare Abisko Östra", "Traîneaux à chiens sur place", "Sauna inclus"],
@@ -1188,6 +1274,7 @@ export const HOTELS: Hotel[] = [
       nl: ["250 m van station Abisko Östra", "Sledehonden ter plaatse", "Sauna inbegrepen"],
       es: ["A 250 m de la estación de Abisko Östra", "Trineos de perros en el mismo lugar", "Sauna incluida"],
       it: ["A 250 m dalla stazione di Abisko Östra", "Slitte trainate da cani in loco", "Sauna inclusa"],
+      ja: ["アビスコ・オストラ駅まで250m", "館内でハスキー犬ぞり体験", "サウナ込み"],
     },
   },
   {
@@ -1207,6 +1294,7 @@ export const HOTELS: Hotel[] = [
       nl: "Glazen iglos en hutten aan de rivier de Torne, bij Jukkasjärvi. Privébadkamers, kitchenettes en luchthavenshuttle.",
       es: "Iglús de cristal y cabañas junto al río Torne, cerca de Jukkasjärvi. Baños privados, kitchenettes y traslado al aeropuerto.",
       it: "Iglu di vetro e baite sul fiume Torne, vicino a Jukkasjärvi. Bagni privati, angoli cottura e navetta aeroportuale.",
+      ja: "トルネ川沿い、ユッカスヤルヴィ近くにあるガラスイグルーとキャビン。専用バスルーム、簡易キッチン、空港シャトルあり。",
     },
     highlights: {
       fr: ["Sur la rivière Torne", "Salles de bain privées", "Navette aéroport"],
@@ -1215,6 +1303,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Aan de rivier de Torne", "Privébadkamers", "Luchthavenshuttle"],
       es: ["Junto al río Torne", "Baños privados", "Traslado al aeropuerto"],
       it: ["Sul fiume Torne", "Bagni privati", "Navetta aeroportuale"],
+      ja: ["トルネ川沿いに位置", "専用バスルーム", "空港シャトルあり"],
     },
   },
   {
@@ -1234,6 +1323,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een door Sami gerunde lodge in Jukkasjärvi, met boshutten en traditionele tenten. Rendierkudde ter plaatse en houtgestookte sauna.",
       es: "Un lodge gestionado por samis en Jukkasjärvi, con cabañas forestales y tiendas tradicionales. Manada de renos en el mismo lugar y sauna de leña.",
       it: "Un lodge gestito da sami a Jukkasjärvi, tra baite nel bosco e tende tradizionali. Mandria di renne in loco e sauna a legna.",
+      ja: "ユッカスヤルヴィにあるサーミの人々が運営するロッジ。森のキャビンと伝統的なテントを用意。トナカイの群れが飼育され、薪サウナも完備。",
     },
     highlights: {
       fr: ["Tenu par des Samis", "Troupeau de rennes sur place", "Sauna au bois"],
@@ -1242,6 +1332,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Gerund door Sami", "Rendierkudde ter plaatse", "Houtgestookte sauna"],
       es: ["Gestionado por samis", "Manada de renos en el lugar", "Sauna de leña"],
       it: ["Gestito da sami", "Mandria di renne in loco", "Sauna a legna"],
+      ja: ["サーミの人々が運営", "敷地内にトナカイの群れ", "薪サウナ"],
     },
   },
   {
@@ -1261,6 +1352,7 @@ export const HOTELS: Hotel[] = [
       nl: "In het dorp Abisko, 2 minuten lopen van station Abisko Östra. Zelfverzorgingskamers en cottages, dicht bij het nationaal park en Aurora Sky Station.",
       es: "En el pueblo de Abisko, a 2 minutos a pie de la estación de Abisko Östra. Habitaciones y cabañas con autoservicio, cerca del parque nacional y de la Aurora Sky Station.",
       it: "Nel villaggio di Abisko, a 2 minuti a piedi dalla stazione di Abisko Östra. Camere e cottage self-catering, vicino al parco nazionale e all'Aurora Sky Station.",
+      ja: "アビスコ村内、アビスコ・オストラ駅から徒歩2分。セルフケータリング式の客室とコテージがあり、国立公園とオーロラスカイステーションに近接。",
     },
     highlights: {
       fr: ["2 min de la gare Abisko Östra", "Proche de l'Aurora Sky Station", "Formules self-catering"],
@@ -1269,6 +1361,7 @@ export const HOTELS: Hotel[] = [
       nl: ["2 min van station Abisko Östra", "Dicht bij het Aurora Sky Station", "Zelfverzorgingsopties"],
       es: ["A 2 min de la estación de Abisko Östra", "Cerca de la Aurora Sky Station", "Opciones de autoservicio"],
       it: ["A 2 min dalla stazione di Abisko Östra", "Vicino all'Aurora Sky Station", "Opzioni self-catering"],
+      ja: ["アビスコ・オストラ駅まで徒歩2分", "オーロラスカイステーションに近接", "セルフケータリング形式あり"],
     },
   },
   {
@@ -1288,6 +1381,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een ski-in/ski-outhotel in Björkliden, ongeveer 500 m van het station en 8-9 km van Abisko. Uitzicht op het meer en de berg Lapporten, sauna, fitnessruimte en restaurant.",
       es: "Un hotel ski-in/ski-out en Björkliden, a unos 500 m de la estación y 8-9 km de Abisko. Vistas al lago y a la montaña Lapporten, sauna, gimnasio y restaurante.",
       it: "Un hotel ski-in/ski-out a Björkliden, a circa 500 m dalla stazione e 8-9 km da Abisko. Vista sul lago e sulla montagna Lapporten, sauna, palestra e ristorante.",
+      ja: "ビョルクリーデンにあるスキーイン・スキーアウトホテル。駅まで約500m、アビスコまで8〜9km。湖とラッポルテン山を望む眺望、サウナ、ジム、レストランを完備。",
     },
     highlights: {
       fr: ["Ski-in/ski-out à Björkliden", "Vue sur le lac et le Lapporten", "500 m de la gare"],
@@ -1296,6 +1390,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Ski-in/ski-out in Björkliden", "Uitzicht op meer en Lapporten", "500 m van het station"],
       es: ["Ski-in/ski-out en Björkliden", "Vistas al lago y al Lapporten", "A 500 m de la estación"],
       it: ["Ski-in/ski-out a Björkliden", "Vista sul lago e sul Lapporten", "A 500 m dalla stazione"],
+      ja: ["ビョルクリーデンでスキーイン・スキーアウト", "湖とラッポルテン山の眺望", "駅まで500m"],
     },
   },
 
@@ -1320,6 +1415,7 @@ export const HOTELS: Hotel[] = [
       nl: "Jacuzzi op het dak met uitzicht op de fjord, midden in het centrum van Tromsø.",
       es: "Jacuzzi en la azotea con vistas al fiordo, en pleno centro de Tromsø.",
       it: "Vasca idromassaggio sul tetto con vista sul fiordo, nel pieno centro di Tromsø.",
+      ja: "フィヨルドを望む屋上ジャグジーがある、トロムソ中心部のホテル。",
     },
     highlights: {
       fr: ["Jacuzzi sur le toit", "Centre-ville de Tromsø", "Repas du soir inclus"],
@@ -1328,6 +1424,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Jacuzzi op het dak", "Centrum van Tromsø", "Avondmaaltijd inbegrepen"],
       es: ["Jacuzzi en la azotea", "Centro de Tromsø", "Cena incluida"],
       it: ["Vasca idromassaggio sul tetto", "Centro di Tromsø", "Cena inclusa"],
+      ja: ["屋上ジャグジー", "トロムソ中心部に立地", "夕食込み"],
     },
   },
   {
@@ -1347,6 +1444,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een sky bar op het dak en een glazen brug over de waterkant, op loopafstand van het centrum.",
       es: "Un sky bar en la azotea y un puente acristalado sobre el paseo marítimo, a poca distancia a pie del centro.",
       it: "Uno sky bar sul tetto e un ponte vetrato sul lungomare, a pochi passi dal centro.",
+      ja: "屋上スカイバーとウォーターフロントを渡るガラス張りの橋を備え、中心部から徒歩圏内。",
     },
     highlights: {
       fr: ["Sky bar avec vue", "Pont vitré sur le fjord", "À pied du centre historique"],
@@ -1355,6 +1453,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Sky bar met uitzicht", "Glazen brug over de fjord", "Loopafstand tot de oude stad"],
       es: ["Sky bar con vistas", "Puente acristalado sobre el fiordo", "A pie del casco antiguo"],
       it: ["Sky bar panoramico", "Ponte vetrato sul fiordo", "A piedi dal centro storico"],
+      ja: ["眺めの良いスカイバー", "フィヨルドを渡るガラス橋", "旧市街まで徒歩圏内"],
     },
   },
   {
@@ -1374,6 +1473,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een groot hotel met 305 kamers aan het water, een solide uitvalsbasis om noorderlicht- en fjordtochten te combineren.",
       es: "Un gran hotel de 305 habitaciones frente al mar, una base sólida para encadenar excursiones de auroras y fiordos.",
       it: "Un grande hotel fronte mare con 305 camere, una base solida per alternare escursioni alle aurore e ai fiordi.",
+      ja: "客室305室を誇るウォーターフロントの大型ホテル。オーロラ観賞とフィヨルド観光を組み合わせるのに適した拠点。",
     },
     highlights: {
       fr: ["305 chambres, front de mer", "Départ facile pour les excursions", "Restaurant et bar sur place"],
@@ -1382,6 +1482,7 @@ export const HOTELS: Hotel[] = [
       nl: ["305 kamers aan het water", "Makkelijke ophaalservice voor excursies", "Restaurant en bar ter plaatse"],
       es: ["305 habitaciones frente al mar", "Recogida fácil para las excursiones", "Restaurante y bar en el hotel"],
       it: ["305 camere fronte mare", "Ritiro facile per le escursioni", "Ristorante e bar in loco"],
+      ja: ["客室305室、ウォーターフロントに立地", "ツアー送迎が便利", "館内にレストランとバー"],
     },
   },
   // --- Tromso (batch 2, aout 2026) ---
@@ -1402,6 +1503,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een centraal hotel aan de Sjøgata, 150 m van de Storgata en naast de 19e-eeuwse houten kathedraal van Tromsø. Gratis wafels en warme dranken bij de open haard.",
       es: "Un hotel céntrico en Sjøgata, a 150 m de Storgata y junto a la catedral de madera de Tromsø del siglo XIX. Gofres y bebidas calientes gratis junto a la chimenea.",
       it: "Un hotel centrale su Sjøgata, a 150 m da Storgata e accanto alla cattedrale in legno di Tromsø del XIX secolo. Waffle e bevande calde gratuiti accanto al camino.",
+      ja: "ショーガタ通りにある中心部のホテルで、ストーガタまで150m、トロムソの19世紀の木造大聖堂の隣に位置。暖炉のそばで無料のワッフルと温かい飲み物を提供。",
     },
     highlights: {
       fr: ["150 m de Storgata", "À côté de la cathédrale en bois", "Gaufres et boissons chaudes gratuites"],
@@ -1410,6 +1512,7 @@ export const HOTELS: Hotel[] = [
       nl: ["150 m van de Storgata", "Naast de houten kathedraal", "Gratis wafels en warme dranken"],
       es: ["A 150 m de Storgata", "Junto a la catedral de madera", "Gofres y bebidas calientes gratis"],
       it: ["A 150 m da Storgata", "Accanto alla cattedrale in legno", "Waffle e bevande calde gratuiti"],
+      ja: ["ストーガタまで150m", "木造大聖堂の隣に立地", "無料のワッフルと温かい飲み物"],
     },
   },
   {
@@ -1429,6 +1532,7 @@ export const HOTELS: Hotel[] = [
       nl: "Aan de Storgata 105, dicht bij de haven en het centrum. Sommige kamers hebben uitzicht op de bergen.",
       es: "En Storgata 105, cerca del puerto y del centro. Algunas habitaciones tienen vistas a la montaña.",
       it: "Su Storgata 105, vicino al porto e al centro. Alcune camere offrono vista sulla montagna.",
+      ja: "ストーガタ105番地に位置し、港と中心部に近接。一部客室からは山の眺望も。",
     },
     highlights: {
       fr: ["Proche du port", "Certaines chambres avec vue montagne", "À deux pas du centre"],
@@ -1437,6 +1541,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Dicht bij de haven", "Sommige kamers met bergzicht", "Vlak bij het centrum"],
       es: ["Cerca del puerto", "Algunas habitaciones con vistas a la montaña", "A pocos pasos del centro"],
       it: ["Vicino al porto", "Alcune camere con vista montagna", "A pochi passi dal centro"],
+      ja: ["港に近接", "一部客室に山の眺望", "中心部まですぐ"],
     },
   },
   {
@@ -1456,6 +1561,7 @@ export const HOTELS: Hotel[] = [
       nl: "Op 100 m van winkelstraat Storgata, met parketvloeren in alle kamers. Ontbijtbuffet en fitnessruimte.",
       es: "A 100 m de la calle comercial Storgata, con suelos de parqué en todas las habitaciones. Desayuno buffet y gimnasio.",
       it: "A 100 m dalla via dello shopping Storgata, con pavimenti in parquet in tutte le camere. Colazione a buffet e palestra.",
+      ja: "ショッピングストリートのストーガタまで100m。全客室に木製の床を採用。ビュッフェ朝食とジムを完備。",
     },
     highlights: {
       fr: ["100 m de Storgata", "Parquet dans toutes les chambres", "Salle de sport sur place"],
@@ -1464,6 +1570,7 @@ export const HOTELS: Hotel[] = [
       nl: ["100 m van de Storgata", "Parketvloeren in alle kamers", "Fitnessruimte ter plaatse"],
       es: ["A 100 m de Storgata", "Suelos de parqué en todas las habitaciones", "Gimnasio en el hotel"],
       it: ["A 100 m da Storgata", "Pavimenti in parquet in tutte le camere", "Palestra in loco"],
+      ja: ["ストーガタまで100m", "全室に木製の床", "館内にジム"],
     },
   },
   {
@@ -1483,6 +1590,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een budgetoptie aan de Parkgata, 200 m van het centrum, in een rustige buurt. Gedeelde keuken en barbecue.",
       es: "Una opción económica en Parkgata, a 200 m del centro, en un barrio tranquilo. Cocina compartida y barbacoa.",
       it: "Un'opzione economica su Parkgata, a 200 m dal centro, in un quartiere tranquillo. Cucina condivisa e barbecue.",
+      ja: "パルクガタ通りにあるお手頃な宿。中心部まで200m、静かな住宅街に位置。共用キッチンとバーベキュー設備あり。",
     },
     highlights: {
       fr: ["200 m du centre", "Quartier calme", "Cuisine partagée et barbecue"],
@@ -1491,6 +1599,7 @@ export const HOTELS: Hotel[] = [
       nl: ["200 m van het centrum", "Rustige buurt", "Gedeelde keuken en barbecue"],
       es: ["A 200 m del centro", "Barrio tranquilo", "Cocina compartida y barbacoa"],
       it: ["A 200 m dal centro", "Quartiere tranquillo", "Cucina condivisa e barbecue"],
+      ja: ["中心部まで200m", "静かな住宅街", "共用キッチンとバーベキュー"],
     },
   },
   {
@@ -1510,6 +1619,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een familiehostel in een traditioneel houten gebouw, Storgata 107, op 700 m van de veerbootterminal.",
       es: "Un albergue familiar en un edificio de madera tradicional, Storgata 107, a 700 m de la terminal de ferris.",
       it: "Un ostello a conduzione familiare in un edificio tradizionale in legno, Storgata 107, a 700 m dal terminal dei traghetti.",
+      ja: "伝統的な木造建築を利用した家族経営のホステル。ストーガタ107番地、フェリーターミナルまで700m。",
     },
     highlights: {
       fr: ["Bâtiment en bois traditionnel", "700 m du terminal ferry", "Gestion familiale"],
@@ -1518,6 +1628,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Traditioneel houten gebouw", "700 m van de veerbootterminal", "Familiebedrijf"],
       es: ["Edificio de madera tradicional", "A 700 m de la terminal de ferris", "Gestión familiar"],
       it: ["Edificio tradizionale in legno", "A 700 m dal terminal dei traghetti", "Gestione familiare"],
+      ja: ["伝統的な木造建築", "フェリーターミナルまで700m", "家族経営"],
     },
   },
   {
@@ -1537,6 +1648,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een centraal adres aan de Grønnegata, met een volledige keuken in elke kamer en een 24-uursreceptie.",
       es: "Una dirección céntrica en Grønnegata, con cocina completa en cada habitación y recepción abierta las 24 horas.",
       it: "Un indirizzo centrale su Grønnegata, con cucina completa in ogni camera e reception aperta 24 ore su 24.",
+      ja: "グロンネガタ通りの中心部に位置し、全客室にフルキッチンを完備、24時間対応のフロントあり。",
     },
     highlights: {
       fr: ["Cuisine complète en chambre", "Réception 24h/24", "Emplacement central"],
@@ -1545,6 +1657,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Volledige keuken op de kamer", "24-uursreceptie", "Centrale ligging"],
       es: ["Cocina completa en la habitación", "Recepción 24 horas", "Ubicación céntrica"],
       it: ["Cucina completa in camera", "Reception 24 ore su 24", "Posizione centrale"],
+      ja: ["全室にフルキッチン", "24時間対応フロント", "中心部に立地"],
     },
   },
   {
@@ -1564,6 +1677,7 @@ export const HOTELS: Hotel[] = [
       nl: "Aan de Grønnegata, met kitchenette in elke kamer, dicht bij de voetgangersstraat en een wasserette.",
       es: "En Grønnegata, con kitchenette en cada habitación, cerca de la calle peatonal y de una lavandería.",
       it: "Su Grønnegata, con angolo cottura in ogni camera, vicino alla via pedonale e a una lavanderia.",
+      ja: "グロンネガタ通りに位置し、全客室に簡易キッチンを完備。歩行者天国とコインランドリーに近接。",
     },
     highlights: {
       fr: ["Kitchenette en chambre", "Proche de la rue piétonne", "Laverie sur place"],
@@ -1572,6 +1686,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Kitchenette op de kamer", "Dicht bij de voetgangersstraat", "Wasserette ter plaatse"],
       es: ["Kitchenette en la habitación", "Cerca de la calle peatonal", "Lavandería en el hotel"],
       it: ["Angolo cottura in camera", "Vicino alla via pedonale", "Lavanderia in loco"],
+      ja: ["全室に簡易キッチン", "歩行者天国に近接", "館内にランドリー"],
     },
   },
   {
@@ -1591,6 +1706,7 @@ export const HOTELS: Hotel[] = [
       nl: "Aan het water, aan het einde van de pier, met panoramisch uitzicht op de haven vanuit de meeste kamers. De Roast Bar kijkt uit op de brug van Tromsø en de IJszeekathedraal; Nordic Swan-milieukeurmerk.",
       es: "En el paseo marítimo, al final del muelle, con vistas panorámicas al puerto desde la mayoría de las habitaciones. El Roast Bar tiene vistas al puente de Tromsø y a la Catedral Ártica; etiqueta ecológica Nordic Swan.",
       it: "Sul lungomare, in fondo al molo, con vista panoramica sul porto dalla maggior parte delle camere. Il Roast Bar affaccia sul ponte di Tromsø e sulla Cattedrale Artica; etichetta ecologica Nordic Swan.",
+      ja: "波止場の先端、ウォーターフロントに位置し、ほとんどの客室から港のパノラマビューを望めます。バー「ロースト・バー」からはトロムソ橋と北極大聖堂を一望。北欧環境ラベル「ノルディック・スワン」認証取得。",
     },
     highlights: {
       fr: ["Vue panoramique sur le port", "Roast Bar avec vue cathédrale arctique", "Label écologique Nordic Swan"],
@@ -1599,6 +1715,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Panoramisch uitzicht op de haven", "Roast Bar met zicht op de IJszeekathedraal", "Nordic Swan-milieukeurmerk"],
       es: ["Vistas panorámicas al puerto", "Roast Bar con vistas a la Catedral Ártica", "Etiqueta ecológica Nordic Swan"],
       it: ["Vista panoramica sul porto", "Roast Bar con vista sulla Cattedrale Artica", "Etichetta ecologica Nordic Swan"],
+      ja: ["港のパノラマビュー", "北極大聖堂を望むロースト・バー", "北欧環境ラベル認証"],
     },
   },
   {
@@ -1618,6 +1735,7 @@ export const HOTELS: Hotel[] = [
       nl: "Aan de haven, Sjøgata, met een glazen brug op de 10e verdieping met uitzicht op de stad en de bergen. Fitnessruimte en sauna.",
       es: "En el paseo del puerto, Sjøgata, con un puente acristalado en la 10ª planta con vistas a la ciudad y las montañas. Gimnasio y sauna.",
       it: "Sul lungoporto, Sjøgata, con un ponte vetrato al 10° piano con vista sulla città e sulle montagne. Palestra e sauna.",
+      ja: "港沿いのショーガタ通りに位置し、10階には街と山々を見渡すガラス橋があります。ジムとサウナを完備。",
     },
     highlights: {
       fr: ["Pont vitré au 10e étage", "Front de port", "Salle de sport et sauna"],
@@ -1626,6 +1744,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Glazen brug op de 10e verdieping", "Ligging aan de haven", "Fitnessruimte en sauna"],
       es: ["Puente acristalado en la 10ª planta", "Ubicación frente al puerto", "Gimnasio y sauna"],
       it: ["Ponte vetrato al 10° piano", "Posizione sul lungoporto", "Palestra e sauna"],
+      ja: ["10階のガラス橋", "港沿いに立地", "ジムとサウナ"],
     },
   },
   {
@@ -1645,6 +1764,7 @@ export const HOTELS: Hotel[] = [
       nl: "Een volledig suite-verblijf in een voormalig kraamziekenhuis, 10 minuten van het centrum. Binnenzwembad, spa en keuken in elke suite. Een luxekeuze, duidelijk duurder dan de rest van deze selectie.",
       es: "Un establecimiento de solo suites instalado en una antigua maternidad, a 10 minutos del centro. Piscina interior, spa y cocina en cada suite. Una opción de lujo, con un precio muy por encima del resto de esta selección.",
       it: "Una struttura interamente a suite ricavata da un'ex maternità, a 10 minuti dal centro. Piscina coperta, spa e cucina in ogni suite. Una scelta di lusso, con un prezzo nettamente superiore al resto della selezione.",
+      ja: "旧産院を改装した全室スイートの施設で、中心部から10分。屋内プール、スパ、全スイートにキッチンを完備。高級志向の宿で、価格帯は本セレクションの中でも際立って高めです。",
     },
     highlights: {
       fr: ["Ancienne maternité reconvertie", "Cuisine dans chaque suite", "Positionnement luxe/spa"],
@@ -1653,6 +1773,7 @@ export const HOTELS: Hotel[] = [
       nl: ["Voormalig kraamziekenhuis", "Keuken in elke suite", "Luxe/spa-positionering"],
       es: ["Antigua maternidad reconvertida", "Cocina en cada suite", "Posicionamiento de lujo/spa"],
       it: ["Ex maternità riconvertita", "Cucina in ogni suite", "Posizionamento lusso/spa"],
+      ja: ["旧産院を改装", "全スイートにキッチン", "高級・スパ志向"],
     },
   },
 
