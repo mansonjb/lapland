@@ -5,11 +5,12 @@ import { UI_DE } from "@/data/i18n/de";
 import { UI_NL } from "@/data/i18n/nl";
 import { UI_ES } from "@/data/i18n/es";
 import { UI_IT } from "@/data/i18n/it";
+import { UI_JA } from "@/data/i18n/ja";
 
-export const LOCALES = ["fr", "en", "de", "nl", "es", "it"] as const;
+export const LOCALES = ["fr", "en", "de", "nl", "es", "it", "ja"] as const;
 export type Locale = (typeof LOCALES)[number];
 
-// FR est la langue par defaut : elle vit a la racine (`/`). Les autres sont prefixees (`/en`, `/de`, `/nl`, `/es`, `/it`).
+// FR est la langue par defaut : elle vit a la racine (`/`). Les autres sont prefixees (`/en`, `/de`, `/nl`, `/es`, `/it`, `/ja`).
 export const DEFAULT_LOCALE: Locale = "fr";
 
 export function isLocale(x: string | undefined): x is Locale {
@@ -36,6 +37,7 @@ export const OG_LOCALE: Record<Locale, string> = {
   nl: "nl_NL",
   es: "es_ES",
   it: "it_IT",
+  ja: "ja_JP",
 };
 
 export const HTML_LANG: Record<Locale, string> = {
@@ -45,6 +47,7 @@ export const HTML_LANG: Record<Locale, string> = {
   nl: "nl-NL",
   es: "es-ES",
   it: "it-IT",
+  ja: "ja-JP",
 };
 
 const DICTS: Record<Locale, Dict> = {
@@ -54,6 +57,7 @@ const DICTS: Record<Locale, Dict> = {
   nl: UI_NL,
   es: UI_ES,
   it: UI_IT,
+  ja: UI_JA,
 };
 
 export function getDict(locale: Locale): Dict {

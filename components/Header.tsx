@@ -24,6 +24,7 @@ const LANG_LABEL_KEY: Record<Locale, keyof Dict["header"]> = {
   nl: "langNl",
   es: "langEs",
   it: "langIt",
+  ja: "langJa",
 };
 
 export function Header({ locale }: { locale: Locale }) {

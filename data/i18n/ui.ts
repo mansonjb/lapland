@@ -19,6 +19,7 @@ export type Dict = {
     langNl: string;
     langEs: string;
     langIt: string;
+    langJa: string;
   };
   hero: {
     badgeBrand: string;

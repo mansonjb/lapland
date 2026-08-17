@@ -47,6 +47,16 @@ body {
   font-style: italic;
 }
 
+/* Japanese has no native italic: a synthetic slant on kanji/kana looks broken,
+   so drop it for lang=ja text and fall back to CJK system fonts instead of the
+   Latin display serif (which has no Japanese glyphs). Higher specificity than
+   `.font-display` alone (two selectors vs one) so it always wins regardless of
+   source order. */
+.font-display:lang(ja) {
+  font-style: normal;
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif;
+}
+
 /* Copper -> birch-dark -> spruce text gradient for hero/brand emphasis. */
 .text-gradient-brand {
   background-image: linear-gradient(

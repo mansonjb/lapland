@@ -10,7 +10,7 @@ export type Stay22MapProps = {
   mode?: "accommodation" | "experience";
   /** Free-form campaign tag for attribution, typically the page slug. */
   campaign?: string;
-  lang: "fr" | "en" | "de" | "nl" | "es" | "it";
+  lang: "fr" | "en" | "de" | "nl" | "es" | "it" | "ja";
   /** Reserved iframe height in px. Fixed so the layout never shifts (no CLS). */
   height?: number;
   className?: string;
@@ -23,6 +23,7 @@ const MAP_TITLE_TEMPLATE: Record<Stay22MapProps["lang"], (place: string) => stri
   nl: (place) => `Verblijven bij ${place}`,
   es: (place) => `Alojamientos cerca de ${place}`,
   it: (place) => `Alloggi vicino a ${place}`,
+  ja: (place) => `${place}周辺の宿泊施設`,
 };
 
 const MAP_TITLE_FALLBACK: Record<Stay22MapProps["lang"], string> = {
@@ -32,6 +33,7 @@ const MAP_TITLE_FALLBACK: Record<Stay22MapProps["lang"], string> = {
   nl: "deze bestemming",
   es: "este destino",
   it: "questa destinazione",
+  ja: "この目的地",
 };
 
 const INVMODE: Record<NonNullable<Stay22MapProps["mode"]>, string> = {
