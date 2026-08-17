@@ -36,7 +36,7 @@ export const UI_DE: Dict = {
     ],
     stats: [
       { value: "5", label: "Reiseziele abgedeckt" },
-      { value: "60+", label: "gelistete Unterkünfte" },
+      { value: "55+", label: "gelistete Unterkünfte" },
       { value: "100%", label: "unabhängig" },
     ],
     imageAlt: "Glashütte unter Polarlichtern in Rovaniemi, Lappland",

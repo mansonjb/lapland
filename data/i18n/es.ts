@@ -36,7 +36,7 @@ export const UI_ES: Dict = {
     ],
     stats: [
       { value: "5", label: "destinos cubiertos" },
-      { value: "60+", label: "alojamientos listados" },
+      { value: "55+", label: "alojamientos listados" },
       { value: "100%", label: "independiente" },
     ],
     imageAlt: "Cabaña acristalada bajo la aurora boreal en Rovaniemi, Laponia",

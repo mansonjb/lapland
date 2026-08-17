@@ -63,6 +63,57 @@ const HOTELS = [
   { slug: "clarion-collection-hotel-aurora", query: "Clarion Collection Hotel Aurora Tromso Norway" },
   { slug: "clarion-hotel-the-edge", query: "Clarion Hotel The Edge Tromso Norway" },
   { slug: "the-dock-6939-by-scandic", query: "The Dock 6939 by Scandic Tromso Norway" },
+
+  // --- Batch 2 (44 additional hotels, Aug 2026) ---
+  // Rovaniemi
+  { slug: "scandic-rovaniemi-city", query: "Scandic Rovaniemi City Rovaniemi Finland" },
+  { slug: "arctic-city-hotel", query: "Arctic City Hotel Rovaniemi Finland" },
+  { slug: "sokos-hotel-vaakuna-rovaniemi", query: "Original Sokos Hotel Vaakuna Rovaniemi Finland" },
+  { slug: "santas-hotel-rudolf", query: "Santa's Hotel Rudolf Rovaniemi Finland" },
+  { slug: "hostel-cafe-koti", query: "Hostel Cafe Koti Rovaniemi Finland" },
+  { slug: "log-cottages-santa-claus-village", query: "Log Villa Santa Claus Village Rovaniemi Finland" },
+  { slug: "santa-claus-holiday-village", query: "Santa Claus Holiday Village Rovaniemi Finland" },
+  { slug: "skyview-igloo-resort-spa", query: "SkyView Igloo Resort Spa Rovaniemi Finland" },
+  // Levi
+  { slug: "levi-hotel-spa", query: "Levi Hotel Spa Levi Finland" },
+  { slug: "hotel-hullu-poro", query: "Hotel Hullu Poro Levi Finland" },
+  { slug: "hotel-levi-panorama", query: "Hotel Levi Panorama Levi Finland" },
+  { slug: "levilehto-apartments", query: "Levilehto Apartments Levi Finland" },
+  { slug: "levi-log-cabin-viprakka", query: "Levi Log Cabin Viprakka Levi Finland" },
+  { slug: "chalet-auroras-levi", query: "Chalet Auroras Levi Finland" },
+  { slug: "aurora-pyramid-glass-igloos", query: "Aurora Pyramid Glass Igloos Kongas Levi Finland" },
+  { slug: "levi-aurora-igloo", query: "Levi Aurora Igloo Levi Finland" },
+  // Saariselka
+  { slug: "wilderness-hotel-kieppi", query: "Wilderness Hotel Kieppi Saariselka Finland" },
+  { slug: "lapland-hotels-riekonlinna", query: "Lapland Hotels Riekonlinna Saariselka Finland" },
+  { slug: "holiday-club-saariselka", query: "Holiday Club Saariselka Finland" },
+  { slug: "grand-hostel-ivalo", query: "Grand Hostel Ivalo Finland" },
+  { slug: "outapailakka-k19", query: "Outapailakka Saariselka Finland" },
+  { slug: "north-frontier-cabins", query: "North Frontier Cabins Saariselka Finland" },
+  { slug: "fell-centre-kiilopaa", query: "Kiilopaa Fell Centre Finland" },
+  { slug: "star-arctic-hotel", query: "Star Arctic Hotel Kaunispaa Finland" },
+  { slug: "aurora-collection-inari", query: "Aurora Collection Inari Finland" },
+  // Kiruna / Abisko
+  { slug: "scandic-kiruna", query: "Scandic Kiruna Sweden" },
+  { slug: "elite-hotel-frost", query: "Elite Hotel Frost Kiruna Sweden" },
+  { slug: "best-western-arctic-eden", query: "Best Western Hotel Arctic Eden Kiruna Sweden" },
+  { slug: "stf-malmfaltens-folkhogskola", query: "STF Malmfaltens Folkhogskola Kiruna Sweden" },
+  { slug: "abisko-hostel-huskies", query: "Abisko Net Hostel Huskies Abisko Sweden" },
+  { slug: "aurora-river-camp", query: "Aurora River Camp Jukkasjarvi Sweden" },
+  { slug: "reindeer-lodge-jukkasjarvi", query: "The Reindeer Lodge Jukkasjarvi Sweden" },
+  { slug: "abisko-mountain-lodge", query: "Abisko Mountain Lodge Sweden" },
+  { slug: "hotell-fjallet-bjorkliden", query: "Hotell Fjallet Bjorkliden Sweden" },
+  // Tromso
+  { slug: "first-hotel-amalie", query: "First Hotel Amalie Tromso Norway" },
+  { slug: "first-hotel-skansen", query: "First Hotel Skansen Tromso Norway" },
+  { slug: "thon-hotel-polar", query: "Thon Hotel Polar Tromso Norway" },
+  { slug: "first-hotel-backpack", query: "First Hotel Backpack Tromso Norway" },
+  { slug: "tromso-activities-hostel", query: "Tromso Activities Hostel Norway" },
+  { slug: "first-hotel-viking", query: "First Hotel Viking Tromso Norway" },
+  { slug: "first-hotel-city-tromso", query: "First Hotel City Tromso Norway" },
+  { slug: "scandic-ishavshotel", query: "Scandic Ishavshotel Tromso Norway" },
+  { slug: "radisson-blu-tromso", query: "Radisson Blu Hotel Tromso Norway" },
+  { slug: "enter-st-elisabeth-suites", query: "Enter St Elisabeth Suites Tromso Norway" },
 ];
 
 async function loadToken() {

@@ -36,7 +36,7 @@ export const UI_IT: Dict = {
     ],
     stats: [
       { value: "5", label: "destinazioni coperte" },
-      { value: "60+", label: "alloggi elencati" },
+      { value: "55+", label: "alloggi elencati" },
       { value: "100%", label: "indipendente" },
     ],
     imageAlt: "Baita vetrata sotto l'aurora boreale a Rovaniemi, Lapponia",

@@ -36,7 +36,7 @@ export const UI_EN: Dict = {
     ],
     stats: [
       { value: "5", label: "destinations covered" },
-      { value: "60+", label: "stays listed" },
+      { value: "55+", label: "stays listed" },
       { value: "100%", label: "independent" },
     ],
     imageAlt: "Glazed cabin under the northern lights in Rovaniemi, Lapland",

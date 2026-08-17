@@ -36,7 +36,7 @@ export const UI_FR: Dict = {
     ],
     stats: [
       { value: "5", label: "destinations couvertes" },
-      { value: "60+", label: "hébergements référencés" },
+      { value: "55+", label: "hébergements référencés" },
       { value: "100%", label: "indépendant" },
     ],
     imageAlt: "Cabane vitrée sous les aurores boréales à Rovaniemi, Laponie",

@@ -36,7 +36,7 @@ export const UI_NL: Dict = {
     ],
     stats: [
       { value: "5", label: "bestemmingen" },
-      { value: "60+", label: "verblijven vermeld" },
+      { value: "55+", label: "verblijven vermeld" },
       { value: "100%", label: "onafhankelijk" },
     ],
     imageAlt: "Glazen hut onder het noorderlicht in Rovaniemi, Lapland",
