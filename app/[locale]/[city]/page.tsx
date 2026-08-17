@@ -98,6 +98,28 @@ export default async function CityPage({
                 </div>
               ))}
             </div>
+
+            <div className="mt-6 rounded-xl border border-line bg-surface p-4">
+              <h2 className="text-xs font-semibold uppercase tracking-wide text-ink-soft">
+                {t.city.practicalHeading}
+              </h2>
+              <dl className="mt-3 grid grid-cols-1 gap-x-6 gap-y-3 sm:grid-cols-2">
+                {(
+                  [
+                    ["practicalPopulation", destination.practicalInfo.population[lang]],
+                    ["practicalAirport", destination.practicalInfo.airport[lang]],
+                    ["practicalTrain", destination.practicalInfo.train[lang]],
+                    ["practicalCarRental", destination.practicalInfo.carRental[lang]],
+                    ["practicalWinterTemp", destination.practicalInfo.winterTemp[lang]],
+                  ] as const
+                ).map(([key, value]) => (
+                  <div key={key}>
+                    <dt className="text-xs font-semibold text-copper">{t.city[key]}</dt>
+                    <dd className="mt-0.5 text-sm leading-snug text-ink-soft">{value}</dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
           </div>
 
           <div className="relative aspect-[5/4] w-full overflow-hidden rounded-3xl shadow-xl">
