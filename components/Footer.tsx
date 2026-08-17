@@ -8,7 +8,7 @@ export function Footer({ locale }: { locale: Locale }) {
   return (
     <footer className="bg-midnight text-frost">
       <div className="mx-auto max-w-(--spacing-maxw) px-6 py-14">
-        <div className="grid gap-10 md:grid-cols-4">
+        <div className="grid gap-10 md:grid-cols-5">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2.5">
               <span aria-hidden className="brand-mark h-6 w-6 rounded-full" />
@@ -56,6 +56,32 @@ export function Footer({ locale }: { locale: Locale }) {
                 <a href="#faq" className="text-frost/80 hover:text-frost">
                   {t.footer.guideFaq}
                 </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-sm font-medium uppercase tracking-wide text-frost/50">
+              {t.footer.columnLegal}
+            </h3>
+            <ul className="mt-4 space-y-2 text-sm">
+              <li>
+                <Link href={localeHref(locale, "legal")} className="text-frost/80 hover:text-frost">
+                  {t.footer.legalLink}
+                </Link>
+              </li>
+              <li>
+                <Link href={localeHref(locale, "privacy")} className="text-frost/80 hover:text-frost">
+                  {t.footer.privacyLink}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={localeHref(locale, "affiliate-disclosure")}
+                  className="text-frost/80 hover:text-frost"
+                >
+                  {t.footer.affiliateLink}
+                </Link>
               </li>
             </ul>
           </div>

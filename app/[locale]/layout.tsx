@@ -1,8 +1,10 @@
 import { notFound } from "next/navigation";
-import Script from "next/script";
 import { HTML_LANG, LOCALES, isLocale, type Locale } from "@/lib/i18n";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { CookieConsentProvider } from "@/lib/cookie-consent";
+import { CookieConsentBanner } from "@/components/CookieConsentBanner";
+import { Stay22Script } from "@/components/Stay22Script";
 
 export function generateStaticParams() {
   return LOCALES.map((locale) => ({ locale }));
@@ -22,20 +24,13 @@ export default async function LocaleLayout({
   return (
     <html lang={HTML_LANG[locale]}>
       <body className="min-h-screen bg-paper text-ink antialiased">
-        <Header locale={lang} />
-        {children}
-        <Footer locale={lang} />
-        <Script id="stay22-lma" strategy="afterInteractive">
-          {`(function (s, t, a, y, twenty, two) {
-    s.Stay22 = s.Stay22 || {};
-    s.Stay22.params = { lmaID: '6a7dfb155ad5565fc46165ff' };
-    twenty = t.createElement(a);
-    two = t.getElementsByTagName(a)[0];
-    twenty.async = 1;
-    twenty.src = y;
-    two.parentNode.insertBefore(twenty, two);
-  })(window, document, 'script', 'https://scripts.stay22.com/letmeallez.js');`}
-        </Script>
+        <CookieConsentProvider>
+          <Header locale={lang} />
+          {children}
+          <Footer locale={lang} />
+          <Stay22Script />
+          <CookieConsentBanner locale={lang} />
+        </CookieConsentProvider>
       </body>
     </html>
   );
