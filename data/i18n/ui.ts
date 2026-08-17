@@ -95,6 +95,8 @@ export type Dict = {
     breadcrumbHome: string;
     quickFactsHeading: string;
     whyHeading: string;
+    whereToStayHeading: string;
+    whatToDoHeading: string;
     hotelsHeading: string;
     hotelsEmpty: string;
     faqHeading: string;

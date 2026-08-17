@@ -102,6 +102,18 @@ export const UI_FR: Dict = {
         q: "Quel budget prévoir ?",
         a: "Un hôtel classique bien situé revient généralement entre 100 et 200 EUR la nuit en saison. Un igloo de verre ou un hôtel de glace monte plutôt entre 250 et 600 EUR la nuit selon la destination et le niveau de confort. Prévoyez un budget séparé pour les excursions guidées si vous ne conduisez pas.",
       },
+      {
+        q: "Quelle ville choisir selon mon profil de voyage ?",
+        a: "Ce guide compare justement les cinq destinations pour ça : familles, Rovaniemi ; ski, Levi ; budget ou authenticité, Saariselkä ou Abisko ; vraie ville et fjord, Tromsø. Il n'y a pas de réponse universelle, tout dépend de ce que vous cherchez en plus des aurores.",
+      },
+      {
+        q: "Faut-il louer une voiture ?",
+        a: "Ça dépend de la ville. Tromsø et les stations comme Levi ou Saariselkä se font très bien à pied ou en navette. Une voiture devient utile pour les cabanes isolées ou pour explorer un parc national par vous-même.",
+      },
+      {
+        q: "Peut-on emmener des enfants voir les aurores ?",
+        a: "Oui, mais mieux vaut prévoir : l'usage dans le secteur recommande plutôt un âge minimum autour de 4 ans pour les sorties nocturnes, avec un habillage en couches. Un hébergement isolé (igloo de verre, cabane) réduit aussi la contrainte de sortir dans le froid.",
+      },
     ],
   },
   footer: {
@@ -120,6 +132,8 @@ export const UI_FR: Dict = {
     breadcrumbHome: "Accueil",
     quickFactsHeading: "En bref",
     whyHeading: "Pourquoi choisir cette destination",
+    whereToStayHeading: "Types d'hébergement",
+    whatToDoHeading: "À faire sur place",
     hotelsHeading: "Où dormir",
     hotelsEmpty: "Nous mettons à jour notre sélection pour cette destination.",
     faqHeading: "Questions fréquentes",

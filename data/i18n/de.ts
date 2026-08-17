@@ -102,6 +102,18 @@ export const UI_DE: Dict = {
         q: "Welches Budget sollte ich einplanen?",
         a: "Ein gut gelegenes Standardhotel kostet in der Saison typischerweise 100 bis 200 EUR pro Nacht. Ein Glasiglu oder Eishotel liegt eher bei 250 bis 600 EUR pro Nacht, je nach Reiseziel und Komfortstufe. Planen Sie ein separates Budget für geführte Ausflüge ein, falls Sie nicht selbst fahren.",
       },
+      {
+        q: "Welchen Ort sollte ich je nach Reiseprofil wählen?",
+        a: "Genau das vergleicht dieser Ratgeber: Familien sind in Rovaniemi gut aufgehoben, Skifahrer in Levi, wer Budget oder Authentizität sucht in Saariselkä oder Abisko, echte Stadt plus Fjord in Tromsø. Es gibt keine einzige richtige Antwort, es hängt davon ab, was Sie neben den Polarlichtern suchen.",
+      },
+      {
+        q: "Braucht man einen Mietwagen?",
+        a: "Das hängt vom Ort ab. Tromsø und Ferienorte wie Levi oder Saariselkä funktionieren gut zu Fuß oder mit dem Shuttle. Ein Auto wird nützlich für abgelegene Hütten oder um einen Nationalpark selbstständig zu erkunden.",
+      },
+      {
+        q: "Können Kinder bei einer Polarlicht-Reise mitkommen?",
+        a: "Ja, mit etwas Planung: In der Branche wird für nächtliche Ausflüge meist ein Mindestalter von etwa 4 Jahren empfohlen, warm angezogen in mehreren Schichten. Eine Unterkunft mit eigenem Blick auf den Himmel (Glasiglu, Hütte) verringert außerdem, wie oft man tatsächlich in die Kälte hinaus muss.",
+      },
     ],
   },
   footer: {
@@ -120,6 +132,8 @@ export const UI_DE: Dict = {
     breadcrumbHome: "Startseite",
     quickFactsHeading: "Auf einen Blick",
     whyHeading: "Warum dieses Reiseziel wählen",
+    whereToStayHeading: "Unterkunftsarten",
+    whatToDoHeading: "Vor Ort unternehmen",
     hotelsHeading: "Wo übernachten",
     hotelsEmpty: "Wir aktualisieren gerade unsere Auswahl für dieses Reiseziel.",
     faqHeading: "Häufig gestellte Fragen",

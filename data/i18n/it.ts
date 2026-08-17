@@ -102,6 +102,18 @@ export const UI_IT: Dict = {
         q: "Che budget devo prevedere?",
         a: "Un hotel standard ben posizionato costa in genere tra 100 e 200 EUR a notte in stagione. Un iglu di vetro o un hotel di ghiaccio si aggira piuttosto tra 250 e 600 EUR a notte a seconda della destinazione e del livello di comfort. Prevedi un budget separato per le escursioni guidate se non guidi tu stesso.",
       },
+      {
+        q: "Quale città scegliere in base al proprio tipo di viaggio?",
+        a: "È esattamente quello che confronta questa guida: le famiglie stanno bene a Rovaniemi, gli sciatori a Levi, chi cerca budget o autenticità a Saariselkä o Abisko, una vera città più fiordo a Tromsø. Non esiste un'unica risposta giusta, dipende da cosa cercate oltre alle aurore.",
+      },
+      {
+        q: "Serve noleggiare un'auto?",
+        a: "Dipende dalla città. Tromsø e i villaggi di stazione come Levi o Saariselkä si vivono bene a piedi o con la navetta. Un'auto diventa utile per le baite isolate o per esplorare un parco nazionale in autonomia.",
+      },
+      {
+        q: "I bambini possono venire a vedere le aurore?",
+        a: "Sì, con un po' di pianificazione: nel settore si tende a consigliare un'età minima intorno ai 4 anni per le uscite notturne, con abbigliamento a strati. Un alloggio con vista diretta sul cielo (iglu di vetro, baita) riduce anche quanto sia necessario uscire al freddo.",
+      },
     ],
   },
   footer: {
@@ -120,6 +132,8 @@ export const UI_IT: Dict = {
     breadcrumbHome: "Home",
     quickFactsHeading: "In breve",
     whyHeading: "Perché scegliere questa destinazione",
+    whereToStayHeading: "Tipi di alloggio",
+    whatToDoHeading: "Cosa fare",
     hotelsHeading: "Dove dormire",
     hotelsEmpty: "Stiamo aggiornando la nostra selezione per questa destinazione.",
     faqHeading: "Domande frequenti",

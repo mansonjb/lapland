@@ -102,6 +102,18 @@ export const UI_ES: Dict = {
         q: "¿Qué presupuesto debo prever?",
         a: "Un hotel estándar bien situado suele costar entre 100 y 200 EUR la noche en temporada. Un iglu de cristal o un hotel de hielo ronda entre 250 y 600 EUR la noche según el destino y el nivel de confort. Prevé un presupuesto aparte para excursiones guiadas si no conduces tú mismo.",
       },
+      {
+        q: "¿Qué ciudad elegir según mi tipo de viaje?",
+        a: "Esto es justo lo que compara esta guía: las familias van bien en Rovaniemi, los esquiadores en Levi, quienes buscan presupuesto o autenticidad en Saariselkä o Abisko, una ciudad de verdad más fiordo en Tromsø. No hay una única respuesta correcta, depende de lo que busques además de las auroras.",
+      },
+      {
+        q: "¿Hace falta alquilar un coche?",
+        a: "Depende de la ciudad. Tromsø y pueblos de estación como Levi o Saariselkä se recorren bien a pie o en lanzadera. Un coche resulta útil para cabañas aisladas o para explorar un parque nacional por tu cuenta.",
+      },
+      {
+        q: "¿Pueden los niños venir a ver las auroras?",
+        a: "Sí, con algo de planificación: en el sector suele recomendarse una edad mínima de unos 4 años para las salidas nocturnas, con ropa por capas. Un alojamiento con vistas propias al cielo (iglu de cristal, cabaña) también reduce la necesidad de salir al frío.",
+      },
     ],
   },
   footer: {
@@ -120,6 +132,8 @@ export const UI_ES: Dict = {
     breadcrumbHome: "Inicio",
     quickFactsHeading: "De un vistazo",
     whyHeading: "Por qué elegir este destino",
+    whereToStayHeading: "Tipos de alojamiento",
+    whatToDoHeading: "Qué hacer",
     hotelsHeading: "Dónde dormir",
     hotelsEmpty: "Estamos actualizando nuestra selección para este destino.",
     faqHeading: "Preguntas frecuentes",

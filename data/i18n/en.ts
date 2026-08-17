@@ -102,6 +102,18 @@ export const UI_EN: Dict = {
         q: "What budget should I plan for?",
         a: "A well-located standard hotel typically runs 100 to 200 EUR a night in season. A glass igloo or ice hotel runs more like 250 to 600 EUR a night depending on destination and comfort level. Budget separately for guided excursions if you're not driving yourself.",
       },
+      {
+        q: "Which town should I pick for my kind of trip?",
+        a: "That is exactly what this guide compares: families do well in Rovaniemi, skiers in Levi, budget or authenticity seekers in Saariselka or Abisko, a real city plus fjord in Tromso. There is no single right answer, it depends on what you want beyond the lights.",
+      },
+      {
+        q: "Do I need to rent a car?",
+        a: "It depends on the town. Tromso and resort villages like Levi or Saariselka work well on foot or by shuttle. A car becomes useful for remote wilderness cabins or exploring a national park on your own schedule.",
+      },
+      {
+        q: "Can kids come along on an aurora trip?",
+        a: "Yes, with some planning: industry practice tends to recommend a minimum age around 4 for late-night outings, dressed in warm layers. A stay with its own aurora view (glass igloo, cabin) also cuts down on how much you need to go outside in the cold.",
+      },
     ],
   },
   footer: {
@@ -120,6 +132,8 @@ export const UI_EN: Dict = {
     breadcrumbHome: "Home",
     quickFactsHeading: "At a glance",
     whyHeading: "Why choose this destination",
+    whereToStayHeading: "Accommodation options",
+    whatToDoHeading: "Things to do",
     hotelsHeading: "Where to stay",
     hotelsEmpty: "We're updating our picks for this destination.",
     faqHeading: "Frequently asked questions",

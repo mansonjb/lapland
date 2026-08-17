@@ -102,6 +102,18 @@ export const UI_NL: Dict = {
         q: "Welk budget moet ik plannen?",
         a: "Een goed gelegen standaard hotel kost doorgaans 100 tot 200 EUR per nacht in het seizoen. Een glazen iglo of ijshotel ligt eerder tussen 250 en 600 EUR per nacht, afhankelijk van bestemming en comfortniveau. Reserveer een apart budget voor begeleide excursies als u niet zelf rijdt.",
       },
+      {
+        q: "Welke stad past bij mijn type reis?",
+        a: "Dat is precies wat deze gids vergelijkt: gezinnen doen het goed in Rovaniemi, skiërs in Levi, wie budget of authenticiteit zoekt in Saariselkä of Abisko, een echte stad plus fjord in Tromsø. Er is geen enkel juist antwoord, het hangt af van wat u naast het noorderlicht zoekt.",
+      },
+      {
+        q: "Heb ik een huurauto nodig?",
+        a: "Dat hangt af van de stad. Tromsø en dorpen als Levi of Saariselkä zijn goed te doen te voet of met de shuttle. Een auto wordt nuttig voor afgelegen hutten of om zelfstandig een nationaal park te verkennen.",
+      },
+      {
+        q: "Kunnen kinderen mee op noorderlichtreis?",
+        a: "Ja, met wat planning: in de sector wordt voor nachtelijke uitstapjes meestal een minimumleeftijd van rond de 4 jaar aangeraden, warm aangekleed in laagjes. Een verblijf met eigen zicht op de hemel (glazen iglo, hut) vermindert ook hoe vaak u echt naar buiten in de kou moet.",
+      },
     ],
   },
   footer: {
@@ -120,6 +132,8 @@ export const UI_NL: Dict = {
     breadcrumbHome: "Home",
     quickFactsHeading: "In het kort",
     whyHeading: "Waarom deze bestemming kiezen",
+    whereToStayHeading: "Soorten accommodatie",
+    whatToDoHeading: "Te doen ter plaatse",
     hotelsHeading: "Waar overnachten",
     hotelsEmpty: "We werken onze selectie voor deze bestemming bij.",
     faqHeading: "Veelgestelde vragen",
