@@ -146,6 +146,8 @@ export const UI_FR: Dict = {
     practicalTrain: "Train",
     practicalCarRental: "Voiture",
     practicalWinterTemp: "Températures",
+    auroraSpotsHeading: "Meilleurs spots pour observer les aurores",
+    activitiesHeading: "Activités à réserver",
   },
   stay22: {
     sponsored: "Réservation partenaire",

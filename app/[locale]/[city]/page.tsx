@@ -163,6 +163,40 @@ export default async function CityPage({
         </div>
       </section>
 
+      {/* ---------- AURORA SPOTS / ACTIVITIES ---------- */}
+      <section className="bg-paper-2 py-14">
+        <div className="mx-auto grid max-w-(--spacing-maxw) gap-10 px-6 sm:grid-cols-2">
+          <div>
+            <h2 className="font-display text-xl text-ink">{t.city.auroraSpotsHeading}</h2>
+            <ul className="mt-4 space-y-3">
+              {destination.auroraSpots.map((spot) => (
+                <li
+                  key={spot.name[lang]}
+                  className="rounded-xl border border-line bg-surface p-3"
+                >
+                  <p className="text-sm font-semibold text-ink">{spot.name[lang]}</p>
+                  <p className="mt-1 text-sm leading-snug text-ink-soft">{spot.note[lang]}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h2 className="font-display text-xl text-ink">{t.city.activitiesHeading}</h2>
+            <ul className="mt-4 space-y-3">
+              {destination.activities.map((activity) => (
+                <li
+                  key={activity.name[lang]}
+                  className="rounded-xl border border-line bg-surface p-3"
+                >
+                  <p className="text-sm font-semibold text-ink">{activity.name[lang]}</p>
+                  <p className="mt-1 text-sm leading-snug text-ink-soft">{activity.note[lang]}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* ---------- MAP ---------- */}
       <section id="carte" className="py-14">
         <div className="mx-auto max-w-(--spacing-maxw) px-6">

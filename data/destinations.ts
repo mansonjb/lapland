@@ -91,6 +91,16 @@ export type Destination = {
     carRental: { fr: string; en: string; de: string; nl: string; es: string; it: string; ja: string };
     winterTemp: { fr: string; en: string; de: string; nl: string; es: string; it: string; ja: string };
   };
+  /** Spots reels pour observer les aurores, courts et verifiables, affiches sous whatToDo. */
+  auroraSpots: {
+    name: { fr: string; en: string; de: string; nl: string; es: string; it: string; ja: string };
+    note: { fr: string; en: string; de: string; nl: string; es: string; it: string; ja: string };
+  }[];
+  /** Activites reservables avec conseil de delai de reservation (hors hebergement). */
+  activities: {
+    name: { fr: string; en: string; de: string; nl: string; es: string; it: string; ja: string };
+    note: { fr: string; en: string; de: string; nl: string; es: string; it: string; ja: string };
+  }[];
   faq: {
     question: { fr: string; en: string; de: string; nl: string; es: string; it: string; ja: string };
     answer: { fr: string; en: string; de: string; nl: string; es: string; it: string; ja: string };
@@ -227,6 +237,150 @@ export const DESTINATIONS: Destination[] = [
         ja: "平均マイナス15度からマイナス5度（マイナス20度まで下がることもあります）",
       },
     },
+    auroraSpots: [
+      {
+        name: {
+          fr: "Ounasvaara",
+          en: "Ounasvaara",
+          de: "Ounasvaara",
+          nl: "Ounasvaara",
+          es: "Ounasvaara",
+          it: "Ounasvaara",
+          ja: "オウナスヴァーラ",
+        },
+        note: {
+          fr: "Colline juste de l'autre côté de la rivière depuis le centre, avec une tour d'observation, à environ 25-30 minutes à pied ou 5 minutes en taxi.",
+          en: "A fell just across the river from downtown, with an observation tower, about a 25-30 minute walk or a 5-minute taxi ride away.",
+          de: "Ein Hügel gleich auf der anderen Flussseite des Zentrums, mit Aussichtsturm, etwa 25-30 Gehminuten oder 5 Taxi-Minuten entfernt.",
+          nl: "Een heuvel net aan de overkant van de rivier vanaf het centrum, met een uitkijktoren, ongeveer 25-30 minuten lopen of 5 minuten met de taxi.",
+          es: "Una colina justo al otro lado del río desde el centro, con una torre de observación, a unos 25-30 minutos a pie o 5 minutos en taxi.",
+          it: "Una collina appena al di là del fiume rispetto al centro, con una torre di osservazione, a circa 25-30 minuti a piedi o 5 minuti in taxi.",
+          ja: "中心部から川を渡ってすぐの丘で、展望塔があり、徒歩約25〜30分、タクシーなら5分の距離です。",
+        },
+      },
+      {
+        name: {
+          fr: "Cercle polaire arctique",
+          en: "Arctic Circle area",
+          de: "Polarkreis-Gebiet",
+          nl: "Poolcirkelgebied",
+          es: "Zona del círculo polar ártico",
+          it: "Zona del circolo polare artico",
+          ja: "北極線エリア",
+        },
+        note: {
+          fr: "Zone de randonnée à environ 20 minutes en voiture du centre, loin de l'éclairage urbain, avec plusieurs clairières dégagées.",
+          en: "A hiking area about a 20-minute drive from downtown, away from town lighting, with several open clearings.",
+          de: "Ein Wandergebiet etwa 20 Autominuten vom Zentrum entfernt, fernab der Stadtbeleuchtung, mit mehreren offenen Lichtungen.",
+          nl: "Een wandelgebied op ongeveer 20 minuten rijden van het centrum, weg van de stadsverlichting, met meerdere open plekken.",
+          es: "Una zona de senderismo a unos 20 minutos en coche del centro, alejada del alumbrado urbano, con varios claros despejados.",
+          it: "Una zona escursionistica a circa 20 minuti di auto dal centro, lontana dall'illuminazione cittadina, con diverse radure aperte.",
+          ja: "市街の照明から離れた、中心部から車で約20分のハイキングエリアで、開けた空き地がいくつかあります。",
+        },
+      },
+      {
+        name: {
+          fr: "Arktikum Park",
+          en: "Arktikum Park",
+          de: "Arktikum Park",
+          nl: "Arktikum Park",
+          es: "Arktikum Park",
+          it: "Arktikum Park",
+          ja: "アークティクム公園",
+        },
+        note: {
+          fr: "Petit parc en plein centre-ville, avec une vue dégagée vers le nord, pratique sans avoir à se déplacer.",
+          en: "A small park right in the town centre, with an open view to the north, handy without needing to travel.",
+          de: "Ein kleiner Park mitten im Stadtzentrum, mit freiem Blick nach Norden, praktisch ohne Anfahrt.",
+          nl: "Een klein park midden in het centrum, met vrij zicht naar het noorden, handig zonder te hoeven reizen.",
+          es: "Un pequeño parque en pleno centro, con vista despejada hacia el norte, práctico sin necesidad de desplazarse.",
+          it: "Un piccolo parco proprio in centro città, con vista aperta verso nord, comodo senza doversi spostare.",
+          ja: "市街中心部にある小さな公園で、北向きに視界が開けており、移動せずに利用できて便利です。",
+        },
+      },
+      {
+        name: {
+          fr: "Lac d'Olkkajärvi",
+          en: "Lake Olkkajärvi",
+          de: "See Olkkajärvi",
+          nl: "Meer Olkkajärvi",
+          es: "Lago Olkkajärvi",
+          it: "Lago Olkkajärvi",
+          ja: "オルッカヤルヴィ湖",
+        },
+        note: {
+          fr: "Aire de loisirs avec abri, à environ 15 minutes en voiture, vue ouverte sur le lac gelé.",
+          en: "A recreation area with a shelter, about a 15-minute drive away, with an open view across the frozen lake.",
+          de: "Ein Naherholungsgebiet mit Schutzhütte, etwa 15 Autominuten entfernt, mit freiem Blick über den zugefrorenen See.",
+          nl: "Een recreatiegebied met schuilhut, ongeveer 15 minuten rijden, met vrij zicht over het bevroren meer.",
+          es: "Una zona recreativa con refugio, a unos 15 minutos en coche, con vista abierta sobre el lago helado.",
+          it: "Un'area ricreativa con riparo, a circa 15 minuti di auto, con vista aperta sul lago ghiacciato.",
+          ja: "小屋のあるレクリエーションエリアで、車で約15分、凍った湖を見渡せる開けた景色が魅力です。",
+        },
+      },
+    ],
+    activities: [
+      {
+        name: {
+          fr: "Traîneau à chiens",
+          en: "Husky sledding",
+          de: "Husky-Schlittentour",
+          nl: "Husky sleeën",
+          es: "Trineo de huskies",
+          it: "Slitta trainata da husky",
+          ja: "ハスキーそり",
+        },
+        note: {
+          fr: "Quelques jours à l'avance suffisent hors saison, mais comptez 4 à 6 semaines avant pendant Noël, le Nouvel An et les vacances de février, car les places par meute sont limitées.",
+          en: "A few days' notice is enough outside peak weeks, but book 4-6 weeks ahead for Christmas, New Year and the February holidays, since spots per kennel are limited.",
+          de: "Außerhalb der Stoßzeiten reichen wenige Tage Vorlauf, aber für Weihnachten, Neujahr und die Februarferien sollten Sie 4-6 Wochen vorher buchen, da die Plätze pro Hundeschlittenfarm begrenzt sind.",
+          nl: "Buiten de piekweken volstaan een paar dagen van tevoren, maar boek 4 tot 6 weken vooruit voor Kerstmis, Nieuwjaar en de februarivakantie, want het aantal plekken per kennel is beperkt.",
+          es: "Unos días de antelación bastan fuera de las semanas de pico, pero reserva con 4 a 6 semanas de antelación para Navidad, Año Nuevo y las vacaciones de febrero, ya que las plazas por criadero son limitadas.",
+          it: "Bastano pochi giorni di anticipo fuori dai periodi di punta, ma prenotate con 4-6 settimane di anticipo per Natale, Capodanno e le vacanze di febbraio, perché i posti per canile sono limitati.",
+          ja: "繁忙期以外は数日前の予約で十分ですが、クリスマス、年末年始、2月の休暇シーズンは犬ぞり施設ごとの定員が限られるため4〜6週間前の予約をお勧めします。",
+        },
+      },
+      {
+        name: {
+          fr: "Motoneige",
+          en: "Snowmobiling",
+          de: "Schneemobiltour",
+          nl: "Sneeuwscooteren",
+          es: "Moto de nieve",
+          it: "Motoslitta",
+          ja: "スノーモービル",
+        },
+        note: {
+          fr: "Réservable en général quelques jours à l'avance, sauf pendant les mêmes périodes de pointe où mieux vaut s'y prendre 1 à 2 semaines avant.",
+          en: "Usually bookable just a few days ahead, except during the same peak weeks, when 1-2 weeks' notice is safer.",
+          de: "In der Regel wenige Tage im Voraus buchbar, außer in denselben Stoßzeiten, wo 1-2 Wochen Vorlauf sicherer sind.",
+          nl: "Meestal een paar dagen van tevoren te boeken, behalve in dezelfde piekweken, waarin 1 tot 2 weken vooruit veiliger is.",
+          es: "Normalmente se puede reservar con pocos días de antelación, salvo en esas mismas semanas de pico, cuando conviene reservar con 1 a 2 semanas de antelación.",
+          it: "Di solito prenotabile con pochi giorni di anticipo, tranne negli stessi periodi di punta, quando conviene prenotare 1-2 settimane prima.",
+          ja: "通常は数日前の予約で足りますが、同じ繁忙期は1〜2週間前に予約する方が安心です。",
+        },
+      },
+      {
+        name: {
+          fr: "Dîner ou rencontre privée avec le Père Noël",
+          en: "Santa Claus dinner or private meeting",
+          de: "Dinner oder privates Treffen mit dem Weihnachtsmann",
+          nl: "Diner of privéontmoeting met de Kerstman",
+          es: "Cena o encuentro privado con Papá Noel",
+          it: "Cena o incontro privato con Babbo Natale",
+          ja: "サンタクロースとのディナーまたは個別面会",
+        },
+        note: {
+          fr: "Le village est en accès libre, mais les expériences premium (dîner, rencontre privée) se réservent plusieurs semaines à l'avance en haute saison.",
+          en: "The village itself is free to enter, but premium experiences (dinner, private meetings) should be booked several weeks ahead in high season.",
+          de: "Das Dorf selbst ist frei zugänglich, aber Premium-Erlebnisse (Dinner, private Treffen) sollten in der Hauptsaison mehrere Wochen im Voraus gebucht werden.",
+          nl: "Het dorp zelf is vrij toegankelijk, maar premium-ervaringen (diner, privéontmoeting) boekt u in het hoogseizoen best enkele weken vooruit.",
+          es: "El pueblo en sí es de acceso libre, pero las experiencias premium (cena, encuentro privado) conviene reservarlas con varias semanas de antelación en temporada alta.",
+          it: "Il villaggio è ad accesso libero, ma le esperienze premium (cena, incontro privato) vanno prenotate con diverse settimane di anticipo in alta stagione.",
+          ja: "村自体は無料で入場できますが、ディナーや個別面会などのプレミアム体験はハイシーズンには数週間前の予約が必要です。",
+        },
+      },
+    ],
     faq: [
       {
         question: {
@@ -456,6 +610,150 @@ export const DESTINATIONS: Destination[] = [
         ja: "平均マイナス20度からマイナス7度、夜間はマイナス20度を下回ることもあります",
       },
     },
+    auroraSpots: [
+      {
+        name: {
+          fr: "Sommet du Levi fell",
+          en: "Levi Fell summit",
+          de: "Levi-Fell-Gipfel",
+          nl: "Top van de Levi Fell",
+          es: "Cumbre del Levi Fell",
+          it: "Vetta del Levi Fell",
+          ja: "レヴィフェル山頂",
+        },
+        note: {
+          fr: "Vue à 360° au-dessus de la limite des arbres, accessible en télécabine le jour ; à pied ou en véhicule le soir car la télécabine ne fonctionne pas la nuit.",
+          en: "A 360-degree view above the treeline, reachable by gondola by day; on foot or by vehicle in the evening since the gondola does not run at night.",
+          de: "Ein 360-Grad-Blick oberhalb der Baumgrenze, tagsüber per Gondel erreichbar; abends zu Fuß oder mit dem Fahrzeug, da die Gondel nachts nicht fährt.",
+          nl: "Een 360-graden uitzicht boven de boomgrens, overdag te bereiken met de gondel; 's avonds te voet of met de auto omdat de gondel dan niet rijdt.",
+          es: "Una vista de 360 grados por encima del límite del bosque, accesible en telecabina de día; a pie o en vehículo por la noche, ya que la telecabina no funciona entonces.",
+          it: "Una vista a 360 gradi sopra il limite del bosco, raggiungibile in cabinovia di giorno; a piedi o in auto la sera perché la cabinovia non funziona di notte.",
+          ja: "森林限界の上に広がる360度の眺望。日中はゴンドラでアクセスできますが、夜間は運行しないため徒歩か車での移動になります。",
+        },
+      },
+      {
+        name: {
+          fr: "Lac Immeljärvi",
+          en: "Lake Immeljärvi",
+          de: "See Immeljärvi",
+          nl: "Meer Immeljärvi",
+          es: "Lago Immeljärvi",
+          it: "Lago Immeljärvi",
+          ja: "インメルヤルヴィ湖",
+        },
+        note: {
+          fr: "À moins de 10 minutes à pied du centre, sa surface gelée et plate reflète les lumières.",
+          en: "Less than a 10-minute walk from the centre, its flat frozen surface reflects the lights.",
+          de: "Weniger als 10 Gehminuten vom Zentrum entfernt, spiegelt seine flache, zugefrorene Oberfläche die Lichter.",
+          nl: "Minder dan 10 minuten lopen van het centrum, het vlakke, bevroren wateroppervlak weerspiegelt de lichten.",
+          es: "A menos de 10 minutos a pie del centro, su superficie helada y plana refleja las luces.",
+          it: "A meno di 10 minuti a piedi dal centro, la sua superficie ghiacciata e piatta riflette le luci.",
+          ja: "中心部から徒歩10分未満。平らに凍った湖面がオーロラの光を映し出します。",
+        },
+      },
+      {
+        name: {
+          fr: "Colline d'Utsuvaara",
+          en: "Utsuvaara Hill",
+          de: "Utsuvaara-Hügel",
+          nl: "Utsuvaara-heuvel",
+          es: "Colina de Utsuvaara",
+          it: "Collina di Utsuvaara",
+          ja: "ウツヴァーラの丘",
+        },
+        note: {
+          fr: "Zone calme à environ 10 km du centre, avec très peu d'éclairage artificiel.",
+          en: "A quiet area about 10 km from the centre, with very little artificial light.",
+          de: "Ein ruhiges Gebiet etwa 10 km vom Zentrum entfernt, mit sehr wenig künstlichem Licht.",
+          nl: "Een rustig gebied op ongeveer 10 km van het centrum, met heel weinig kunstlicht.",
+          es: "Una zona tranquila a unos 10 km del centro, con muy poca iluminación artificial.",
+          it: "Una zona tranquilla a circa 10 km dal centro, con pochissima illuminazione artificiale.",
+          ja: "中心部から約10kmの静かなエリアで、人工の光がほとんどありません。",
+        },
+      },
+      {
+        name: {
+          fr: "Rivière Ounasjoki",
+          en: "Ounasjoki River",
+          de: "Fluss Ounasjoki",
+          nl: "Rivier Ounasjoki",
+          es: "Río Ounasjoki",
+          it: "Fiume Ounasjoki",
+          ja: "オウナスヨキ川",
+        },
+        note: {
+          fr: "Berges dégagées et tranquilles le long de la rivière, à quelques minutes du village.",
+          en: "Open, quiet riverbanks a few minutes from the village.",
+          de: "Offene, ruhige Flussufer, wenige Minuten vom Dorf entfernt.",
+          nl: "Open, rustige oevers langs de rivier, enkele minuten van het dorp.",
+          es: "Orillas abiertas y tranquilas junto al río, a pocos minutos del pueblo.",
+          it: "Rive aperte e tranquille lungo il fiume, a pochi minuti dal villaggio.",
+          ja: "村から数分の、開けた静かな川岸です。",
+        },
+      },
+    ],
+    activities: [
+      {
+        name: {
+          fr: "Location de skis et cours",
+          en: "Ski rental and lessons",
+          de: "Skiverleih und Kurse",
+          nl: "Ski-verhuur en lessen",
+          es: "Alquiler de esquís y clases",
+          it: "Noleggio sci e lezioni",
+          ja: "スキーレンタルとレッスン",
+        },
+        note: {
+          fr: "Le forfait de remontées s'achète sur place sans réservation, mais mieux vaut réserver le matériel et les cours quelques jours à l'avance en pleine saison (Noël, février).",
+          en: "The lift pass itself is bought on the spot with no booking, but rental gear and lessons are best booked a few days ahead during peak weeks (Christmas, February).",
+          de: "Der Liftpass wird vor Ort ohne Reservierung gekauft, aber Leihausrüstung und Kurse sollten in den Stoßzeiten (Weihnachten, Februar) einige Tage im Voraus gebucht werden.",
+          nl: "De liftpas koopt u zonder reservering ter plaatse, maar huurmateriaal en lessen boekt u in de piekweken (Kerstmis, februari) beter enkele dagen vooruit.",
+          es: "El forfait se compra allí mismo sin reserva, pero conviene reservar el equipo de alquiler y las clases con unos días de antelación en las semanas de pico (Navidad, febrero).",
+          it: "Lo skipass si acquista sul posto senza prenotazione, ma è meglio prenotare l'attrezzatura a noleggio e le lezioni con qualche giorno di anticipo nei periodi di punta (Natale, febbraio).",
+          ja: "リフト券は現地購入で予約不要ですが、レンタル用品とレッスンは繁忙期（クリスマス、2月）には数日前の予約をお勧めします。",
+        },
+      },
+      {
+        name: {
+          fr: "Traîneau à chiens",
+          en: "Husky sledding",
+          de: "Husky-Schlittentour",
+          nl: "Husky sleeën",
+          es: "Trineo de huskies",
+          it: "Slitta trainata da husky",
+          ja: "ハスキーそり",
+        },
+        note: {
+          fr: "Même logique qu'ailleurs en Laponie : quelques jours à l'avance suffisent hors saison, comptez plusieurs semaines autour de Noël et février.",
+          en: "Same rule as elsewhere in Lapland: a few days ahead is enough outside peak weeks, allow several weeks around Christmas and February.",
+          de: "Gleiche Regel wie andernorts in Lappland: außerhalb der Stoßzeiten reichen wenige Tage, rund um Weihnachten und Februar mehrere Wochen einplanen.",
+          nl: "Zelfde regel als elders in Lapland: buiten de piekweken volstaan een paar dagen, reken rond Kerstmis en februari op enkele weken.",
+          es: "Misma norma que en el resto de Laponia: unos días bastan fuera de temporada alta, calcula varias semanas en torno a Navidad y febrero.",
+          it: "Stessa regola del resto della Lapponia: pochi giorni bastano fuori dai periodi di punta, calcolate diverse settimane intorno a Natale e febbraio.",
+          ja: "ラップランドの他の地域と同じルールです。繁忙期以外は数日前で十分ですが、クリスマスと2月の前後は数週間の余裕を見てください。",
+        },
+      },
+      {
+        name: {
+          fr: "Motoneige",
+          en: "Snowmobiling",
+          de: "Schneemobiltour",
+          nl: "Sneeuwscooteren",
+          es: "Moto de nieve",
+          it: "Motoslitta",
+          ja: "スノーモービル",
+        },
+        note: {
+          fr: "Quelques jours à l'avance suffisent en dehors des pics de fréquentation.",
+          en: "A few days' notice is usually enough outside the busiest weeks.",
+          de: "Außerhalb der stärksten Wochen reichen in der Regel wenige Tage Vorlauf.",
+          nl: "Buiten de drukste weken volstaan meestal een paar dagen van tevoren.",
+          es: "Fuera de las semanas más concurridas, suelen bastar unos días de antelación.",
+          it: "Fuori dalle settimane più affollate, di solito bastano pochi giorni di anticipo.",
+          ja: "最も混雑する週を除けば、通常は数日前の予約で十分です。",
+        },
+      },
+    ],
     faq: [
       {
         question: {
@@ -685,6 +983,130 @@ export const DESTINATIONS: Destination[] = [
         ja: "平均マイナス20度からマイナス8度、このリストの中でも特に寒い部類です",
       },
     },
+    auroraSpots: [
+      {
+        name: {
+          fr: "Kaunispää",
+          en: "Kaunispää",
+          de: "Kaunispää",
+          nl: "Kaunispää",
+          es: "Kaunispää",
+          it: "Kaunispää",
+          ja: "カウニスパー",
+        },
+        note: {
+          fr: "Fell avec un café au sommet, accessible à pied ou en télésiège saisonnier, vue dégagée sur le village et le parc national.",
+          en: "A fell with a café at the summit, reachable on foot or by seasonal chairlift, with open views over the village and national park.",
+          de: "Ein Fjell mit einem Café auf dem Gipfel, zu Fuß oder mit dem saisonalen Sessellift erreichbar, mit freiem Blick über das Dorf und den Nationalpark.",
+          nl: "Een fjeld met een café op de top, te bereiken te voet of met de seizoensstoeltjeslift, met vrij zicht over het dorp en het nationaal park.",
+          es: "Un fell con una cafetería en la cima, accesible a pie o en telesilla estacional, con vistas despejadas sobre el pueblo y el parque nacional.",
+          it: "Un fell con un caffè in vetta, raggiungibile a piedi o con la seggiovia stagionale, con vista aperta sul villaggio e sul parco nazionale.",
+          ja: "山頂にカフェがあるフェル（丘）で、徒歩または季節運行のリフトでアクセスでき、村と国立公園を見渡せます。",
+        },
+      },
+      {
+        name: {
+          fr: "Kiilopää",
+          en: "Kiilopää",
+          de: "Kiilopää",
+          nl: "Kiilopää",
+          es: "Kiilopää",
+          it: "Kiilopää",
+          ja: "キーロパー",
+        },
+        note: {
+          fr: "Sommet voisin dans le parc national, réputé pour ses conditions d'observation dégagées.",
+          en: "A neighbouring summit in the national park, noted for clear viewing conditions.",
+          de: "Ein benachbarter Gipfel im Nationalpark, bekannt für klare Beobachtungsbedingungen.",
+          nl: "Een naburige top in het nationaal park, bekend om heldere waarnemingsomstandigheden.",
+          es: "Una cumbre vecina dentro del parque nacional, conocida por sus condiciones de observación despejadas.",
+          it: "Una vetta vicina nel parco nazionale, nota per le sue condizioni di osservazione limpide.",
+          ja: "国立公園内にある近隣の頂で、観測条件の良さで知られています。",
+        },
+      },
+      {
+        name: {
+          fr: "Parc national d'Urho Kekkonen",
+          en: "Urho Kekkonen National Park",
+          de: "Urho-Kekkonen-Nationalpark",
+          nl: "Urho Kekkonen Nationaal Park",
+          es: "Parque Nacional de Urho Kekkonen",
+          it: "Parco Nazionale di Urho Kekkonen",
+          ja: "ウルホ・ケッコネン国立公園",
+        },
+        note: {
+          fr: "Vaste étendue sauvage qui sert de zone tampon contre la pollution lumineuse, avec plusieurs sentiers ouverts en hiver.",
+          en: "A vast wilderness area that acts as a buffer against light pollution, with several trails open in winter.",
+          de: "Ein weites Wildnisgebiet, das als Puffer gegen Lichtverschmutzung dient, mit mehreren im Winter geöffneten Wegen.",
+          nl: "Een uitgestrekt wildernisgebied dat als buffer tegen lichtvervuiling dient, met meerdere paden die 's winters open zijn.",
+          es: "Una extensa zona salvaje que actúa como barrera frente a la contaminación lumínica, con varios senderos abiertos en invierno.",
+          it: "Una vasta area selvaggia che funge da cuscinetto contro l'inquinamento luminoso, con diversi sentieri aperti in inverno.",
+          ja: "光害を遮る緩衝地帯となる広大な原野で、冬季には複数のトレイルが開放されています。",
+        },
+      },
+    ],
+    activities: [
+      {
+        name: {
+          fr: "Traîneau à chiens ou à rennes",
+          en: "Husky or reindeer sledding",
+          de: "Husky- oder Rentierschlittentour",
+          nl: "Husky- of rendiersleeën",
+          es: "Trineo de huskies o renos",
+          it: "Slitta trainata da husky o renne",
+          ja: "ハスキーまたはトナカイのそり",
+        },
+        note: {
+          fr: "Réservez plusieurs semaines à l'avance pendant Noël et les vacances de février, quelques jours suffisent le reste de la saison.",
+          en: "Book several weeks ahead around Christmas and the February holidays, a few days is enough the rest of the season.",
+          de: "Rund um Weihnachten und die Februarferien mehrere Wochen im Voraus buchen, den Rest der Saison reichen wenige Tage.",
+          nl: "Boek enkele weken vooruit rond Kerstmis en de februarivakantie, de rest van het seizoen volstaan een paar dagen.",
+          es: "Reserva con varias semanas de antelación en torno a Navidad y las vacaciones de febrero, el resto de la temporada bastan unos días.",
+          it: "Prenotate con diverse settimane di anticipo durante Natale e le vacanze di febbraio, il resto della stagione bastano pochi giorni.",
+          ja: "クリスマスと2月の休暇時期は数週間前の予約を、それ以外の時期は数日前で十分です。",
+        },
+      },
+      {
+        name: {
+          fr: "Excursion raquettes guidée dans le parc national",
+          en: "Guided snowshoe trip in the national park",
+          de: "Geführte Schneeschuhtour im Nationalpark",
+          nl: "Begeleide sneeuwschoentocht in het nationaal park",
+          es: "Excursión guiada con raquetas en el parque nacional",
+          it: "Escursione guidata con racchette nel parco nazionale",
+          ja: "国立公園でのガイド付きスノーシューツアー",
+        },
+        note: {
+          fr: "Quelques jours à l'avance suffisent en général, sauf pour les petits groupes en haute saison où une semaine est plus sûre.",
+          en: "A few days ahead is usually enough, except for small-group departures in high season where a week is safer.",
+          de: "In der Regel reichen wenige Tage, außer bei Kleingruppentouren in der Hauptsaison, wo eine Woche sicherer ist.",
+          nl: "Meestal volstaan een paar dagen, behalve voor kleine groepen in het hoogseizoen, waar een week veiliger is.",
+          es: "Suelen bastar unos días, salvo en las salidas de grupo reducido en temporada alta, donde una semana es más seguro.",
+          it: "Di solito bastano pochi giorni, tranne per le partenze in piccoli gruppi in alta stagione, dove una settimana è più sicuro.",
+          ja: "通常は数日前で十分ですが、ハイシーズンの少人数ツアーは1週間前の予約が安心です。",
+        },
+      },
+      {
+        name: {
+          fr: "Motoneige",
+          en: "Snowmobiling",
+          de: "Schneemobiltour",
+          nl: "Sneeuwscooteren",
+          es: "Moto de nieve",
+          it: "Motoslitta",
+          ja: "スノーモービル",
+        },
+        note: {
+          fr: "Comme ailleurs en Laponie, prévoyez 1 à 2 semaines pendant les périodes de pointe, quelques jours suffisent sinon.",
+          en: "As elsewhere in Lapland, allow 1-2 weeks during peak weeks, a few days is enough otherwise.",
+          de: "Wie andernorts in Lappland sollten Sie in den Stoßzeiten 1-2 Wochen einplanen, sonst reichen wenige Tage.",
+          nl: "Net als elders in Lapland: reken op 1 tot 2 weken in de piekweken, anders volstaan een paar dagen.",
+          es: "Como en el resto de Laponia, calcula 1 a 2 semanas en las semanas de pico, unos días bastan el resto del tiempo.",
+          it: "Come altrove in Lapponia, prevedete 1-2 settimane nei periodi di punta, altrimenti bastano pochi giorni.",
+          ja: "ラップランドの他の地域と同様、繁忙期は1〜2週間前、それ以外は数日前の予約で十分です。",
+        },
+      },
+    ],
     faq: [
       {
         question: {
@@ -914,6 +1336,130 @@ export const DESTINATIONS: Destination[] = [
         ja: "平均マイナス20度からマイナス7度、夜間はマイナス25度を下回ることもあります",
       },
     },
+    auroraSpots: [
+      {
+        name: {
+          fr: "Aurora Sky Station (mont Nuolja / Njulla)",
+          en: "Aurora Sky Station (Mount Nuolja / Njulla)",
+          de: "Aurora Sky Station (Berg Nuolja/Njulla)",
+          nl: "Aurora Sky Station (berg Nuolja/Njulla)",
+          es: "Aurora Sky Station (monte Nuolja/Njulla)",
+          it: "Aurora Sky Station (monte Nuolja/Njulla)",
+          ja: "オーロラスカイステーション（ヌオリア/ニュラ山）",
+        },
+        note: {
+          fr: "Accessible en télésiège (environ 30 minutes) jusqu'à 900 m d'altitude, en plein cœur de l'ovale auroral et d'un microclimat réputé pour un ciel dégagé.",
+          en: "Reached by a roughly 30-minute chairlift ride up to 900 m, sitting right in the aurora oval and a microclimate known for clear skies.",
+          de: "Mit dem Sessellift (ca. 30 Minuten) auf 900 m Höhe erreichbar, mitten im Polarlicht-Oval und einem für klaren Himmel bekannten Mikroklima.",
+          nl: "Bereikbaar met de stoeltjeslift (ongeveer 30 minuten) tot 900 m hoogte, midden in de aurora-ovaal en een microklimaat dat bekendstaat om heldere luchten.",
+          es: "Se llega en telesilla (unos 30 minutos) hasta 900 m de altitud, justo en el óvalo auroral y un microclima conocido por sus cielos despejados.",
+          it: "Raggiungibile con la seggiovia (circa 30 minuti) fino a 900 m di quota, proprio nell'ovale aurorale e in un microclima noto per il cielo limpido.",
+          ja: "リフトで約30分かけて標高900mまで上がります。オーロラオーバルの中心に位置し、晴天率の高い微気候で知られています。",
+        },
+      },
+      {
+        name: {
+          fr: "Rives du lac Torneträsk",
+          en: "Shores of Lake Torneträsk",
+          de: "Ufer des Torneträsk-Sees",
+          nl: "Oevers van het Torneträsk-meer",
+          es: "Orillas del lago Torneträsk",
+          it: "Rive del lago Torneträsk",
+          ja: "トルネトレスク湖畔",
+        },
+        note: {
+          fr: "Grand lac gelé près d'Abisko, avec un horizon large et dégagé loin de toute lumière.",
+          en: "A large frozen lake near Abisko, with a wide, open horizon far from any lighting.",
+          de: "Ein großer zugefrorener See bei Abisko, mit einem weiten, offenen Horizont fernab jeder Beleuchtung.",
+          nl: "Een groot bevroren meer bij Abisko, met een breed, open horizon ver van elke verlichting.",
+          es: "Un gran lago helado cerca de Abisko, con un horizonte amplio y despejado lejos de cualquier luz.",
+          it: "Un grande lago ghiacciato vicino ad Abisko, con un orizzonte ampio e aperto lontano da ogni luce.",
+          ja: "アビスコ近くの大きな凍った湖で、あらゆる照明から離れた広く開けた地平線が特徴です。",
+        },
+      },
+      {
+        name: {
+          fr: "Périphérie de Kiruna",
+          en: "Outskirts of Kiruna",
+          de: "Umgebung von Kiruna",
+          nl: "Buitenwijken van Kiruna",
+          es: "Alrededores de Kiruna",
+          it: "Periferia di Kiruna",
+          ja: "キルナ郊外",
+        },
+        note: {
+          fr: "Pour ceux qui restent côté Kiruna, quelques minutes en voiture suffisent à sortir de l'éclairage de la ville.",
+          en: "For those based in Kiruna, just a few minutes' drive is enough to get clear of the town's lighting.",
+          de: "Für alle, die in Kiruna übernachten, reichen wenige Autominuten, um der Stadtbeleuchtung zu entkommen.",
+          nl: "Voor wie in Kiruna verblijft, volstaan een paar minuten rijden om aan de stadsverlichting te ontsnappen.",
+          es: "Para quienes se alojan en Kiruna, basta con unos minutos en coche para alejarse del alumbrado de la ciudad.",
+          it: "Per chi soggiorna a Kiruna, bastano pochi minuti di auto per allontanarsi dall'illuminazione cittadina.",
+          ja: "キルナに滞在する場合、車で数分走るだけで市街の照明から離れられます。",
+        },
+      },
+    ],
+    activities: [
+      {
+        name: {
+          fr: "Télésiège de l'Aurora Sky Station",
+          en: "Aurora Sky Station chairlift",
+          de: "Sessellift zur Aurora Sky Station",
+          nl: "Stoeltjeslift naar het Aurora Sky Station",
+          es: "Telesilla de la Aurora Sky Station",
+          it: "Seggiovia dell'Aurora Sky Station",
+          ja: "オーロラスカイステーションのリフト",
+        },
+        note: {
+          fr: "Capacité limitée à environ 40 places pour les visites du soir : réservation en ligne conseillée à l'avance, surtout en haute saison.",
+          en: "Evening visits are capped at around 40 spots: online booking ahead is recommended, especially in high season.",
+          de: "Abendbesuche sind auf rund 40 Plätze begrenzt: Online-Buchung im Voraus empfohlen, besonders in der Hauptsaison.",
+          nl: "Avondbezoeken zijn beperkt tot ongeveer 40 plekken: online vooraf boeken wordt aangeraden, zeker in het hoogseizoen.",
+          es: "Las visitas nocturnas están limitadas a unas 40 plazas: se recomienda reservar en línea con antelación, sobre todo en temporada alta.",
+          it: "Le visite serali sono limitate a circa 40 posti: si consiglia la prenotazione online in anticipo, soprattutto in alta stagione.",
+          ja: "夜間の見学は定員約40名に限られているため、特にハイシーズンはオンラインでの事前予約をお勧めします。",
+        },
+      },
+      {
+        name: {
+          fr: "Suites d'art de l'Icehotel",
+          en: "Icehotel art suites",
+          de: "Icehotel-Kunst-Suiten",
+          nl: "Icehotel kunst-suites",
+          es: "Suites de arte del Icehotel",
+          it: "Suite d'arte dell'Icehotel",
+          ja: "アイスホテルのアートスイート",
+        },
+        note: {
+          fr: "Visite réservable en ligne, quelques jours à l'avance suffisent en dehors de la période de Noël-Nouvel An.",
+          en: "Visits can be booked online, a few days ahead is enough outside the Christmas-New Year period.",
+          de: "Besuche online buchbar, außerhalb der Weihnachts-Neujahrs-Zeit reichen wenige Tage Vorlauf.",
+          nl: "Bezoek online te boeken, buiten de kerst-nieuwjaarsperiode volstaan een paar dagen van tevoren.",
+          es: "La visita se puede reservar en línea, unos días de antelación bastan fuera del periodo de Navidad y Año Nuevo.",
+          it: "Visita prenotabile online, pochi giorni di anticipo bastano al di fuori del periodo natalizio.",
+          ja: "オンライン予約が可能で、クリスマスから年始の時期を除けば数日前の予約で十分です。",
+        },
+      },
+      {
+        name: {
+          fr: "Rencontre avec une famille samie et traîneau à rennes",
+          en: "Sami family visit and reindeer sledding",
+          de: "Besuch bei einer samischen Familie und Rentierschlittenfahrt",
+          nl: "Bezoek aan een Samische familie en rendiersleeën",
+          es: "Visita a una familia sami y trineo de renos",
+          it: "Visita a una famiglia sami e slitta trainata da renne",
+          ja: "サーミの家族訪問とトナカイぞり",
+        },
+        note: {
+          fr: "Mieux vaut réserver plusieurs semaines à l'avance en haute saison, les groupes accueillis restant petits.",
+          en: "Best booked several weeks ahead in high season, since the groups hosted stay small.",
+          de: "In der Hauptsaison am besten mehrere Wochen im Voraus buchen, da die betreuten Gruppen klein bleiben.",
+          nl: "In het hoogseizoen boekt u dit best enkele weken vooruit, aangezien de ontvangen groepen klein blijven.",
+          es: "Mejor reservar con varias semanas de antelación en temporada alta, ya que los grupos acogidos son reducidos.",
+          it: "Meglio prenotare con diverse settimane di anticipo in alta stagione, poiché i gruppi ospitati restano piccoli.",
+          ja: "受け入れ人数が少人数のため、ハイシーズンは数週間前の予約をお勧めします。",
+        },
+      },
+    ],
     faq: [
       {
         question: {
@@ -1143,6 +1689,130 @@ export const DESTINATIONS: Destination[] = [
         ja: "メキシコ湾流の影響で平均マイナス5度から0度、フィンランドやスウェーデンのラップランドよりかなり温暖です",
       },
     },
+    auroraSpots: [
+      {
+        name: {
+          fr: "Île de Kvaløya (Ersfjordbotn, Skulsfjord)",
+          en: "Kvaløya island (Ersfjordbotn, Skulsfjord)",
+          de: "Insel Kvaløya (Ersfjordbotn, Skulsfjord)",
+          nl: "Eiland Kvaløya (Ersfjordbotn, Skulsfjord)",
+          es: "Isla de Kvaløya (Ersfjordbotn, Skulsfjord)",
+          it: "Isola di Kvaløya (Ersfjordbotn, Skulsfjord)",
+          ja: "クヴァロヤ島（エルスフィヨルボトン、スクルスフィヨルド）",
+        },
+        note: {
+          fr: "À environ 30-45 minutes du centre, ciels ouverts et lacs gelés, l'un des points de repli les plus cités par les habitants.",
+          en: "About 30-45 minutes from the centre, with open skies and frozen lakes, one of the spots locals mention most often.",
+          de: "Etwa 30-45 Minuten vom Zentrum entfernt, mit offenem Himmel und zugefrorenen Seen, einer der von Einheimischen am häufigsten genannten Orte.",
+          nl: "Op ongeveer 30-45 minuten van het centrum, met open luchten en bevroren meren, een van de plekken die inwoners het vaakst noemen.",
+          es: "A unos 30-45 minutos del centro, con cielos abiertos y lagos helados, uno de los lugares más citados por los habitantes.",
+          it: "A circa 30-45 minuti dal centro, con cieli aperti e laghi ghiacciati, uno dei luoghi più citati dagli abitanti del posto.",
+          ja: "中心部から約30〜45分、開けた空と凍った湖があり、地元住民が最もよく挙げるスポットの一つです。",
+        },
+      },
+      {
+        name: {
+          fr: "Sommarøy",
+          en: "Sommarøy",
+          de: "Sommarøy",
+          nl: "Sommarøy",
+          es: "Sommarøy",
+          it: "Sommarøy",
+          ja: "ソンマロイ",
+        },
+        note: {
+          fr: "Plus loin à l'ouest, un ciel nettement plus sombre et un horizon presque totalement dégagé.",
+          en: "Further west, with noticeably darker skies and an almost completely open horizon.",
+          de: "Weiter westlich, mit merklich dunklerem Himmel und einem fast vollständig offenen Horizont.",
+          nl: "Verder naar het westen, met merkbaar donkerder luchten en een bijna volledig open horizon.",
+          es: "Más al oeste, con cielos notablemente más oscuros y un horizonte casi completamente despejado.",
+          it: "Più a ovest, con cieli notevolmente più scuri e un orizzonte quasi completamente aperto.",
+          ja: "さらに西に位置し、空はより暗く、地平線もほぼ完全に開けています。",
+        },
+      },
+      {
+        name: {
+          fr: "Sortie en bateau sur le fjord",
+          en: "Boat trip on the fjord",
+          de: "Bootsausflug auf dem Fjord",
+          nl: "Boottocht op de fjord",
+          es: "Salida en barco por el fiordo",
+          it: "Uscita in barca sul fiordo",
+          ja: "フィヨルドでのボートツアー",
+        },
+        note: {
+          fr: "Alternative organisée pour s'éloigner des lumières de la ville par la mer plutôt que par la route : voir la section activités.",
+          en: "An organised alternative that gets away from city lights by sea rather than by road: see the activities section.",
+          de: "Eine organisierte Alternative, um den Stadtlichtern über das Meer statt über die Straße zu entkommen: siehe den Abschnitt Aktivitäten.",
+          nl: "Een georganiseerd alternatief om via zee in plaats van over de weg aan het stadslicht te ontsnappen: zie de activiteitensectie.",
+          es: "Una alternativa organizada para alejarse de las luces de la ciudad por mar en lugar de por carretera: ver la sección de actividades.",
+          it: "Un'alternativa organizzata per allontanarsi dalle luci della città via mare anziché su strada: vedi la sezione attività.",
+          ja: "陸路ではなく海上から市街の光を離れる、催行ツアーによる選択肢です。詳細はアクティビティ欄をご覧ください。",
+        },
+      },
+    ],
+    activities: [
+      {
+        name: {
+          fr: "Sortie bateau chasse aux aurores",
+          en: "Boat-based aurora chase",
+          de: "Polarlicht-Bootstour",
+          nl: "Noorderlichttocht per boot",
+          es: "Excursión en barco para cazar auroras",
+          it: "Escursione in barca per la caccia alle aurore",
+          ja: "ボートによるオーロラチェイス",
+        },
+        note: {
+          fr: "Réservable quelques jours à l'avance ; les opérateurs annulent ou reportent en cas de ciel trop couvert, souvent avec une deuxième tentative offerte.",
+          en: "Bookable a few days ahead; operators cancel or reschedule if the sky is too overcast, often with a second attempt included.",
+          de: "Wenige Tage im Voraus buchbar; Anbieter sagen bei zu starker Bewölkung ab oder verschieben, oft mit einem inklusiven zweiten Versuch.",
+          nl: "Enkele dagen van tevoren te boeken; aanbieders annuleren of verzetten bij een te bewolkte hemel, vaak met een inbegrepen tweede poging.",
+          es: "Reservable con pocos días de antelación; los operadores cancelan o reprograman si el cielo está muy nublado, a menudo con un segundo intento incluido.",
+          it: "Prenotabile con pochi giorni di anticipo; gli operatori annullano o riprogrammano in caso di cielo troppo coperto, spesso con un secondo tentativo incluso.",
+          ja: "数日前の予約で足ります。曇りがひどい場合はオペレーターがキャンセルまたは日程変更しますが、多くの場合2回目の挑戦が無料で含まれます。",
+        },
+      },
+      {
+        name: {
+          fr: "Excursion aurores en minibus",
+          en: "Minibus aurora chase",
+          de: "Polarlicht-Kleinbustour",
+          nl: "Noorderlichttocht per minibus",
+          es: "Excursión de auroras en minibús",
+          it: "Escursione per le aurore in minibus",
+          ja: "ミニバスによるオーロラツアー",
+        },
+        note: {
+          fr: "Même délai que le bateau, quelques jours à l'avance, avec un départ conditionné à la météo du soir.",
+          en: "Same lead time as the boat option, a few days ahead, with departure decided on the evening's weather.",
+          de: "Gleicher Vorlauf wie beim Boot, wenige Tage im Voraus, mit Abfahrt je nach Abendwetter.",
+          nl: "Zelfde termijn als de boottocht, enkele dagen van tevoren, met vertrek afhankelijk van het avondweer.",
+          es: "Mismo plazo que la opción en barco, unos días de antelación, con salida condicionada al tiempo de la noche.",
+          it: "Stesso anticipo dell'opzione in barca, pochi giorni prima, con partenza condizionata dal meteo della sera.",
+          ja: "ボートツアーと同様に数日前の予約で、出発はその晩の天候次第で決まります。",
+        },
+      },
+      {
+        name: {
+          fr: "Télécabine du Fjellheisen",
+          en: "Fjellheisen cable car",
+          de: "Fjellheisen-Seilbahn",
+          nl: "Fjellheisen-kabelbaan",
+          es: "Teleférico de Fjellheisen",
+          it: "Funivia Fjellheisen",
+          ja: "フィエルヘイセンのケーブルカー",
+        },
+        note: {
+          fr: "Pas de réservation nécessaire, billet directement sur place ou en ligne le jour même.",
+          en: "No booking needed, tickets are bought on the spot or online on the same day.",
+          de: "Keine Reservierung nötig, Tickets werden vor Ort oder online am selben Tag gekauft.",
+          nl: "Geen reservering nodig, tickets koopt u ter plaatse of online op dezelfde dag.",
+          es: "No hace falta reserva, los billetes se compran allí mismo o en línea el mismo día.",
+          it: "Non serve prenotare, i biglietti si acquistano sul posto o online lo stesso giorno.",
+          ja: "予約は不要で、当日現地またはオンラインでチケットを購入できます。",
+        },
+      },
+    ],
     faq: [
       {
         question: {

@@ -146,6 +146,8 @@ export const UI_JA: Dict = {
     practicalTrain: "鉄道",
     practicalCarRental: "レンタカー",
     practicalWinterTemp: "冬の気温",
+    auroraSpotsHeading: "オーロラ観賞のベストスポット",
+    activitiesHeading: "予約しておきたいアクティビティ",
   },
   stay22: {
     sponsored: "提携予約",

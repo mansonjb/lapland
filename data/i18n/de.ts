@@ -146,6 +146,8 @@ export const UI_DE: Dict = {
     practicalTrain: "Zug",
     practicalCarRental: "Auto",
     practicalWinterTemp: "Temperaturen",
+    auroraSpotsHeading: "Beste Orte, um Polarlichter zu beobachten",
+    activitiesHeading: "Aktivitäten zum Buchen",
   },
   stay22: {
     sponsored: "Partner-Buchung",

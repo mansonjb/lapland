@@ -109,6 +109,8 @@ export type Dict = {
     practicalTrain: string;
     practicalCarRental: string;
     practicalWinterTemp: string;
+    auroraSpotsHeading: string;
+    activitiesHeading: string;
   };
   stay22: {
     sponsored: string;
