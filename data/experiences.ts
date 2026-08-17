@@ -5,6 +5,7 @@ type Localized = {
   nl: string;
   es: string;
   it: string;
+  ja: string;
 };
 
 export type Experience = {
@@ -31,6 +32,7 @@ export const EXPERIENCES: Experience[] = [
       nl: "Noorderlicht",
       es: "Auroras boreales",
       it: "Aurore boreali",
+      ja: "オーロラ",
     },
     description: {
       fr: "Le sujet qui a fait notre réputation : où et quand dormir pour maximiser vos chances de voir le ciel s'embraser. Retrouvez notre sélection d'hébergements et de destinations plus bas.",
@@ -39,6 +41,7 @@ export const EXPERIENCES: Experience[] = [
       nl: "Het onderwerp waarmee we onze naam hebben opgebouwd: waar en wanneer u moet verblijven om uw kansen op een oplichtende hemel te maximaliseren. Onze selectie van verblijven en bestemmingen vindt u verderop.",
       es: "El tema que ha construido nuestra reputación: dónde y cuándo alojarse para maximizar las posibilidades de ver el cielo encenderse. Encuentra nuestra selección de alojamientos y destinos más abajo.",
       it: "L'argomento che ha costruito la nostra reputazione: dove e quando soggiornare per massimizzare le possibilità di vedere il cielo accendersi. Trovate la nostra selezione di alloggi e destinazioni più in basso.",
+      ja: "当サイトの名声を築いてきたテーマです。空が輝く瞬間を見る可能性を最大限に高めるために、どこで、いつ宿泊すべきか。下記に宿泊施設と目的地の選りすぐりをご紹介しています。",
     },
   },
   {
@@ -52,6 +55,7 @@ export const EXPERIENCES: Experience[] = [
       nl: "Kerstman Dorp",
       es: "Pueblo de Papá Noel",
       it: "Villaggio di Babbo Natale",
+      ja: "サンタクロース村",
     },
     description: {
       fr: "À 8 km au nord de Rovaniemi sur la route 4, la ligne du cercle polaire arctique est marquée au sol avec certificat de passage à la clé. Bureau de poste officiel, rencontre du Père Noël toute l'année : le village est ouvert 365 jours par an et accueille plus de 500 000 visiteurs chaque année.",
@@ -60,6 +64,7 @@ export const EXPERIENCES: Experience[] = [
       nl: "8 km ten noorden van Rovaniemi aan weg 4 is de poolcirkellijn op de grond gemarkeerd, met een oversteekcertificaat als aandenken. Een officieel postkantoor van de Kerstman, het hele jaar door ontmoetingen met de Kerstman: het dorp is 365 dagen per jaar geopend en ontvangt jaarlijks meer dan 500.000 bezoekers.",
       es: "A 8 km al norte de Rovaniemi por la carretera 4, la línea del círculo polar ártico está marcada en el suelo, con certificado de cruce incluido. Una oficina de correos oficial de Papá Noel, encuentros con Papá Noel todo el año: el pueblo abre 365 días al año y recibe más de 500.000 visitantes anuales.",
       it: "A 8 km a nord di Rovaniemi sulla strada 4, la linea del circolo polare artico è segnata a terra, con tanto di certificato di attraversamento. Un ufficio postale ufficiale di Babbo Natale, incontri con Babbo Natale tutto l'anno: il villaggio è aperto 365 giorni all'anno e accoglie oltre 500.000 visitatori ogni anno.",
+      ja: "ロヴァニエミから北へ8km、4号線沿いに北極線が地面に示されており、通過証明書を持ち帰ることもできます。公式のサンタクロース郵便局があり、年間を通じてサンタクロースに会えます。村は年間365日オープンし、毎年50万人以上の来訪者を迎えています。",
     },
   },
   {
@@ -73,6 +78,7 @@ export const EXPERIENCES: Experience[] = [
       nl: "Husky sleeën",
       es: "Trineo de huskies",
       it: "Slitta trainata da husky",
+      ja: "ハスキーそり",
     },
     description: {
       fr: "Excursions guidées en husky safari près de Rovaniemi, Levi, Saariselkä ou Ylläs, comptez entre 195 et 240 EUR transport inclus. Des opérateurs reconnus comme Bearhill Husky, Apukka Husky ou Nordic Odyssey, où le bien-être des chiens (jours de repos, retraite) est pris au sérieux.",
@@ -81,6 +87,7 @@ export const EXPERIENCES: Experience[] = [
       nl: "Begeleide husky safari's in de buurt van Rovaniemi, Levi, Saariselkä of Ylläs, reken op 195 tot 240 EUR inclusief vervoer. Gerenommeerde aanbieders zoals Bearhill Husky, Apukka Husky en Nordic Odyssey nemen het welzijn van de honden serieus, met rustdagen en een echt pensioen.",
       es: "Excursiones guiadas en trineo de huskies cerca de Rovaniemi, Levi, Saariselkä o Ylläs, cuenta entre 195 y 240 EUR con transporte incluido. Operadores de confianza como Bearhill Husky, Apukka Husky y Nordic Odyssey se toman en serio el bienestar de los perros, con días de descanso y una jubilación real.",
       it: "Escursioni guidate in slitta con gli husky vicino a Rovaniemi, Levi, Saariselkä o Ylläs, contate tra 195 e 240 EUR trasporto incluso. Operatori affidabili come Bearhill Husky, Apukka Husky e Nordic Odyssey prendono sul serio il benessere dei cani, con giorni di riposo e una vera pensione.",
+      ja: "ロヴァニエミ、レヴィ、サーリセルカ、あるいはユッラス近郊で行われるガイド付きハスキーサファリで、送迎込みで通常195〜240ユーロほどです。Bearhill Husky、Apukka Husky、Nordic Odysseyといった信頼できる運営者は、休養日を設けたり引退後もきちんとケアするなど、犬の福祉を真剣に考えています。",
     },
   },
   {
@@ -94,6 +101,7 @@ export const EXPERIENCES: Experience[] = [
       nl: "Actieve winter",
       es: "Invierno activo",
       it: "Inverno attivo",
+      ja: "アクティブな冬",
     },
     description: {
       fr: "Motoneige sur les lacs gelés, raquettes en forêt, rencontre avec des rennes et des éleveurs sami : la Laponie se vit aussi hors observation du ciel. De quoi remplir vos journées avant la nuit tombée.",
@@ -102,6 +110,7 @@ export const EXPERIENCES: Experience[] = [
       nl: "Sneeuwscooteren op bevroren meren, sneeuwschoenwandelen door het bos, een ontmoeting met rendieren en Sami-herders: Lapland is ook de moeite waard buiten de nachtelijke hemel om. Genoeg om uw dagen te vullen voor het donker wordt.",
       es: "Motos de nieve sobre lagos helados, raquetas de nieve en el bosque, encuentros con renos y pastores sami: Laponia también merece la pena más allá del cielo nocturno. Suficiente para llenar tus días antes de que caiga la noche.",
       it: "Motoslitta sui laghi ghiacciati, escursioni con le racchette da neve nel bosco, incontri con renne e allevatori sami: la Lapponia merita anche oltre l'osservazione del cielo notturno. Abbastanza per riempire le giornate prima che cali il buio.",
+      ja: "凍った湖でのスノーモービル、森でのスノーシューハイキング、トナカイやサーミの牧畜民との出会い。ラップランドは夜空以外にも魅力がたくさんあります。日が暮れるまでの時間を存分に楽しめます。",
     },
   },
 ];

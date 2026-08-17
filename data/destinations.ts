@@ -10,6 +10,7 @@ export type Destination = {
     nl: string;
     es: string;
     it: string;
+    ja: string;
   };
   country: string;
   /** Default high-season (aurora season) window used to pre-fill booking widgets. */
@@ -26,6 +27,7 @@ export type Destination = {
     nl: string;
     es: string;
     it: string;
+    ja: string;
   };
   tags: {
     fr: string[];
@@ -34,6 +36,7 @@ export type Destination = {
     nl: string[];
     es: string[];
     it: string[];
+    ja: string[];
   };
   description: {
     fr: string;
@@ -42,6 +45,7 @@ export type Destination = {
     nl: string;
     es: string;
     it: string;
+    ja: string;
   };
   whyVisit: {
     fr: string;
@@ -50,6 +54,7 @@ export type Destination = {
     nl: string;
     es: string;
     it: string;
+    ja: string;
   };
   quickFacts: {
     fr: string[];
@@ -58,10 +63,11 @@ export type Destination = {
     nl: string[];
     es: string[];
     it: string[];
+    ja: string[];
   };
   faq: {
-    question: { fr: string; en: string; de: string; nl: string; es: string; it: string };
-    answer: { fr: string; en: string; de: string; nl: string; es: string; it: string };
+    question: { fr: string; en: string; de: string; nl: string; es: string; it: string; ja: string };
+    answer: { fr: string; en: string; de: string; nl: string; es: string; it: string; ja: string };
   }[];
 };
 
@@ -81,6 +87,7 @@ export const DESTINATIONS: Destination[] = [
       nl: "Rovaniemi",
       es: "Rovaniemi",
       it: "Rovaniemi",
+      ja: "ロヴァニエミ",
     },
     country: "Finland",
     season: AURORA_SEASON,
@@ -91,6 +98,7 @@ export const DESTINATIONS: Destination[] = [
       nl: "2-3 nachten",
       es: "2-3 noches",
       it: "2-3 notti",
+      ja: "2〜3泊",
     },
     tags: {
       fr: ["Village du Père Noël", "Vols directs", "Igloos de verre"],
@@ -99,6 +107,7 @@ export const DESTINATIONS: Destination[] = [
       nl: ["Kerstman Dorp", "Directe vluchten", "Glazen iglos"],
       es: ["Pueblo de Papá Noel", "Vuelos directos", "Iglus de cristal"],
       it: ["Villaggio di Babbo Natale", "Voli diretti", "Iglu di vetro"],
+      ja: ["サンタクロース村", "直行便あり", "ガラスイグルー"],
     },
     description: {
       fr: "La porte d'entrée la plus simple de la Laponie finlandaise, sur le cercle polaire arctique, avec vols directs depuis plusieurs capitales européennes.",
@@ -107,6 +116,7 @@ export const DESTINATIONS: Destination[] = [
       nl: "De makkelijkste toegangspoort tot Fins Lapland, direct op de poolcirkel, met directe vluchten vanuit meerdere Europese hoofdsteden.",
       es: "La puerta de entrada más sencilla a la Laponia finlandesa, justo en el círculo polar ártico, con vuelos directos desde varias capitales europeas.",
       it: "La porta d'accesso più semplice alla Lapponia finlandese, proprio sul circolo polare artico, con voli diretti da diverse capitali europee.",
+      ja: "フィンランド領ラップランドへの最も簡単な玄関口で、北極線上に位置し、欧州各都市からの直行便があります。",
     },
     whyVisit: {
       fr: "Rovaniemi combine accès facile (aéroport à 10 minutes du centre) et forte densité d'hébergements aurores : igloos de verre, cabanes vitrées et hôtels de neige se trouvent tous à moins de 20 minutes du centre-ville. C'est la meilleure base pour un premier séjour en Laponie, surtout si vous voyagez avec des enfants ou voulez combiner Village du Père Noël et chasse aux aurores.",
@@ -115,6 +125,7 @@ export const DESTINATIONS: Destination[] = [
       nl: "Rovaniemi combineert gemakkelijke bereikbaarheid (de luchthaven ligt 10 minuten van het centrum) met de hoogste dichtheid aan noorderlichtvriendelijke verblijven in de regio: glazen iglos, glazen hutten en sneeuwhotels liggen allemaal binnen 20 minuten van het centrum. Het is de beste uitvalsbasis voor een eerste Lapland-reis, zeker met kinderen of als u het Kerstman Dorp wilt combineren met noorderlicht spotten.",
       es: "Rovaniemi combina un acceso fácil (el aeropuerto está a 10 minutos del centro) con la mayor densidad de alojamientos aptos para auroras de la región: iglus de cristal, cabañas acristaladas y hoteles de nieve, todos a menos de 20 minutos del centro. Es la mejor base para un primer viaje a Laponia, especialmente con niños o si quieres combinar el Pueblo de Papá Noel con la caza de auroras.",
       it: "Rovaniemi unisce un accesso facile (l'aeroporto è a 10 minuti dal centro) alla più alta densità di alloggi adatti alle aurore della regione: iglu di vetro, baite vetrate e hotel di neve si trovano tutti entro 20 minuti dal centro. È la base migliore per un primo viaggio in Lapponia, soprattutto con i bambini o se si vuole unire il Villaggio di Babbo Natale alla caccia alle aurore.",
+      ja: "ロヴァニエミは、アクセスの良さ（空港は市街中心部から10分）と、地域随一のオーロラ観賞向け宿泊施設の密度の高さを兼ね備えています。ガラスイグルー、ガラス張りキャビン、スノーホテルはいずれも中心部から20分以内。初めてのラップランド旅行、特に子供連れの場合やサンタクロース村とオーロラ観賞を組み合わせたい場合に最適な拠点です。",
     },
     quickFacts: {
       fr: ["Aéroport à 10 min du centre", "Sur le cercle polaire arctique", "Vols directs depuis Paris, Londres, Bruxelles en saison"],
@@ -123,6 +134,7 @@ export const DESTINATIONS: Destination[] = [
       nl: ["Luchthaven op 10 min van het centrum", "Ligt op de poolcirkel", "Directe seizoensvluchten vanuit Parijs, Londen, Brussel"],
       es: ["Aeropuerto a 10 min del centro", "Situado en el círculo polar ártico", "Vuelos directos de temporada desde París, Londres, Bruselas"],
       it: ["Aeroporto a 10 min dal centro", "Si trova sul circolo polare artico", "Voli diretti stagionali da Parigi, Londra, Bruxelles"],
+      ja: ["空港は中心部から10分", "北極線上に位置", "パリ・ロンドン・ブリュッセルからの季節直行便"],
     },
     faq: [
       {
@@ -133,6 +145,7 @@ export const DESTINATIONS: Destination[] = [
           nl: "Heb ik een huurauto nodig in Rovaniemi?",
           es: "¿Hace falta alquilar coche en Rovaniemi?",
           it: "Serve noleggiare un'auto a Rovaniemi?",
+          ja: "ロヴァニエミではレンタカーが必要ですか？",
         },
         answer: {
           fr: "Pas indispensable pour un premier séjour : la plupart des hébergements proposent des navettes depuis l'aéroport et des excursions aurores organisées. Une voiture est utile si vous voulez explorer par vous-même au-delà du centre.",
@@ -141,6 +154,7 @@ export const DESTINATIONS: Destination[] = [
           nl: "Niet noodzakelijk voor een eerste reis: de meeste verblijven bieden luchthaventransfers en georganiseerde noorderlichttochten aan. Een auto is handig als u zelfstandig verder wilt verkennen buiten het centrum.",
           es: "No es imprescindible para un primer viaje: la mayoría de los alojamientos ofrecen traslados desde el aeropuerto y excursiones organizadas para ver auroras. Un coche resulta útil si quieres explorar por tu cuenta más allá del centro.",
           it: "Non indispensabile per un primo viaggio: la maggior parte degli alloggi offre navette dall'aeroporto ed escursioni organizzate per le aurore. Un'auto è utile se si vuole esplorare autonomamente oltre il centro.",
+          ja: "初めての旅行では必須ではありません。ほとんどの宿泊施設は空港シャトルや催行のオーロラツアーを提供しています。自分のペースで中心部の外まで探索したい場合には車があると便利です。",
         },
       },
       {
@@ -151,6 +165,7 @@ export const DESTINATIONS: Destination[] = [
           nl: "Is Rovaniemi geschikt voor gezinnen?",
           es: "¿Es Rovaniemi adecuado para familias?",
           it: "Rovaniemi è adatta alle famiglie?",
+          ja: "ロヴァニエミは家族連れに向いていますか？",
         },
         answer: {
           fr: "Oui, c'est la destination la plus adaptée aux familles de la région grâce au Village du Père Noël et aux activités encadrées à proximité immédiate des hébergements.",
@@ -159,6 +174,7 @@ export const DESTINATIONS: Destination[] = [
           nl: "Ja, het is de meest gezinsvriendelijke bestemming van de regio dankzij het Kerstman Dorp en begeleide activiteiten vlak bij de meeste verblijven.",
           es: "Sí, es el destino más familiar de la región gracias al Pueblo de Papá Noel y a las actividades guiadas muy cerca de la mayoría de los alojamientos.",
           it: "Sì, è la destinazione più adatta alle famiglie della regione grazie al Villaggio di Babbo Natale e alle attività guidate proprio accanto alla maggior parte degli alloggi.",
+          ja: "はい、サンタクロース村や、ほとんどの宿泊施設のすぐそばで楽しめるガイド付きアクティビティのおかげで、この地域で最も家族向けの目的地です。",
         },
       },
     ],
@@ -175,6 +191,7 @@ export const DESTINATIONS: Destination[] = [
       nl: "Levi",
       es: "Levi",
       it: "Levi",
+      ja: "レヴィ",
     },
     country: "Finland",
     season: AURORA_SEASON,
@@ -185,6 +202,7 @@ export const DESTINATIONS: Destination[] = [
       nl: "3-4 nachten",
       es: "3-4 noches",
       it: "3-4 notti",
+      ja: "3〜4泊",
     },
     tags: {
       fr: ["Station de ski", "Vie de village", "Familles et groupes"],
@@ -193,6 +211,7 @@ export const DESTINATIONS: Destination[] = [
       nl: ["Skigebied", "Dorpsleven", "Gezinnen en groepen"],
       es: ["Estación de esquí", "Vida de pueblo", "Familias y grupos"],
       it: ["Stazione sciistica", "Vita di paese", "Famiglie e gruppi"],
+      ja: ["スキーリゾート", "村の暮らし", "家族・グループ向け"],
     },
     description: {
       fr: "La plus grande station de ski de Finlande, avec un village compact où pistes, restaurants et igloos de verre se côtoient à pied.",
@@ -201,6 +220,7 @@ export const DESTINATIONS: Destination[] = [
       nl: "Het grootste skigebied van Finland, met een compact dorp waar pistes, restaurants en glazen iglos op loopafstand van elkaar liggen.",
       es: "La estación de esquí más grande de Finlandia, con un pueblo compacto donde las pistas, restaurantes e iglus de cristal quedan a poca distancia a pie.",
       it: "La più grande stazione sciistica della Finlandia, con un villaggio compatto dove piste, ristoranti e iglu di vetro si trovano a pochi passi l'uno dall'altro.",
+      ja: "フィンランド最大のスキーリゾートで、ゲレンデ、レストラン、ガラスイグルーがすべて徒歩圏内にコンパクトにまとまった村です。",
     },
     whyVisit: {
       fr: "Levi convient à ceux qui veulent alterner ski et chasse aux aurores sans changer de base. Le village est dense et piétonnier, avec un vrai choix de restaurants et de bars le soir, ce qui en fait la destination la plus vivante de la région pour les groupes d'amis comme pour les familles qui skient.",
@@ -209,6 +229,7 @@ export const DESTINATIONS: Destination[] = [
       nl: "Levi is geschikt voor wie skien en noorderlicht spotten wil afwisselen zonder van uitvalsbasis te wisselen. Het dorp is compact en voetgangersvriendelijk, met een echte keuze aan restaurants en bars in de avond, wat het de levendigste bestemming van de regio maakt voor groepen vrienden en skiende gezinnen.",
       es: "Levi es ideal para quienes quieren alternar esquí y caza de auroras sin cambiar de base. El pueblo es compacto y peatonal, con una auténtica variedad de restaurantes y bares por la noche, lo que lo convierte en el destino más animado de la región tanto para grupos de amigos como para familias que esquían.",
       it: "Levi è adatta a chi vuole alternare sci e caccia alle aurore senza cambiare base. Il villaggio è compatto e pedonale, con una vera scelta di ristoranti e bar la sera, il che lo rende la destinazione più vivace della regione sia per gruppi di amici sia per famiglie che sciano.",
+      ja: "レヴィは、拠点を変えずにスキーとオーロラ観賞を交互に楽しみたい旅行者に向いています。村はコンパクトで徒歩移動が可能、夜にはレストランやバーの選択肢も豊富で、友人グループにもスキー好きの家族にも、この地域で最も活気ある目的地となっています。",
     },
     quickFacts: {
       fr: ["Plus grande station de ski de Finlande", "Village piétonnier compact", "Aéroport de Kittilä à 15 min"],
@@ -217,6 +238,7 @@ export const DESTINATIONS: Destination[] = [
       nl: ["Grootste skigebied van Finland", "Compact, voetgangersvriendelijk dorp", "Luchthaven Kittilä op 15 min"],
       es: ["La estación de esquí más grande de Finlandia", "Pueblo compacto y peatonal", "Aeropuerto de Kittilä a 15 min"],
       it: ["La più grande stazione sciistica della Finlandia", "Villaggio compatto e pedonale", "Aeroporto di Kittilä a 15 min"],
+      ja: ["フィンランド最大のスキーリゾート", "コンパクトで歩きやすい村", "キッティラ空港まで15分"],
     },
     faq: [
       {
@@ -227,6 +249,7 @@ export const DESTINATIONS: Destination[] = [
           nl: "Kan ik in Levi skien en noorderlicht zien tijdens dezelfde reis?",
           es: "¿Se puede esquiar y ver auroras en el mismo viaje en Levi?",
           it: "Si può sciare e vedere le aurore nello stesso viaggio a Levi?",
+          ja: "レヴィでは同じ旅行でスキーとオーロラ観賞の両方を楽しめますか？",
         },
         answer: {
           fr: "Oui, c'est l'atout principal de Levi : les domaines skiables ferment en fin d'après-midi, ce qui laisse la soirée libre pour les excursions ou l'observation depuis un igloo de verre.",
@@ -235,6 +258,7 @@ export const DESTINATIONS: Destination[] = [
           nl: "Ja, dat is het grote voordeel van Levi: de skigebieden sluiten laat in de middag, waardoor de avond vrij blijft voor tochten of om vanuit een glazen iglo te kijken.",
           es: "Sí, esa es la gran baza de Levi: las pistas cierran a última hora de la tarde, lo que deja la noche libre para excursiones u observar desde un iglu de cristal.",
           it: "Sì, è questo il punto di forza di Levi: le piste chiudono nel tardo pomeriggio, lasciando la serata libera per escursioni o per l'osservazione da un iglu di vetro.",
+          ja: "はい、それがレヴィの一番の魅力です。ゲレンデは夕方早くに閉まるため、夜はツアーやガラスイグルーからの観賞に充てられます。",
         },
       },
       {
@@ -245,6 +269,7 @@ export const DESTINATIONS: Destination[] = [
           nl: "Wanneer overlappen het skiseizoen en het noorderlichtseizoen?",
           es: "¿Cuándo se solapan la temporada de esquí y la de auroras?",
           it: "Quando si sovrappongono la stagione sciistica e quella delle aurore?",
+          ja: "スキーシーズンとオーロラシーズンはいつ重なりますか？",
         },
         answer: {
           fr: "De novembre à avril, avec un pic de conditions (neige garantie, nuits longues) entre janvier et mars.",
@@ -253,6 +278,7 @@ export const DESTINATIONS: Destination[] = [
           nl: "Van november tot april, met de beste omstandigheden (gegarandeerde sneeuw, lange donkere nachten) tussen januari en maart.",
           es: "De noviembre a abril, con las mejores condiciones (nieve garantizada, noches largas) entre enero y marzo.",
           it: "Da novembre ad aprile, con le condizioni migliori (neve garantita, notti lunghe e buie) tra gennaio e marzo.",
+          ja: "11月から4月まで重なり、1月から3月にかけて（雪が確実にあり、夜が長く暗い）最も条件の良い時期を迎えます。",
         },
       },
     ],
@@ -269,6 +295,7 @@ export const DESTINATIONS: Destination[] = [
       nl: "Saariselkä",
       es: "Saariselkä",
       it: "Saariselkä",
+      ja: "サーリセルカ",
     },
     country: "Finland",
     season: AURORA_SEASON,
@@ -279,6 +306,7 @@ export const DESTINATIONS: Destination[] = [
       nl: "3-4 nachten",
       es: "3-4 noches",
       it: "3-4 notti",
+      ja: "3〜4泊",
     },
     tags: {
       fr: ["Parc national", "Le plus au nord", "Igloos de verre"],
@@ -287,6 +315,7 @@ export const DESTINATIONS: Destination[] = [
       nl: ["Nationaal park", "Meest noordelijk", "Glazen iglos"],
       es: ["Parque nacional", "Lo más al norte", "Iglus de cristal"],
       it: ["Parco nazionale", "Il più a nord", "Iglu di vetro"],
+      ja: ["国立公園", "最北の拠点", "ガラスイグルー"],
     },
     description: {
       fr: "Le village le plus au nord de la Laponie finlandaise accessible facilement, aux portes du parc national d'Urho Kekkonen.",
@@ -295,6 +324,7 @@ export const DESTINATIONS: Destination[] = [
       nl: "Het meest noordelijke, goed bereikbare dorp in Fins Lapland, aan de rand van het Urho Kekkonen Nationaal Park.",
       es: "El pueblo de fácil acceso más septentrional de la Laponia finlandesa, justo en el borde del Parque Nacional de Urho Kekkonen.",
       it: "Il villaggio più a nord facilmente raggiungibile della Lapponia finlandese, proprio ai margini del Parco Nazionale di Urho Kekkonen.",
+      ja: "フィンランド領ラップランドで容易にアクセスできる村としては最も北に位置し、ウルホ・ケッコネン国立公園のすぐそばにあります。",
     },
     whyVisit: {
       fr: "Plus on monte au nord, plus les nuits sont sombres et longues en hiver, ce qui joue en faveur de Saariselkä pour l'observation des aurores. C'est aussi là où l'on trouve le plus fort choix d'igloos de verre et de cabanes vitrées de toute la Laponie, avec un accès direct à un vrai parc national pour la randonnée en raquettes.",
@@ -303,6 +333,7 @@ export const DESTINATIONS: Destination[] = [
       nl: "Hoe verder je naar het noorden gaat, hoe donkerder en langer de winternachten worden, wat in het voordeel van Saariselkä speelt voor het spotten van noorderlicht. Het heeft ook de hoogste concentratie glazen iglos en glazen hutten van heel Lapland, met directe toegang tot een echt nationaal park voor sneeuwschoentochten.",
       es: "Cuanto más al norte se va, más oscuras y largas son las noches de invierno, lo que favorece a Saariselkä para la observación de auroras. Además cuenta con la mayor concentración de iglus de cristal y cabañas acristaladas de toda Laponia, con acceso directo a un auténtico parque nacional para hacer rutas con raquetas de nieve.",
       it: "Più si sale verso nord, più le notti invernali diventano buie e lunghe, il che gioca a favore di Saariselkä per l'osservazione delle aurore. Qui si trova anche la maggiore concentrazione di iglu di vetro e baite vetrate di tutta la Lapponia, con accesso diretto a un vero parco nazionale per escursioni con le racchette da neve.",
+      ja: "北に行くほど冬の夜は暗く長くなり、これがオーロラ観賞においてサーリセルカに有利に働きます。またラップランド全域の中でもガラスイグルーとガラス張りキャビンの集積度が最も高く、本格的な国立公園でのスノーシューハイキングにも直接アクセスできます。",
     },
     quickFacts: {
       fr: ["Aux portes d'un parc national", "Plus forte densité d'igloos de verre", "Aéroport d'Ivalo à 30 min"],
@@ -311,6 +342,7 @@ export const DESTINATIONS: Destination[] = [
       nl: ["Aan de rand van een nationaal park", "Hoogste concentratie glazen iglos", "Luchthaven Ivalo op 30 min"],
       es: ["En el borde de un parque nacional", "Mayor concentración de iglus de cristal", "Aeropuerto de Ivalo a 30 min"],
       it: ["Ai margini di un parco nazionale", "Massima concentrazione di iglu di vetro", "Aeroporto di Ivalo a 30 min"],
+      ja: ["国立公園のそばに位置", "ガラスイグルーの集積度が最も高い", "イヴァロ空港まで30分"],
     },
     faq: [
       {
@@ -321,6 +353,7 @@ export const DESTINATIONS: Destination[] = [
           nl: "Is Saariselkä moeilijker te bereiken dan Rovaniemi?",
           es: "¿Es Saariselkä más difícil de alcanzar que Rovaniemi?",
           it: "Saariselkä è più difficile da raggiungere rispetto a Rovaniemi?",
+          ja: "サーリセルカはロヴァニエミよりアクセスしにくいですか？",
         },
         answer: {
           fr: "Un peu : on y arrive par l'aéroport d'Ivalo (30 min de route) plutôt que directement depuis l'Europe. En échange, les nuits y sont plus sombres et le paysage plus sauvage.",
@@ -329,6 +362,7 @@ export const DESTINATIONS: Destination[] = [
           nl: "Een beetje: u komt aan via luchthaven Ivalo (30 minuten rijden) in plaats van rechtstreeks vanuit Europa. Daar staat tegenover dat de nachten donkerder en het landschap ruiger is.",
           es: "Un poco: se llega a través del aeropuerto de Ivalo (30 minutos en coche) en lugar de directamente desde Europa. A cambio, las noches son más oscuras y el paisaje más salvaje.",
           it: "Un po': si arriva tramite l'aeroporto di Ivalo (30 minuti di auto) anziché direttamente dall'Europa. In cambio, le notti sono più buie e il paesaggio più selvaggio.",
+          ja: "やや不便です。ヨーロッパから直接ではなく、イヴァロ空港経由（車で30分）でのアクセスとなります。その代わり、夜はより暗く、景観もより野性的です。",
         },
       },
       {
@@ -339,6 +373,7 @@ export const DESTINATIONS: Destination[] = [
           nl: "Zijn er activiteiten naast noorderlicht spotten?",
           es: "¿Hay actividades además de ver auroras?",
           it: "Ci sono attività oltre all'osservazione delle aurore?",
+          ja: "オーロラ観賞以外にできることはありますか？",
         },
         answer: {
           fr: "Oui : raquettes et ski de fond dans le parc national d'Urho Kekkonen, safaris en traîneau à chiens et rennes, et sauna en pleine nature.",
@@ -347,6 +382,7 @@ export const DESTINATIONS: Destination[] = [
           nl: "Ja: sneeuwschoenwandelen en langlaufen in het Urho Kekkonen Nationaal Park, husky- en rendiersledesafari's, en saunasessies in de wildernis.",
           es: "Sí: raquetas de nieve y esquí de fondo en el Parque Nacional de Urho Kekkonen, safaris en trineo tirado por huskies y renos, y sesiones de sauna en plena naturaleza.",
           it: "Sì: escursioni con le racchette da neve e sci di fondo nel Parco Nazionale di Urho Kekkonen, safari in slitta trainata da husky e renne, e sessioni di sauna nella natura selvaggia.",
+          ja: "はい。ウルホ・ケッコネン国立公園でのスノーシューやクロスカントリースキー、ハスキー犬・トナカイのそり体験、大自然の中でのサウナなどが楽しめます。",
         },
       },
     ],
@@ -363,6 +399,7 @@ export const DESTINATIONS: Destination[] = [
       nl: "Kiruna & Abisko",
       es: "Kiruna y Abisko",
       it: "Kiruna e Abisko",
+      ja: "キルナ＆アビスコ",
     },
     country: "Sweden",
     season: AURORA_SEASON,
@@ -373,6 +410,7 @@ export const DESTINATIONS: Destination[] = [
       nl: "3-4 nachten",
       es: "3-4 noches",
       it: "3-4 notti",
+      ja: "3〜4泊",
     },
     tags: {
       fr: ["Hôtel de glace original", "Ciel le plus clair", "Laponie suédoise"],
@@ -381,6 +419,7 @@ export const DESTINATIONS: Destination[] = [
       nl: ["Origineel ijshotel", "Helderste luchten", "Zweeds Lapland"],
       es: ["Hotel de hielo original", "Cielos más despejados", "Laponia sueca"],
       it: ["Hotel di ghiaccio originale", "Cieli più limpidi", "Lapponia svedese"],
+      ja: ["元祖アイスホテル", "最も晴天率の高い空", "スウェーデン領ラップランド"],
     },
     description: {
       fr: "L'Icehotel original à Kiruna, et à une heure de route, l'Aurora Sky Station d'Abisko, réputée pour l'un des ciels les plus clairs de Scandinavie.",
@@ -389,6 +428,7 @@ export const DESTINATIONS: Destination[] = [
       nl: "Het originele Icehotel in Kiruna, en een uur verderop, het Aurora Sky Station van Abisko, bekend om een van de helderste luchten van Scandinavië.",
       es: "El Icehotel original en Kiruna y, a una hora en coche, la Aurora Sky Station de Abisko, conocida por tener uno de los cielos más despejados de Escandinavia.",
       it: "L'Icehotel originale a Kiruna e, a un'ora di distanza, l'Aurora Sky Station di Abisko, nota per uno dei cieli più limpidi della Scandinavia.",
+      ja: "キルナには元祖アイスホテルがあり、そこから1時間の距離には、北欧屈指の晴天率で知られるアビスコのオーロラスカイステーションがあります。",
     },
     whyVisit: {
       fr: "Abisko bénéficie d'un microclimat qui dégage souvent le ciel même quand il neige partout ailleurs dans la région, ce qui en fait une référence scientifique pour la probabilité d'observation. Kiruna, à une heure de route, ajoute l'Icehotel, refait chaque année par des artistes, une expérience à part entière même sans aurores.",
@@ -397,6 +437,7 @@ export const DESTINATIONS: Destination[] = [
       nl: "Abisko profiteert van een microklimaat dat de lucht vaak opklaart, zelfs als het overal elders in de regio sneeuwt, wat het een wetenschappelijk referentiepunt maakt voor de kans op waarnemingen. Kiruna, een uur verderop, voegt het Icehotel toe, elk jaar opnieuw gebouwd door kunstenaars, een ervaring op zich zelfs zonder noorderlicht.",
       es: "Abisko se beneficia de un microclima que suele despejar el cielo incluso cuando nieva en el resto de la región, lo que lo convierte en una referencia científica para la probabilidad de observación. Kiruna, a una hora, añade el Icehotel, reconstruido cada año por artistas, una experiencia en sí misma incluso sin auroras.",
       it: "Abisko beneficia di un microclima che spesso rasserena il cielo anche quando altrove nella regione nevica, il che la rende un punto di riferimento scientifico per la probabilità di osservazione. Kiruna, a un'ora di distanza, aggiunge l'Icehotel, ricostruito ogni anno da artisti, un'esperienza a sé stante anche senza aurore.",
+      ja: "アビスコには特有の微気候があり、地域の他の場所で雪が降っていても空が晴れることが多いため、オーロラ観測確率における科学的な基準地点となっています。1時間離れたキルナには、毎年アーティストの手で作り直されるアイスホテルもあり、オーロラが見られなくてもそれ自体が独立した体験となります。",
     },
     quickFacts: {
       fr: ["Microclimat réputé pour un ciel dégagé", "Aurora Sky Station à Abisko", "Icehotel original à Kiruna"],
@@ -405,6 +446,7 @@ export const DESTINATIONS: Destination[] = [
       nl: ["Microklimaat bekend om heldere luchten", "Aurora Sky Station in Abisko", "Origineel Icehotel in Kiruna"],
       es: ["Microclima conocido por sus cielos despejados", "Aurora Sky Station en Abisko", "Icehotel original en Kiruna"],
       it: ["Microclima noto per i cieli limpidi", "Aurora Sky Station ad Abisko", "Icehotel originale a Kiruna"],
+      ja: ["晴天率の高さで知られる微気候", "アビスコのオーロラスカイステーション", "キルナの元祖アイスホテル"],
     },
     faq: [
       {
@@ -415,6 +457,7 @@ export const DESTINATIONS: Destination[] = [
           nl: "Moet ik kiezen tussen Kiruna en Abisko?",
           es: "¿Hay que elegir entre Kiruna y Abisko?",
           it: "Bisogna scegliere tra Kiruna e Abisko?",
+          ja: "キルナとアビスコのどちらかを選ぶ必要がありますか？",
         },
         answer: {
           fr: "Non, les deux sont à environ une heure de route ou de train l'un de l'autre : beaucoup de voyageurs dorment à Kiruna et font une excursion à l'Aurora Sky Station d'Abisko, ou l'inverse.",
@@ -423,6 +466,7 @@ export const DESTINATIONS: Destination[] = [
           nl: "Nee, ze liggen ongeveer een uur van elkaar met de auto of trein: veel reizigers verblijven in Kiruna en maken een dagtrip naar het Aurora Sky Station in Abisko, of andersom.",
           es: "No, ambos están a una hora de distancia por carretera o tren: muchos viajeros se alojan en Kiruna y hacen una excursión de un día a la Aurora Sky Station de Abisko, o al revés.",
           it: "No, le due località distano circa un'ora di auto o treno l'una dall'altra: molti viaggiatori soggiornano a Kiruna e fanno un'escursione all'Aurora Sky Station di Abisko, o viceversa.",
+          ja: "いいえ、両者は車や列車で約1時間の距離です。多くの旅行者はキルナを拠点にアビスコのオーロラスカイステーションへ日帰りで訪れる、あるいはその逆のパターンを選んでいます。",
         },
       },
       {
@@ -433,6 +477,7 @@ export const DESTINATIONS: Destination[] = [
           nl: "Is het Icehotel het hele jaar open?",
           es: "¿Está el Icehotel abierto todo el año?",
           it: "L'Icehotel è aperto tutto l'anno?",
+          ja: "アイスホテルは年間を通じて営業していますか？",
         },
         answer: {
           fr: "L'aile permanente climatisée est ouverte toute l'année, mais l'hôtel de glace complet n'existe que de décembre à avril, reconstruit chaque hiver.",
@@ -441,6 +486,7 @@ export const DESTINATIONS: Destination[] = [
           nl: "De permanent gekoelde vleugel is het hele jaar open, maar het volledige ijshotel bestaat alleen van december tot april en wordt elke winter opnieuw opgebouwd.",
           es: "El ala refrigerada permanente está abierta todo el año, pero el hotel de hielo completo solo existe de diciembre a abril, reconstruido cada invierno.",
           it: "L'ala permanente refrigerata è aperta tutto l'anno, ma l'hotel di ghiaccio completo esiste solo da dicembre ad aprile, ricostruito ogni inverno.",
+          ja: "常時冷却された棟は年間を通じて営業していますが、完全な形の氷のホテルは毎冬作り直され、12月から4月までのみ存在します。",
         },
       },
     ],
@@ -457,6 +503,7 @@ export const DESTINATIONS: Destination[] = [
       nl: "Tromsø",
       es: "Tromsø",
       it: "Tromsø",
+      ja: "トロムソ",
     },
     country: "Norway",
     season: AURORA_SEASON,
@@ -467,6 +514,7 @@ export const DESTINATIONS: Destination[] = [
       nl: "3-4 nachten",
       es: "3-4 noches",
       it: "3-4 notti",
+      ja: "3〜4泊",
     },
     tags: {
       fr: ["Fjords", "Vraie ville", "Excursions bateau"],
@@ -475,6 +523,7 @@ export const DESTINATIONS: Destination[] = [
       nl: ["Fjorden", "Echte stad", "Boottochten"],
       es: ["Fiordos", "Ciudad de verdad", "Excursiones en barco"],
       it: ["Fiordi", "Vera città", "Escursioni in barca"],
+      ja: ["フィヨルド", "本格的な街", "ボートツアー"],
     },
     description: {
       fr: "La grande ville du Grand Nord norvégien, entre fjords et montagnes, avec la plus forte offre d'excursions aurores organisées en bateau ou en minibus.",
@@ -483,6 +532,7 @@ export const DESTINATIONS: Destination[] = [
       nl: "De grote stad van het Noorse hoge noorden, gelegen tussen fjorden en bergen, met het grootste aanbod aan georganiseerde noorderlichttochten per boot of minibus.",
       es: "La gran ciudad del extremo norte noruego, situada entre fiordos y montañas, con la mayor oferta de excursiones organizadas para ver auroras en barco o minibús.",
       it: "La grande città dell'estremo nord norvegese, tra fiordi e montagne, con la più ampia offerta di escursioni organizzate per le aurore in barca o minibus.",
+      ja: "フィヨルドと山々に囲まれたノルウェー極北の大都市で、ボートやミニバスによる催行オーロラツアーの選択肢が最も豊富です。",
     },
     whyVisit: {
       fr: "Tromsø est la seule destination de cette liste qui est une vraie ville : restaurants, bars, musées et vie nocturne, en plus des aurores. La chasse aux aurores s'y organise surtout en minibus ou en bateau pour s'échapper des lumières urbaines, ce qui rassure les voyageurs qui préfèrent une excursion guidée à l'attente dans un igloo isolé.",
@@ -491,6 +541,7 @@ export const DESTINATIONS: Destination[] = [
       nl: "Tromsø is de enige bestemming op deze lijst die een echte stad is: restaurants, bars, musea en nachtleven, naast het noorderlicht. De jacht op noorderlicht wordt hier vooral georganiseerd per minibus of boot om aan het stadslicht te ontsnappen, wat geruststellend is voor reizigers die een begeleide tocht verkiezen boven wachten in een afgelegen iglo.",
       es: "Tromsø es el único destino de esta lista que es una ciudad de verdad: restaurantes, bares, museos y vida nocturna, además de las auroras. La caza de auroras aquí se organiza sobre todo en minibús o barco para alejarse de las luces urbanas, lo que tranquiliza a los viajeros que prefieren una excursión guiada antes que esperar en un iglú aislado.",
       it: "Tromsø è l'unica destinazione di questo elenco che è davvero una città: ristoranti, bar, musei e vita notturna, oltre alle aurore. La caccia alle aurore qui viene organizzata soprattutto in minibus o in barca per allontanarsi dalle luci cittadine, il che rassicura i viaggiatori che preferiscono un'escursione guidata all'attesa in un iglu isolato.",
+      ja: "トロムソはこのリスト唯一の本格的な都市で、オーロラに加えてレストラン、バー、美術館、ナイトライフも楽しめます。ここでのオーロラ観賞は主にミニバスやボートで市街の光から離れる形で催行され、人里離れたイグルーで待つよりガイド付きツアーを好む旅行者に向いています。",
     },
     quickFacts: {
       fr: ["Vraie vie urbaine (restaurants, bars, musées)", "Excursions aurores en bateau et minibus", "Vols directs depuis Oslo toute l'année"],
@@ -499,6 +550,7 @@ export const DESTINATIONS: Destination[] = [
       nl: ["Echt stadsleven (restaurants, bars, musea)", "Noorderlichttochten per boot en minibus", "Het hele jaar directe vluchten vanuit Oslo"],
       es: ["Vida urbana real (restaurantes, bares, museos)", "Excursiones de auroras en barco y minibús", "Vuelos directos desde Oslo todo el año"],
       it: ["Vera vita cittadina (ristoranti, bar, musei)", "Escursioni per le aurore in barca e minibus", "Voli diretti da Oslo tutto l'anno"],
+      ja: ["本格的な都市生活（レストラン・バー・美術館）", "ボートとミニバスによるオーロラツアー", "オスロからの通年直行便"],
     },
     faq: [
       {
@@ -509,6 +561,7 @@ export const DESTINATIONS: Destination[] = [
           nl: "Is Tromsø duurder dan Fins Lapland?",
           es: "¿Es Tromsø más caro que la Laponia finlandesa?",
           it: "Tromsø è più cara della Lapponia finlandese?",
+          ja: "トロムソはフィンランド領ラップランドより物価が高いですか？",
         },
         answer: {
           fr: "En général oui, le coût de la vie norvégien est plus élevé. En échange, la ville offre plus d'options de restauration et de sorties indépendantes des hôtels.",
@@ -517,6 +570,7 @@ export const DESTINATIONS: Destination[] = [
           nl: "Over het algemeen wel, de Noorse kosten van levensonderhoud liggen hoger. Daar staat tegenover dat de stad veel meer eet- en uitgaansmogelijkheden biedt los van de hotels.",
           es: "En general sí, el coste de vida noruego es más alto. A cambio, la ciudad ofrece muchas más opciones de restauración y ocio independientes de los hoteles.",
           it: "In generale sì, il costo della vita norvegese è più alto. In cambio, la città offre molte più opzioni di ristorazione e svago indipendenti dagli hotel.",
+          ja: "概して高めです。ノルウェーの生活費は高い傾向にあります。その代わり、街にはホテルに頼らない食事やナイトライフの選択肢が格段に豊富です。",
         },
       },
       {
@@ -527,6 +581,7 @@ export const DESTINATIONS: Destination[] = [
           nl: "Heb ik een tour nodig om het noorderlicht vanuit Tromsø te zien?",
           es: "¿Hace falta una excursión para ver las auroras desde Tromsø?",
           it: "Serve un'escursione per vedere le aurore da Tromsø?",
+          ja: "トロムソからオーロラを見るにはツアーが必要ですか？",
         },
         answer: {
           fr: "Fortement conseillé : les lumières de la ville gênent l'observation directe, donc la plupart des visiteurs réservent une excursion en bateau ou en minibus qui s'éloigne du centre.",
@@ -535,6 +590,7 @@ export const DESTINATIONS: Destination[] = [
           nl: "Sterk aanbevolen: het stadslicht bemoeilijkt directe waarneming, dus de meeste bezoekers boeken een boot- of minibustocht die wegrijdt van het centrum.",
           es: "Muy recomendable: las luces de la ciudad dificultan la observación directa, por lo que la mayoría de los visitantes reserva una excursión en barco o minibús que se aleja del centro.",
           it: "Fortemente consigliata: le luci della città ostacolano l'osservazione diretta, quindi la maggior parte dei visitatori prenota un'escursione in barca o minibus che si allontana dal centro.",
+          ja: "強くお勧めします。市街の光が直接観賞の妨げになるため、ほとんどの訪問者は中心部から離れるボートやミニバスのツアーを予約しています。",
         },
       },
     ],
