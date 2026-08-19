@@ -43,5 +43,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     alternates: { languages: hreflangAlternates("getting-around") },
   }));
 
-  return [...home, ...cities, ...hotelHubs, ...gettingAround];
+  const legalSlugs = ["legal", "privacy", "affiliate-disclosure"];
+  const legal = LOCALES.flatMap((locale) =>
+    legalSlugs.map((slug) => ({
+      url: `${SITE_URL}${localeHref(locale, slug)}`,
+      lastModified: new Date(),
+      alternates: { languages: hreflangAlternates(slug) },
+    }))
+  );
+
+  return [...home, ...cities, ...hotelHubs, ...gettingAround, ...legal];
 }
