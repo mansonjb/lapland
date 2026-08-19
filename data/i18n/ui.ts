@@ -186,6 +186,7 @@ export type Dict = {
     decline: string;
     learnMore: string;
     mapPlaceholderText: string;
+    carWidgetPlaceholderText: string;
   };
   gettingAroundPage: {
     metaTitle: string;

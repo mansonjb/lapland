@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import { CookieConsentProvider } from "@/lib/cookie-consent";
 import { CookieConsentBanner } from "@/components/CookieConsentBanner";
 import { Stay22Script } from "@/components/Stay22Script";
+import { AnalyticsScripts } from "@/components/AnalyticsScripts";
 
 export function generateStaticParams() {
   return LOCALES.map((locale) => ({ locale }));
@@ -29,6 +30,7 @@ export default async function LocaleLayout({
           {children}
           <Footer locale={lang} />
           <Stay22Script />
+          <AnalyticsScripts />
           <CookieConsentBanner locale={lang} />
         </CookieConsentProvider>
       </body>

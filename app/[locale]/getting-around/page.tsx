@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { LOCALES, isLocale, getDict, localeHref, fill, type Locale } from "@/lib/i18n";
 import { DESTINATIONS } from "@/data/destinations";
 import { CAR_RENTAL_DISTANCES } from "@/data/car-rental-distances";
-import { CarRentalWidgetPlaceholder } from "@/components/CarRentalWidgetPlaceholder";
+import { CarRentalWidget } from "@/components/CarRentalWidget";
 
 export function generateStaticParams() {
   return LOCALES.map((locale) => ({ locale }));
@@ -283,15 +283,11 @@ export default async function GettingAroundPage({
                 </div>
               </div>
 
-              {/* Widget reservation (placeholder) */}
+              {/* Widget de reservation (TravelPayouts) */}
               <div>
                 <h3 className="text-lg font-semibold text-ink">{p.car.widgetHeading}</h3>
                 <div className="mt-4">
-                  {/* TODO: widget de reservation voiture TravelPayouts a integrer ici */}
-                  <CarRentalWidgetPlaceholder
-                    title={p.car.widgetPlaceholderTitle}
-                    text={p.car.widgetPlaceholderText}
-                  />
+                  <CarRentalWidget locale={lang} />
                 </div>
               </div>
             </div>
