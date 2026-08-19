@@ -10,7 +10,7 @@ export type Dict = {
     hotels: string;
     map: string;
     faq: string;
-    carRental: string;
+    gettingAround: string;
   };
   header: {
     ctaButton: string;
@@ -187,50 +187,66 @@ export type Dict = {
     learnMore: string;
     mapPlaceholderText: string;
   };
-  carRentalPage: {
+  gettingAroundPage: {
     metaTitle: string;
     metaDescription: string;
     breadcrumbLabel: string;
     title: string;
     intro: string;
-    needHeading: string;
-    needIntro: string;
-    needLinkLabel: string; // gabarit avec {city}
-    tiresHeading: string;
-    tiresIntro: string;
-    tiresFinlandHeading: string;
-    tiresFinlandText: string;
-    tiresSwedenHeading: string;
-    tiresSwedenText: string;
-    tiresNorwayHeading: string;
-    tiresNorwayText: string;
-    tiresRentalNote: string;
-    vehicleHeading: string;
-    vehicle2wdHeading: string;
-    vehicle2wdText: string;
-    vehicleAwdHeading: string;
-    vehicleAwdText: string;
-    transmissionHeading: string;
-    transmissionText: string;
-    ageHeading: string;
-    ageText: string;
-    safetyHeading: string;
-    safetyWildlifeHeading: string;
-    safetyWildlifeText: string;
-    safetyFuelHeading: string;
-    safetyFuelText: string;
-    safetyDarknessHeading: string;
-    safetyDarknessText: string;
-    safetyKitHeading: string;
-    safetyKitText: string;
-    distancesHeading: string;
-    distancesIntro: string;
-    distancesFromLabel: string;
-    distancesToLabel: string;
-    distancesDistanceLabel: string;
-    distancesTimeLabel: string;
-    widgetHeading: string;
-    widgetPlaceholderTitle: string;
-    widgetPlaceholderText: string;
+    car: {
+      heading: string;
+      tagline: string;
+      needHeading: string;
+      needIntro: string;
+      needLinkLabel: string; // gabarit avec {city}
+      tiresHeading: string;
+      tiresIntro: string;
+      tiresFinlandHeading: string;
+      tiresFinlandText: string;
+      tiresSwedenHeading: string;
+      tiresSwedenText: string;
+      tiresNorwayHeading: string;
+      tiresNorwayText: string;
+      tiresRentalNote: string;
+      vehicleHeading: string;
+      vehicle2wdHeading: string;
+      vehicle2wdText: string;
+      vehicleAwdHeading: string;
+      vehicleAwdText: string;
+      transmissionHeading: string;
+      transmissionText: string;
+      ageHeading: string;
+      ageText: string;
+      safetyHeading: string;
+      safetyWildlifeHeading: string;
+      safetyWildlifeText: string;
+      safetyFuelHeading: string;
+      safetyFuelText: string;
+      safetyDarknessHeading: string;
+      safetyDarknessText: string;
+      safetyKitHeading: string;
+      safetyKitText: string;
+      distancesHeading: string;
+      distancesIntro: string;
+      distancesFromLabel: string;
+      distancesToLabel: string;
+      distancesDistanceLabel: string;
+      distancesTimeLabel: string;
+      widgetHeading: string;
+      widgetPlaceholderTitle: string;
+      widgetPlaceholderText: string;
+    };
+    walking: {
+      heading: string;
+      tagline: string;
+      intro: string;
+      cities: string[]; // 5 entrees, alignees sur l'ordre de DESTINATIONS
+    };
+    publicTransport: {
+      heading: string;
+      tagline: string;
+      intro: string;
+      cities: string[]; // 5 entrees, alignees sur l'ordre de DESTINATIONS
+    };
   };
 };

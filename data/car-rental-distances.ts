@@ -1,5 +1,5 @@
 // Distances routieres indicatives entre les destinations du site, verifiees via recherche web (aout 2026).
-// Utilise par app/[locale]/car-rental/page.tsx.
+// Utilise par app/[locale]/getting-around/page.tsx (section voiture).
 
 type LocaleText = {
   fr: string;

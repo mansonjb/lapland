@@ -37,11 +37,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
-  const carRental = LOCALES.map((locale) => ({
-    url: `${SITE_URL}${localeHref(locale, "car-rental")}`,
+  const gettingAround = LOCALES.map((locale) => ({
+    url: `${SITE_URL}${localeHref(locale, "getting-around")}`,
     lastModified: new Date(),
-    alternates: { languages: hreflangAlternates("car-rental") },
+    alternates: { languages: hreflangAlternates("getting-around") },
   }));
 
-  return [...home, ...cities, ...hotelHubs, ...carRental];
+  return [...home, ...cities, ...hotelHubs, ...gettingAround];
 }
