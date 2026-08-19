@@ -1,9 +1,9 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { LOCALES, isLocale, getDict, localeHref, type Locale } from "@/lib/i18n";
+import { LOCALES, isLocale, getDict, localeHref, fill, type Locale } from "@/lib/i18n";
 import { DESTINATIONS } from "@/data/destinations";
-import { HOTELS } from "@/data/hotels";
+import { HOTELS, HOTEL_TYPES, HOTEL_TYPE_LABEL } from "@/data/hotels";
 import { EXPERIENCES } from "@/data/experiences";
 import { Stay22Map } from "@/components/Stay22Map";
 import { DestinationCard } from "@/components/DestinationCard";
@@ -217,6 +217,18 @@ export default async function HomePage({
           <p className="mt-2 max-w-2xl text-base text-ink-soft">
             {t.hotelsSection.subheading}
           </p>
+
+          <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2">
+            {HOTEL_TYPES.map((type) => (
+              <Link
+                key={type}
+                href={localeHref(lang, `hebergements/${type}`)}
+                className="text-sm font-medium text-copper hover:text-copper-dark"
+              >
+                {fill(t.cityTypeFilter.typeLinkLabel, { type: HOTEL_TYPE_LABEL[type][lang] })}
+              </Link>
+            ))}
+          </div>
 
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {HOTELS.map((h) => (

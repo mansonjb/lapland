@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
@@ -13,7 +14,8 @@ import {
 import { DESTINATIONS, getDestination } from "@/data/destinations";
 import { getHotelsByCity } from "@/data/hotels";
 import { Stay22Map } from "@/components/Stay22Map";
-import { HotelCard } from "@/components/HotelCard";
+import { HotelsSectionView } from "@/components/HotelsSectionView";
+import { CityHotelsSectionClient } from "@/components/CityHotelsSectionClient";
 
 export function generateStaticParams() {
   return LOCALES.flatMap((locale) =>
@@ -52,7 +54,8 @@ export default async function CityPage({
   const t = getDict(lang);
   const imageBaseUrl = process.env.NEXT_PUBLIC_R2_IMAGE_BASE_URL ?? "";
   const aid = process.env.NEXT_PUBLIC_STAY22_AID ?? "PLACEHOLDER_AID";
-  const hotels = getHotelsByCity(destination.slug);
+
+  const allHotels = getHotelsByCity(destination.slug);
 
   return (
     <main>
@@ -217,29 +220,36 @@ export default async function CityPage({
       </section>
 
       {/* ---------- HOTELS ---------- */}
+      {/*
+        Le filtre `?type=` est lu cote client (useSearchParams) via
+        CityHotelsSectionClient, pas cote serveur : ca permet de garder
+        cette page ville entierement statique (generateStaticParams) au lieu
+        de basculer toute la route en rendu dynamique a cause d'une lecture
+        de `searchParams` serveur. Le fallback Suspense (non filtre) est ce
+        qui est prerendu au build et vu par les crawlers sans JS.
+      */}
       <section id="hebergements" className="py-14">
         <div className="mx-auto max-w-(--spacing-maxw) px-6">
-          <h2 className="font-display text-2xl text-ink">{t.city.hotelsHeading}</h2>
-
-          {hotels.length > 0 ? (
-            <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {hotels.map((h) => (
-                <HotelCard
-                  key={h.slug}
-                  hotel={h}
-                  locale={lang}
-                  imageBaseUrl={imageBaseUrl}
-                  availabilityLabel={t.hotelsSection.availabilityLabel}
-                  ctaLabel={t.hotelsSection.ctaLabel}
-                  priceFromLabel={t.hotelsSection.priceFromLabel}
-                  perNightLabel={t.hotelsSection.perNightLabel}
-                  showRegion={false}
-                />
-              ))}
-            </div>
-          ) : (
-            <p className="mt-4 text-sm text-ink-soft">{t.city.hotelsEmpty}</p>
-          )}
+          <Suspense
+            fallback={
+              <HotelsSectionView
+                lang={lang}
+                t={t}
+                destination={destination}
+                allHotels={allHotels}
+                imageBaseUrl={imageBaseUrl}
+                activeType={undefined}
+              />
+            }
+          >
+            <CityHotelsSectionClient
+              lang={lang}
+              t={t}
+              destination={destination}
+              allHotels={allHotels}
+              imageBaseUrl={imageBaseUrl}
+            />
+          </Suspense>
         </div>
       </section>
 

@@ -1,5 +1,11 @@
 export type HotelType = "hotel" | "glass-igloo" | "ice-hotel" | "cabin";
 
+export const HOTEL_TYPES: HotelType[] = ["hotel", "glass-igloo", "ice-hotel", "cabin"];
+
+export function isHotelType(x: string): x is HotelType {
+  return (HOTEL_TYPES as readonly string[]).includes(x);
+}
+
 export type Currency = "EUR" | "SEK" | "NOK";
 
 export type Hotel = {
@@ -1781,6 +1787,10 @@ export const HOTELS: Hotel[] = [
 
 export function getHotelsByCity(citySlug: string): Hotel[] {
   return HOTELS.filter((h) => h.citySlug === citySlug);
+}
+
+export function getHotelsByType(type: HotelType): Hotel[] {
+  return HOTELS.filter((h) => h.type === type);
 }
 
 export function getHotel(slug: string): Hotel | undefined {

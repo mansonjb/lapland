@@ -3,10 +3,8 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { DESTINATIONS } from "@/data/destinations";
-import { HOTEL_TYPE_LABEL, type HotelType } from "@/data/hotels";
+import { HOTEL_TYPE_LABEL, HOTEL_TYPES } from "@/data/hotels";
 import { localeHref, type Locale } from "@/lib/i18n";
-
-const TYPES: HotelType[] = ["hotel", "glass-igloo", "ice-hotel", "cabin"];
 
 export function PlanningBar({
   locale,
@@ -31,9 +29,20 @@ export function PlanningBar({
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    const target = city || DESTINATIONS[0].slug;
-    const query = type ? `?type=${type}` : "";
-    router.push(`${localeHref(locale, target)}${query}#hebergements`);
+
+    if (city && type) {
+      // Ville + type : page ville filtree sur ce type.
+      router.push(`${localeHref(locale, city)}?type=${type}#hebergements`);
+    } else if (city) {
+      // Ville seule : page ville, tous types.
+      router.push(`${localeHref(locale, city)}#hebergements`);
+    } else if (type) {
+      // Type seul, pas de ville : page hub du type, toutes villes confondues.
+      router.push(localeHref(locale, `hebergements/${type}`));
+    } else {
+      // Ni ville ni type : section hebergements de la home.
+      router.push(`${localeHref(locale)}#hebergements`);
+    }
   }
 
   return (
@@ -71,7 +80,7 @@ export function PlanningBar({
           className="rounded-xl border border-line bg-paper px-3 py-2.5 text-sm text-ink"
         >
           <option value="">{typeAll}</option>
-          {TYPES.map((t) => (
+          {HOTEL_TYPES.map((t) => (
             <option key={t} value={t}>
               {HOTEL_TYPE_LABEL[t][locale]}
             </option>
