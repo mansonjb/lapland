@@ -1,8 +1,3 @@
-"use client";
-
-import { useCookieConsent } from "@/lib/cookie-consent";
-import { getDict } from "@/lib/i18n";
-
 export type Stay22MapProps = {
   /** Stay22 affiliate id, e.g. process.env.NEXT_PUBLIC_STAY22_AID */
   aid: string;
@@ -81,38 +76,6 @@ function buildStay22Src({
  */
 export function Stay22Map(props: Stay22MapProps) {
   const { height = 460, className } = props;
-  const { status, accept, decline } = useCookieConsent();
-
-  if (status !== "accepted") {
-    const t = getDict(props.lang).cookieConsent;
-    return (
-      <div
-        className={`flex w-full flex-col items-center justify-center gap-4 rounded-2xl border border-line bg-paper-2 px-6 text-center ${className ?? ""}`}
-        style={{ height }}
-      >
-        <p className="max-w-sm text-sm leading-relaxed text-ink-soft">
-          {t.mapPlaceholderText}
-        </p>
-        <div className="flex gap-2">
-          <button
-            type="button"
-            onClick={decline}
-            className="rounded-full border border-line px-4 py-2 text-sm font-medium text-ink transition hover:bg-paper"
-          >
-            {t.decline}
-          </button>
-          <button
-            type="button"
-            onClick={accept}
-            className="rounded-full bg-copper px-4 py-2 text-sm font-medium text-white transition hover:bg-copper-dark"
-          >
-            {t.accept}
-          </button>
-        </div>
-      </div>
-    );
-  }
-
   const src = buildStay22Src(props);
   const title = MAP_TITLE_TEMPLATE[props.lang](
     props.address ?? MAP_TITLE_FALLBACK[props.lang]

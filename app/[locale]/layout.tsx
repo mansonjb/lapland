@@ -2,8 +2,6 @@ import { notFound } from "next/navigation";
 import { HTML_LANG, LOCALES, isLocale, type Locale } from "@/lib/i18n";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { CookieConsentProvider } from "@/lib/cookie-consent";
-import { CookieConsentBanner } from "@/components/CookieConsentBanner";
 import { Stay22Script } from "@/components/Stay22Script";
 import { AnalyticsScripts } from "@/components/AnalyticsScripts";
 
@@ -25,14 +23,11 @@ export default async function LocaleLayout({
   return (
     <html lang={HTML_LANG[locale]}>
       <body className="min-h-screen bg-paper text-ink antialiased">
-        <CookieConsentProvider>
-          <Header locale={lang} />
-          {children}
-          <Footer locale={lang} />
-          <Stay22Script />
-          <AnalyticsScripts />
-          <CookieConsentBanner locale={lang} />
-        </CookieConsentProvider>
+        <Header locale={lang} />
+        {children}
+        <Footer locale={lang} />
+        <Stay22Script />
+        <AnalyticsScripts />
       </body>
     </html>
   );

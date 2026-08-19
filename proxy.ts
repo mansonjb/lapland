@@ -14,6 +14,8 @@ export function proxy(req: NextRequest) {
   if (
     pathname.startsWith("/_next") ||
     pathname.startsWith("/api") ||
+    pathname === "/icon" ||
+    pathname === "/apple-icon" ||
     /\.\w+$/.test(pathname)
   ) {
     return;
@@ -36,5 +38,5 @@ export function proxy(req: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!_next|api|.*\\..*).*)"],
+  matcher: ["/((?!_next|api|icon$|apple-icon$|.*\\..*).*)"],
 };

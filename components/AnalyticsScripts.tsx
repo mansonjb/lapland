@@ -1,21 +1,14 @@
 "use client";
 
 import Script from "next/script";
-import { useCookieConsent } from "@/lib/cookie-consent";
 
 const GA_MEASUREMENT_ID = "G-GNML2X5XC1";
 const CLARITY_PROJECT_ID = "y4ualv6x9l";
 
 /**
- * Google Analytics (gtag.js) + Microsoft Clarity, loaded only after cookie
- * consent has been accepted. Mirrors the gating already applied to the
- * Stay22 script and the Stay22Map iframe.
+ * Google Analytics (gtag.js) + Microsoft Clarity, loaded site-wide.
  */
 export function AnalyticsScripts() {
-  const { status } = useCookieConsent();
-
-  if (status !== "accepted") return null;
-
   return (
     <>
       <Script

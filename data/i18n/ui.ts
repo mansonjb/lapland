@@ -180,14 +180,6 @@ export type Dict = {
     partnersText: string;
     contactText: string; // gabarit avec {email}
   };
-  cookieConsent: {
-    message: string;
-    accept: string;
-    decline: string;
-    learnMore: string;
-    mapPlaceholderText: string;
-    carWidgetPlaceholderText: string;
-  };
   gettingAroundPage: {
     metaTitle: string;
     metaDescription: string;

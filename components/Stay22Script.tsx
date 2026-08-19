@@ -1,17 +1,11 @@
 "use client";
 
 import Script from "next/script";
-import { useCookieConsent } from "@/lib/cookie-consent";
 
 /**
- * Loads the Stay22 "Let Me Allez" script only after cookie consent has been
- * accepted. Before that (unset or declined) nothing is injected.
+ * Loads the Stay22 "Let Me Allez" script site-wide.
  */
 export function Stay22Script() {
-  const { status } = useCookieConsent();
-
-  if (status !== "accepted") return null;
-
   return (
     <Script id="stay22-lma" strategy="afterInteractive">
       {`(function (s, t, a, y, twenty, two) {
