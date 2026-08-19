@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/site";
 import { LOCALES, DEFAULT_LOCALE, localeHref } from "@/lib/i18n";
 import { DESTINATIONS } from "@/data/destinations";
+import { HOTEL_TYPES } from "@/data/hotels";
 
 function hreflangAlternates(path = ""): Record<string, string> {
   const languages: Record<string, string> = {};
@@ -28,11 +29,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
+  const hotelHubs = LOCALES.flatMap((locale) =>
+    HOTEL_TYPES.map((type) => ({
+      url: `${SITE_URL}${localeHref(locale, `hebergements/${type}`)}`,
+      lastModified: new Date(),
+      alternates: { languages: hreflangAlternates(`hebergements/${type}`) },
+    }))
+  );
+
   const carRental = LOCALES.map((locale) => ({
     url: `${SITE_URL}${localeHref(locale, "car-rental")}`,
     lastModified: new Date(),
     alternates: { languages: hreflangAlternates("car-rental") },
   }));
 
-  return [...home, ...cities, ...carRental];
+  return [...home, ...cities, ...hotelHubs, ...carRental];
 }
