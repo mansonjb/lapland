@@ -56,6 +56,9 @@ export function Header({ locale }: { locale: Locale }) {
           <a href="#faq" className="hover:text-ink">
             {t.nav.faq}
           </a>
+          <Link href={localeHref(locale, "car-rental")} className="hover:text-ink">
+            {t.nav.carRental}
+          </Link>
         </nav>
 
         <div className="flex items-center gap-3">

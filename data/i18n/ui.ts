@@ -10,6 +10,7 @@ export type Dict = {
     hotels: string;
     map: string;
     faq: string;
+    carRental: string;
   };
   header: {
     ctaButton: string;
@@ -120,6 +121,22 @@ export type Dict = {
     sponsored: string;
     browse: string; // gabarit avec {name}
   };
+  hotelHub: {
+    breadcrumbLabel: string;
+    title: string; // gabarit avec {type}
+    metaDescription: string; // gabarit avec {type}
+    subheading: string; // gabarit avec {count} et {type}
+    citiesHeading: string;
+    otherTypesHeading: string;
+    backToHome: string;
+  };
+  cityTypeFilter: {
+    activeTitle: string; // gabarit avec {type} et {city}
+    clearFilter: string; // gabarit avec {city}
+    noResults: string; // gabarit avec {type} et {city}
+    seeElsewhere: string; // gabarit avec {type}
+    typeLinkLabel: string; // gabarit avec {type}
+  };
   legal: {
     title: string;
     updated: string;
@@ -169,5 +186,51 @@ export type Dict = {
     decline: string;
     learnMore: string;
     mapPlaceholderText: string;
+  };
+  carRentalPage: {
+    metaTitle: string;
+    metaDescription: string;
+    breadcrumbLabel: string;
+    title: string;
+    intro: string;
+    needHeading: string;
+    needIntro: string;
+    needLinkLabel: string; // gabarit avec {city}
+    tiresHeading: string;
+    tiresIntro: string;
+    tiresFinlandHeading: string;
+    tiresFinlandText: string;
+    tiresSwedenHeading: string;
+    tiresSwedenText: string;
+    tiresNorwayHeading: string;
+    tiresNorwayText: string;
+    tiresRentalNote: string;
+    vehicleHeading: string;
+    vehicle2wdHeading: string;
+    vehicle2wdText: string;
+    vehicleAwdHeading: string;
+    vehicleAwdText: string;
+    transmissionHeading: string;
+    transmissionText: string;
+    ageHeading: string;
+    ageText: string;
+    safetyHeading: string;
+    safetyWildlifeHeading: string;
+    safetyWildlifeText: string;
+    safetyFuelHeading: string;
+    safetyFuelText: string;
+    safetyDarknessHeading: string;
+    safetyDarknessText: string;
+    safetyKitHeading: string;
+    safetyKitText: string;
+    distancesHeading: string;
+    distancesIntro: string;
+    distancesFromLabel: string;
+    distancesToLabel: string;
+    distancesDistanceLabel: string;
+    distancesTimeLabel: string;
+    widgetHeading: string;
+    widgetPlaceholderTitle: string;
+    widgetPlaceholderText: string;
   };
 };
