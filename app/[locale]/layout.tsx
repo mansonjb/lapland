@@ -4,6 +4,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Stay22Script } from "@/components/Stay22Script";
 import { AnalyticsScripts } from "@/components/AnalyticsScripts";
+import { TravelpayoutsDriveScript } from "@/components/TravelpayoutsDriveScript";
 
 export function generateStaticParams() {
   return LOCALES.map((locale) => ({ locale }));
@@ -28,6 +29,7 @@ export default async function LocaleLayout({
         <Footer locale={lang} />
         <Stay22Script />
         <AnalyticsScripts />
+        <TravelpayoutsDriveScript />
       </body>
     </html>
   );
