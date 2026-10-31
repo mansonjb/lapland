@@ -1,4 +1,6 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { pageMetadata } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import { LOCALES, isLocale, getDict, localeHref, fill, type Locale } from "@/lib/i18n";
@@ -13,6 +15,22 @@ import { PlanningBar } from "@/components/PlanningBar";
 
 export function generateStaticParams() {
   return LOCALES.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  if (!isLocale(locale)) return {};
+  const lang = locale as Locale;
+  const t = getDict(lang);
+  return pageMetadata({
+    locale: lang,
+    title: `${t.site.name}: ${t.site.tagline}`,
+    description: t.hero.lede,
+  });
 }
 
 // Centre approximatif de la Laponie = moyenne des 5 destinations couvertes.

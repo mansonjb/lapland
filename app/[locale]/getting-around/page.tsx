@@ -1,3 +1,4 @@
+import { pageMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
@@ -18,7 +19,12 @@ export async function generateMetadata({
   const { locale } = await params;
   if (!isLocale(locale)) return {};
   const t = getDict(locale as Locale);
-  return { title: t.gettingAroundPage.metaTitle, description: t.gettingAroundPage.metaDescription };
+  return pageMetadata({
+    locale: locale as Locale,
+    path: "getting-around",
+    title: t.gettingAroundPage.metaTitle,
+    description: t.gettingAroundPage.metaDescription,
+  });
 }
 
 // Icones inline minimalistes (pas de librairie externe), style coherent avec

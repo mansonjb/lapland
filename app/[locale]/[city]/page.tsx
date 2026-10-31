@@ -13,6 +13,8 @@ import {
 } from "@/lib/i18n";
 import { DESTINATIONS, getDestination } from "@/data/destinations";
 import { getHotelsByCity } from "@/data/hotels";
+import { absUrl, pageMetadata } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
 import { Stay22Map } from "@/components/Stay22Map";
 import { HotelsSectionView } from "@/components/HotelsSectionView";
 import { CityHotelsSectionClient } from "@/components/CityHotelsSectionClient";
@@ -33,10 +35,12 @@ export async function generateMetadata({
   const destination = getDestination(city);
   if (!destination) return {};
   const lang = locale as Locale;
-  return {
+  return pageMetadata({
+    locale: lang,
+    path: destination.slug,
     title: destination.label[lang],
     description: destination.description[lang],
-  };
+  });
 }
 
 export default async function CityPage({
@@ -57,8 +61,51 @@ export default async function CityPage({
 
   const allHotels = getHotelsByCity(destination.slug);
 
+  const cityUrl = absUrl(lang, destination.slug);
+  const cityJsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "TouristDestination",
+      "@id": `${cityUrl}#destination`,
+      name: destination.label[lang],
+      description: destination.description[lang],
+      url: cityUrl,
+      geo: { "@type": "GeoCoordinates", latitude: destination.lat, longitude: destination.lng },
+      touristType: destination.tags[lang],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: destination.faq.map((item) => ({
+        "@type": "Question",
+        name: item.question[lang],
+        acceptedAnswer: { "@type": "Answer", text: item.answer[lang] },
+      })),
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      name: destination.label[lang],
+      itemListElement: allHotels.map((h, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: h.name,
+        url: absUrl(lang, `${destination.slug}/${h.slug}`),
+      })),
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: t.city.breadcrumbHome, item: absUrl(lang) },
+        { "@type": "ListItem", position: 2, name: destination.label[lang], item: cityUrl },
+      ],
+    },
+  ];
+
   return (
     <main>
+      <JsonLd data={cityJsonLd} />
       {/* ---------- BREADCRUMB ---------- */}
       <nav className="mx-auto max-w-(--spacing-maxw) px-6 pt-6 text-sm text-ink-soft">
         <Link href={localeHref(lang)} className="hover:text-copper">

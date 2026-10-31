@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { LOCALES, isLocale, getDict, localeHref, fill, type Locale } from "@/lib/i18n";
 import { HOTEL_TYPES, HOTEL_TYPE_LABEL, getHotelsByType, isHotelType } from "@/data/hotels";
 import { DESTINATIONS } from "@/data/destinations";
@@ -22,10 +23,12 @@ export async function generateMetadata({
   const lang = locale as Locale;
   const t = getDict(lang);
   const typeLabel = HOTEL_TYPE_LABEL[type][lang];
-  return {
+  return pageMetadata({
+    locale: lang,
+    path: `hebergements/${type}`,
     title: fill(t.hotelHub.title, { type: typeLabel }),
     description: fill(t.hotelHub.metaDescription, { type: typeLabel }),
-  };
+  });
 }
 
 export default async function HotelHubPage({

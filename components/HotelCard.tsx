@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { Hotel } from "@/data/hotels";
 import { HOTEL_TYPE_LABEL } from "@/data/hotels";
 import { getDestination } from "@/data/destinations";
-import { HTML_LANG } from "@/lib/i18n";
+import { HTML_LANG, localeHref } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n";
 
 const TIER_SIGN: Record<Hotel["priceTier"], string> = {
@@ -37,9 +38,12 @@ export function HotelCard({
     maximumFractionDigits: 0,
   }).format(hotel.priceFrom);
 
+  const detailHref = localeHref(locale, `${hotel.citySlug}/${hotel.slug}`);
+
   return (
     <div className="flex flex-col overflow-hidden rounded-2xl border border-line bg-surface">
       <div className="relative aspect-[4/3] w-full overflow-hidden">
+        <Link href={detailHref} aria-label={hotel.name} className="absolute inset-0 z-10" />
         <Image
           src={`${imageBaseUrl}/hotels/${hotel.image}.jpg`}
           alt={hotel.name}
@@ -59,7 +63,11 @@ export function HotelCard({
 
       <div className="flex flex-1 flex-col p-5">
         <div className="flex items-start justify-between gap-2">
-          <h3 className="font-display text-lg text-ink">{hotel.name}</h3>
+          <h3 className="font-display text-lg text-ink">
+            <Link href={detailHref} className="hover:text-copper">
+              {hotel.name}
+            </Link>
+          </h3>
           <span className="shrink-0 text-sm font-medium text-birch-dark">
             {TIER_SIGN[hotel.priceTier]}
           </span>

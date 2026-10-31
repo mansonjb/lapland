@@ -1,0 +1,882 @@
+{
+  "arctic-treehouse-hotel": {
+    "matchedTitle": "Arctic TreeHouse Hotel",
+    "rating": 4.4,
+    "reviews": 647,
+    "address": "Tarvantie 3, 96910 Rovaniemi, Finland",
+    "countryCode": "FI",
+    "lat": 66.5394354,
+    "lng": 25.7999938,
+    "category": "Hotel",
+    "website": "http://arctictreehousehotel.com/",
+    "amenities": [
+      "Free parking",
+      "Free breakfast",
+      "Free Wi-Fi",
+      "Air-conditioned"
+    ]
+  },
+  "santas-igloos-arctic-circle": {
+    "matchedTitle": "Santa's Igloos Arctic Circle",
+    "rating": 4.4,
+    "reviews": 615,
+    "address": "Joulumaankuja 8, 96930 Rovaniemi, Finland",
+    "countryCode": "FI",
+    "lat": 66.5432826,
+    "lng": 25.8610293,
+    "category": "Hotel",
+    "website": "https://santashotels.fi/hotelli/igloos-arctic-circle-rovaniemi/",
+    "amenities": [
+      "Free parking",
+      "Free breakfast",
+      "Free Wi-Fi",
+      "Air-conditioned"
+    ]
+  },
+  "arctic-snowhotel-glass-igloos": {
+    "matchedTitle": "Arctic SnowHotel & Glass Igloos",
+    "rating": 4.5,
+    "reviews": 1837,
+    "address": "Lehtoahontie 27, 97220 Sinettä, Finland",
+    "countryCode": "FI",
+    "lat": 66.6373212,
+    "lng": 25.3439064,
+    "category": "Hotel",
+    "website": "https://arcticsnowhotel.fi/",
+    "amenities": [
+      "Free parking",
+      "Free breakfast",
+      "Free Wi-Fi",
+      "Breakfast"
+    ]
+  },
+  "golden-crown-levin-iglut": {
+    "matchedTitle": "Golden Crown Iglu",
+    "rating": 4.6,
+    "reviews": 438,
+    "address": "Harjatie 2, 99130 Kittilä, Finland",
+    "countryCode": "FI",
+    "lat": 67.787118,
+    "lng": 24.8910606,
+    "category": "Hotel",
+    "website": null,
+    "amenities": [
+      "Free breakfast",
+      "Free Wi-Fi",
+      "Air-conditioned",
+      "Breakfast"
+    ]
+  },
+  "break-sokos-hotel-levi": {
+    "matchedTitle": "Break Sokos Hotel Levi",
+    "rating": 4.4,
+    "reviews": 1351,
+    "address": "Tähtitie 5, 99130 Levi, Finland",
+    "countryCode": "FI",
+    "lat": 67.8055045,
+    "lng": 24.8065172,
+    "category": "Hotel",
+    "website": "https://www.sokoshotels.fi/hotellit/kittila/break-sokos-hotel-levi",
+    "amenities": [
+      "Free parking",
+      "Free breakfast",
+      "Free Wi-Fi",
+      "Breakfast"
+    ]
+  },
+  "hotel-k5-levi": {
+    "matchedTitle": "Hotel K5 Levi",
+    "rating": 4.4,
+    "reviews": 348,
+    "address": "Kätkänrannantie 2, 99130 Levi, Finland",
+    "countryCode": "FI",
+    "lat": 67.8052239,
+    "lng": 24.7965994,
+    "category": "Hotel",
+    "website": "https://www.k5levi.fi/",
+    "amenities": [
+      "Free breakfast",
+      "Free Wi-Fi",
+      "Air-conditioned",
+      "Breakfast"
+    ]
+  },
+  "kakslauttanen-arctic-resort": {
+    "matchedTitle": "Kakslauttanen Arctic Resort East Village",
+    "rating": 4.1,
+    "reviews": 1425,
+    "address": "Kiilopääntie 9, 99830 Saariselkä, Finland",
+    "countryCode": "FI",
+    "lat": 68.3346112,
+    "lng": 27.3342888,
+    "category": "Resort hotel",
+    "website": "http://www.kakslauttanen.fi/",
+    "amenities": [
+      "Free parking",
+      "Free Wi-Fi",
+      "Air-conditioned",
+      "Breakfast"
+    ]
+  },
+  "northern-lights-village": {
+    "matchedTitle": "Northern Lights Village Saariselkä",
+    "rating": 4.6,
+    "reviews": 1814,
+    "address": "Rovaniementie 3222E, 99830 Saariselkä, Finland",
+    "countryCode": "FI",
+    "lat": 68.4240083,
+    "lng": 27.4026698,
+    "category": "Resort hotel",
+    "website": "http://saariselka.northernlightsvillage.com/",
+    "amenities": [
+      "Pool",
+      "Free parking",
+      "Air-conditioned",
+      "Breakfast"
+    ]
+  },
+  "wilderness-hotel-saariselka": {
+    "matchedTitle": "Wilderness Hotel Muotka",
+    "rating": 4.6,
+    "reviews": 527,
+    "address": "Muotkantie 204, 99830 Sodankylä, Finland",
+    "countryCode": "FI",
+    "lat": 68.3276443,
+    "lng": 27.3829135,
+    "category": "Hotel",
+    "website": "https://wildernesshotels.fi/wilderness-hotel-muotka",
+    "amenities": [
+      "Free parking",
+      "Free Wi-Fi",
+      "Breakfast",
+      "Wi-Fi"
+    ]
+  },
+  "icehotel-kiruna": {
+    "matchedTitle": "ICEHOTEL",
+    "rating": 4.6,
+    "reviews": 5233,
+    "address": "Marknadsvägen 63, 981 91 Jukkasjärvi, Sweden",
+    "countryCode": "SE",
+    "lat": 67.8498842,
+    "lng": 20.597001,
+    "category": "Hotel",
+    "website": "https://www.icehotel.com/",
+    "amenities": [
+      "Free parking",
+      "Free Wi-Fi",
+      "Breakfast",
+      "Wi-Fi"
+    ]
+  },
+  "stf-abisko-turiststation": {
+    "matchedTitle": "STF Abisko Turiststation",
+    "rating": 4.4,
+    "reviews": 1876,
+    "address": "ABISKO TURISTSTATION 2, 981 07 Abisko, Sweden",
+    "countryCode": "SE",
+    "lat": 68.358623,
+    "lng": 18.7836778,
+    "category": "Hotel",
+    "website": "https://www.svenskaturistforeningen.se/boende/stf-abisko-turiststation/",
+    "amenities": [
+      "Free parking",
+      "Free Wi-Fi",
+      "Breakfast",
+      "Wi-Fi"
+    ]
+  },
+  "clarion-collection-hotel-aurora": {
+    "matchedTitle": "Home Hotel Aurora",
+    "rating": 4.1,
+    "reviews": 1677,
+    "address": "Sjøgata 19-21, 9291 Tromsø, Norway",
+    "countryCode": "NO",
+    "lat": 69.6501044,
+    "lng": 18.9594644,
+    "category": "Hotel",
+    "website": "https://www.strawberry.no/hotell/norge/tromso/home-hotel-aurora/",
+    "amenities": [
+      "Pool",
+      "Free breakfast",
+      "Free Wi-Fi",
+      "Air-conditioned"
+    ]
+  },
+  "clarion-hotel-the-edge": {
+    "matchedTitle": "Clarion Hotel® The Edge",
+    "rating": 4.4,
+    "reviews": 3656,
+    "address": "Kaigata 6, 9008 Tromsø, Norway",
+    "countryCode": "NO",
+    "lat": 69.6472003,
+    "lng": 18.9571024,
+    "category": "Hotel",
+    "website": "https://www.strawberry.no/hotell/norge/tromso/clarion-hotel-the-edge/",
+    "amenities": []
+  },
+  "the-dock-6939-by-scandic": {
+    "matchedTitle": "The Dock 69°39 By Scandic",
+    "rating": 4.5,
+    "reviews": 315,
+    "address": "Skansegata 7, 9008 Tromsø, Norway",
+    "countryCode": "NO",
+    "lat": 69.653704,
+    "lng": 18.9659451,
+    "category": "Hotel",
+    "website": "https://www.scandichotels.com/no/hotell/the-dock-69-39-by-scandic",
+    "amenities": [
+      "Pool",
+      "Free parking",
+      "Free Wi-Fi",
+      "Breakfast"
+    ]
+  },
+  "scandic-rovaniemi-city": {
+    "matchedTitle": "Scandic Rovaniemi City",
+    "rating": 4.2,
+    "reviews": 1904,
+    "address": "Koskikatu 23, 96200 Rovaniemi, Finland",
+    "countryCode": "FI",
+    "lat": 66.5029553,
+    "lng": 25.7270822,
+    "category": "Hotel",
+    "website": "https://www.scandichotels.com/fi/hotellit/scandic-rovaniemi-city",
+    "amenities": [
+      "Free Wi-Fi",
+      "Air-conditioned",
+      "Breakfast",
+      "Wi-Fi"
+    ]
+  },
+  "arctic-city-hotel": {
+    "matchedTitle": "Arctic City Hotel",
+    "rating": 4.3,
+    "reviews": 1171,
+    "address": "Pekankatu 9, 96200 Rovaniemi, Finland",
+    "countryCode": "FI",
+    "lat": 66.5014541,
+    "lng": 25.7296894,
+    "category": "Hotel",
+    "website": "http://www.arcticcityhotel.fi/",
+    "amenities": [
+      "Free parking",
+      "Free breakfast",
+      "Free Wi-Fi",
+      "Air-conditioned"
+    ]
+  },
+  "sokos-hotel-vaakuna-rovaniemi": {
+    "matchedTitle": "Original Sokos Hotel Vaakuna, Rovaniemi",
+    "rating": 4.3,
+    "reviews": 1662,
+    "address": "Koskikatu 4, 96200 Rovaniemi, Finland",
+    "countryCode": "FI",
+    "lat": 66.5020065,
+    "lng": 25.7363029,
+    "category": "Hotel",
+    "website": "https://www.sokoshotels.fi/hotellit/rovaniemi/original-sokos-hotel-vaakuna",
+    "amenities": [
+      "Free Wi-Fi",
+      "Air-conditioned",
+      "Breakfast",
+      "Wi-Fi"
+    ]
+  },
+  "santas-hotel-rudolf": {
+    "matchedTitle": "Hotel Rudolf",
+    "rating": 3.5,
+    "reviews": 235,
+    "address": "Koskikatu 41 43, 96200 Rovaniemi, Finland",
+    "countryCode": "FI",
+    "lat": 66.5052147,
+    "lng": 25.7189261,
+    "category": "Hotel",
+    "website": "https://santashotels.fi/hotelli/rudolf-rovaniemi/",
+    "amenities": [
+      "Free Wi-Fi",
+      "Air-conditioned",
+      "Breakfast",
+      "Wi-Fi"
+    ]
+  },
+  "hostel-cafe-koti": {
+    "matchedTitle": "Hostel Café Koti",
+    "rating": 4.6,
+    "reviews": 1229,
+    "address": "Valtakatu 21, 96200 Rovaniemi, Finland",
+    "countryCode": "FI",
+    "lat": 66.5012179,
+    "lng": 25.734052,
+    "category": "Hotel",
+    "website": "https://www.hostelcafekoti.fi/",
+    "amenities": [
+      "Free Wi-Fi",
+      "Breakfast",
+      "Wi-Fi",
+      "Parking"
+    ]
+  },
+  "santa-claus-holiday-village": {
+    "matchedTitle": "Santa Claus Holiday Village",
+    "rating": 4.5,
+    "reviews": 4567,
+    "address": "Tähtikuja 2, 96930 Rovaniemi, Finland",
+    "countryCode": "FI",
+    "lat": 66.5432168,
+    "lng": 25.8446797,
+    "category": "Hotel",
+    "website": "https://www.santaclausholidayvillage.fi/",
+    "amenities": [
+      "Free parking",
+      "Free breakfast",
+      "Free Wi-Fi",
+      "Air-conditioned"
+    ]
+  },
+  "skyview-igloo-resort-spa": {
+    "matchedTitle": "SkyView Igloo Resort & Spa",
+    "rating": 4.9,
+    "reviews": 90,
+    "address": "Olleronvaarantie 66, 96800 Rovaniemi, Finland",
+    "countryCode": "FI",
+    "lat": 66.5689972,
+    "lng": 25.6244282,
+    "category": "Resort hotel",
+    "website": "https://skyviewigloos.fi/",
+    "amenities": [
+      "Pool",
+      "Spa",
+      "Free parking",
+      "Free breakfast"
+    ]
+  },
+  "levi-hotel-spa": {
+    "matchedTitle": "Levi Hotel Spa",
+    "rating": 4.2,
+    "reviews": 2574,
+    "address": "Levintie 1590, LEVI PF, 99130 Sirkka, Finland",
+    "countryCode": "FI",
+    "lat": 67.8036383,
+    "lng": 24.7999472,
+    "category": "Hotel",
+    "website": "http://www.levihotelspa.fi/",
+    "amenities": [
+      "Pool",
+      "Spa",
+      "Free parking",
+      "Free breakfast"
+    ]
+  },
+  "hotel-hullu-poro": {
+    "matchedTitle": "Hullu Poro (Hotel Crazy Reindeer)",
+    "rating": 4.2,
+    "reviews": 590,
+    "address": "Rakkavaarantie 3, 99130 Sirkka, Finland",
+    "countryCode": "FI",
+    "lat": 67.8083343,
+    "lng": 24.809723,
+    "category": "Hotel",
+    "website": "http://www.hulluporo.fi/",
+    "amenities": [
+      "Pool",
+      "Free parking",
+      "Free breakfast",
+      "Free Wi-Fi"
+    ]
+  },
+  "hotel-levi-panorama": {
+    "matchedTitle": "Hotel Levi Panorama",
+    "rating": 4.4,
+    "reviews": 1856,
+    "address": "Tunturitie 205, 99130 Levi, Finland",
+    "countryCode": "FI",
+    "lat": 67.7996469,
+    "lng": 24.8118503,
+    "category": "Hotel",
+    "website": "https://levipanorama.fi/",
+    "amenities": [
+      "Free parking",
+      "Free breakfast",
+      "Free Wi-Fi",
+      "Air-conditioned"
+    ]
+  },
+  "levilehto-apartments": {
+    "matchedTitle": "Levilehto Apartments",
+    "rating": 4.3,
+    "reviews": 452,
+    "address": "Levintie 1625, 99130 Kittilä, Finland",
+    "countryCode": "FI",
+    "lat": 67.8066761,
+    "lng": 24.802111,
+    "category": "Holiday apartment rental",
+    "website": "http://www.levilehto.fi/",
+    "amenities": []
+  },
+  "levi-log-cabin-viprakka": {
+    "matchedTitle": "Viprakka 4A Levi Log Cabin",
+    "rating": 5,
+    "reviews": 4,
+    "address": "Viprakka 4, 99130 Kittilä, Finland",
+    "countryCode": "FI",
+    "lat": 67.8086234,
+    "lng": 24.8176574,
+    "category": "Lodging",
+    "website": "https://levilogcabin.com/",
+    "amenities": []
+  },
+  "chalet-auroras-levi": {
+    "matchedTitle": "Frijavillas - Chalet Auroras",
+    "rating": 5,
+    "reviews": 4,
+    "address": "Hissitie 10, 99130 Sirkka, Finland",
+    "countryCode": "FI",
+    "lat": 67.804236,
+    "lng": 24.8135094,
+    "category": "Holiday apartment",
+    "website": "https://frijavillas.fi/en/chalet-auroras",
+    "amenities": []
+  },
+  "aurora-pyramid-glass-igloos": {
+    "matchedTitle": "Aurora Pyramid Glass Igloos",
+    "rating": 4,
+    "reviews": 24,
+    "address": "Revontultentie 50, 99140 Köngäs, Finland",
+    "countryCode": "FI",
+    "lat": 67.8619772,
+    "lng": 24.8580065,
+    "category": "Hotel",
+    "website": "https://elvesvillage.fi/en/accommodations/aurora-pyramids/",
+    "amenities": [
+      "Free parking",
+      "Free breakfast",
+      "Free Wi-Fi",
+      "Air-conditioned"
+    ]
+  },
+  "holiday-club-saariselka": {
+    "matchedTitle": "Holiday Club Saariselkä",
+    "rating": 4,
+    "reviews": 2345,
+    "address": "Saariseläntie 7, 99830 Inari, Finland",
+    "countryCode": "FI",
+    "lat": 68.4205136,
+    "lng": 27.4188679,
+    "category": "Hotel",
+    "website": "https://www.holidayclubresorts.com/saariselka",
+    "amenities": [
+      "Pool",
+      "Spa",
+      "Free parking",
+      "Free breakfast"
+    ]
+  },
+  "grand-hostel-ivalo": {
+    "matchedTitle": "Grand Hostel Ivalo",
+    "rating": 4.9,
+    "reviews": 27,
+    "address": "Kirkkokuja 14, 99800 Inari, Finland",
+    "countryCode": "FI",
+    "lat": 68.662615,
+    "lng": 27.5253401,
+    "category": "Serviced accommodation",
+    "website": "https://hostelivalo.fi/",
+    "amenities": []
+  },
+  "levi-aurora-igloo": {
+    "matchedTitle": "Levi Aurora Igloo",
+    "rating": 5,
+    "reviews": 4,
+    "address": "Utsuvaarantie 12 C, 99130 Kittilä, Finland",
+    "countryCode": "FI",
+    "lat": 67.7832756,
+    "lng": 24.9030123,
+    "category": "Serviced accommodation",
+    "website": "https://www.booking.com/hotel/fi/levi-aurora-igloo.fi.html",
+    "amenities": []
+  },
+  "wilderness-hotel-kieppi": {
+    "matchedTitle": "Wilderness Hotel Kieppi",
+    "rating": 4.6,
+    "reviews": 75,
+    "address": "Raitopolku 1, 99830 Saariselkä, Finland",
+    "countryCode": "FI",
+    "lat": 68.4191936,
+    "lng": 27.4194342,
+    "category": "Hotel",
+    "website": "https://wildernesshotels.fi/wilderness-hotel-kieppi",
+    "amenities": [
+      "Pool",
+      "Free parking",
+      "Free breakfast",
+      "Free Wi-Fi"
+    ]
+  },
+  "lapland-hotels-riekonlinna": {
+    "matchedTitle": "Lapland Hotels Riekonlinna",
+    "rating": 4.1,
+    "reviews": 1199,
+    "address": "Saariseläntie 13, 99830 Saariselkä, Finland",
+    "countryCode": "FI",
+    "lat": 68.4215291,
+    "lng": 27.4258,
+    "category": "Hotel",
+    "website": "https://www.laplandhotels.com/fi/hotellit-ja-kohteet/saariselka/lapland-hotels-riekonlinna",
+    "amenities": [
+      "Free parking",
+      "Free breakfast",
+      "Free Wi-Fi",
+      "Breakfast"
+    ]
+  },
+  "aurora-collection-inari": {
+    "matchedTitle": "Aurora Collection",
+    "rating": 4.9,
+    "reviews": 130,
+    "address": "Koivutie 2, 99830 Saariselkä, Finland",
+    "countryCode": "FI",
+    "lat": 68.4331968,
+    "lng": 27.4224751,
+    "category": "Hotel",
+    "website": "https://auroracollectionresort.com/",
+    "amenities": [
+      "Free parking",
+      "Free breakfast",
+      "Free Wi-Fi",
+      "Air-conditioned"
+    ]
+  },
+  "scandic-kiruna": {
+    "matchedTitle": "Scandic Kiruna",
+    "rating": 4.2,
+    "reviews": 1033,
+    "address": "Stadshustorget 11, 981 30 Kiruna, Sweden",
+    "countryCode": "SE",
+    "lat": 67.8485793,
+    "lng": 20.3038633,
+    "category": "Hotel",
+    "website": "https://www.scandichotels.com/sv/hotell/scandic-kiruna",
+    "amenities": [
+      "Free Wi-Fi",
+      "Air-conditioned",
+      "Breakfast",
+      "Wi-Fi"
+    ]
+  },
+  "fell-centre-kiilopaa": {
+    "matchedTitle": "Suomen Latu Kiilopää/Fell Centre Kiilopää",
+    "rating": 4.4,
+    "reviews": 1634,
+    "address": "Kiilopääntie 620, 99830 Saariselkä, Finland",
+    "countryCode": "FI",
+    "lat": 68.3463791,
+    "lng": 27.4605868,
+    "category": "Hotel",
+    "website": "http://www.kiilopaa.fi/",
+    "amenities": [
+      "Free parking",
+      "Free Wi-Fi",
+      "Breakfast",
+      "Wi-Fi"
+    ]
+  },
+  "north-frontier-cabins": {
+    "matchedTitle": "North Frontier",
+    "rating": 4.9,
+    "reviews": 18,
+    "address": "Laanilantie 8, 99830 Inari, Finland",
+    "countryCode": "FI",
+    "lat": 68.3938262,
+    "lng": 27.4000764,
+    "category": "Cottage",
+    "website": "https://north-frontier.fi/",
+    "amenities": [
+      "Free parking",
+      "Free Wi-Fi",
+      "Breakfast",
+      "Wi-Fi"
+    ]
+  },
+  "elite-hotel-frost": {
+    "matchedTitle": "Elite Hotel Frost, Kiruna",
+    "rating": 4.6,
+    "reviews": 248,
+    "address": "Torggatan 5, 981 30 Kiruna, Sweden",
+    "countryCode": "SE",
+    "lat": 67.849207,
+    "lng": 20.306271,
+    "category": "Hotel",
+    "website": "https://www.elite.se/hotell/kiruna/elite-hotel-frost/",
+    "amenities": [
+      "Pool",
+      "Free parking",
+      "Free Wi-Fi",
+      "Breakfast"
+    ]
+  },
+  "star-arctic-hotel": {
+    "matchedTitle": "Star Arctic Hotel & Activities",
+    "rating": 4.5,
+    "reviews": 706,
+    "address": "Ylämajantie 1, 99830 Saariselkä, Finland",
+    "countryCode": "FI",
+    "lat": 68.4326547,
+    "lng": 27.4382042,
+    "category": "Resort hotel",
+    "website": "https://stararctichotel.com/",
+    "amenities": [
+      "Free parking",
+      "Free breakfast",
+      "Free Wi-Fi",
+      "Air-conditioned"
+    ]
+  },
+  "reindeer-lodge-jukkasjarvi": {
+    "matchedTitle": "Reindeer Lodge",
+    "rating": 4.7,
+    "reviews": 151,
+    "address": "Paksuniemivägen 188, 981 91 Jukkasjärvi, Sweden",
+    "countryCode": "SE",
+    "lat": 67.8504353,
+    "lng": 20.6437451,
+    "category": "Cottage village",
+    "website": "https://www.nutti.se/",
+    "amenities": [
+      "Free parking",
+      "Breakfast"
+    ]
+  },
+  "abisko-mountain-lodge": {
+    "matchedTitle": "Abisko Mountain Lodge",
+    "rating": 4.6,
+    "reviews": 794,
+    "address": "Lapportsvägen 30, 981 07 Abisko, Sweden",
+    "countryCode": "SE",
+    "lat": 68.3467777,
+    "lng": 18.8325771,
+    "category": "Hotel",
+    "website": "http://www.abiskomountainlodge.se/",
+    "amenities": [
+      "Free parking",
+      "Free Wi-Fi",
+      "Air-conditioned",
+      "Wi-Fi"
+    ]
+  },
+  "best-western-arctic-eden": {
+    "matchedTitle": "Best Western Hotel Arctic Eden",
+    "rating": 4,
+    "reviews": 784,
+    "address": "Föraregatan, Konduktörsgatan 18, 981 39 Kiruna, Sweden",
+    "countryCode": "SE",
+    "lat": 67.8595534,
+    "lng": 20.2232387,
+    "category": "Hotel",
+    "website": "http://www.hotelarcticeden.se/",
+    "amenities": [
+      "Pool",
+      "Spa",
+      "Free parking",
+      "Free breakfast"
+    ]
+  },
+  "aurora-river-camp": {
+    "matchedTitle": "Aurora River Camp",
+    "rating": 4.9,
+    "reviews": 147,
+    "address": "Poikkijärvivägen 55, 981 92 Kiruna, Sweden",
+    "countryCode": "SE",
+    "lat": 67.8391936,
+    "lng": 20.5882979,
+    "category": "Hotel",
+    "website": "https://www.aurorarivercamp.com/",
+    "amenities": [
+      "Free parking",
+      "Free Wi-Fi",
+      "Wi-Fi",
+      "Kitchen"
+    ]
+  },
+  "stf-malmfaltens-folkhogskola": {
+    "matchedTitle": "STF Malmfältens Folkhögskola",
+    "rating": 4.1,
+    "reviews": 164,
+    "address": "Campingvägen 3, 981 35 Kiruna, Sweden",
+    "countryCode": "SE",
+    "lat": 67.8617335,
+    "lng": 20.2350666,
+    "category": "Folk high school",
+    "website": "https://malmfaltensfolkhogskola.se/stf-hotell-och-vandrarhem/",
+    "amenities": [
+      "Free parking",
+      "Free Wi-Fi",
+      "Wi-Fi",
+      "Restaurant"
+    ]
+  },
+  "first-hotel-amalie": {
+    "matchedTitle": "First Hotel Amalie",
+    "rating": 4,
+    "reviews": 774,
+    "address": "Sjøgata 5b, 9008 Tromsø, Norway",
+    "countryCode": "NO",
+    "lat": 69.6486414,
+    "lng": 18.9596869,
+    "category": "Hotel",
+    "website": "https://www.firsthotels.no/hoteller/norge/tromsoe/first-hotel-amalie",
+    "amenities": [
+      "Free breakfast",
+      "Free Wi-Fi",
+      "Air-conditioned",
+      "Breakfast"
+    ]
+  },
+  "hotell-fjallet-bjorkliden": {
+    "matchedTitle": "Hotell Fjället",
+    "rating": 4.2,
+    "reviews": 484,
+    "address": "Björklidenvägen 70, 981 93 Björkliden, Sweden",
+    "countryCode": "SE",
+    "lat": 68.4071039,
+    "lng": 18.6750712,
+    "category": "Hotel",
+    "website": "https://bjorkliden.com/",
+    "amenities": [
+      "Free parking",
+      "Free Wi-Fi",
+      "Breakfast",
+      "Wi-Fi"
+    ]
+  },
+  "thon-hotel-polar": {
+    "matchedTitle": "Thon Hotel Polar",
+    "rating": 4.2,
+    "reviews": 1050,
+    "address": "Grønnegata 45, 9008 Tromsø, Norway",
+    "countryCode": "NO",
+    "lat": 69.6484209,
+    "lng": 18.9535518,
+    "category": "Hotel",
+    "website": "https://www.thonhotels.no/hoteller/norge/tromso/thon-hotel-polar/",
+    "amenities": [
+      "Free breakfast",
+      "Free Wi-Fi",
+      "Air-conditioned",
+      "Breakfast"
+    ]
+  },
+  "tromso-activities-hostel": {
+    "matchedTitle": "Tromso Activities Hostel",
+    "rating": 4.3,
+    "reviews": 298,
+    "address": "Storgata 107, 9008 Tromsø, Norway",
+    "countryCode": "NO",
+    "lat": 69.6537033,
+    "lng": 18.9607297,
+    "category": "Youth hostel",
+    "website": "https://www.tromsoactivities.com/",
+    "amenities": [
+      "Free Wi-Fi",
+      "Wi-Fi",
+      "Hot tub",
+      "Pet-friendly"
+    ]
+  },
+  "first-hotel-backpack": {
+    "matchedTitle": "Enter Backpack Hotel",
+    "rating": 3.9,
+    "reviews": 364,
+    "address": "Parkgata 4, 9008 Tromsø, Norway",
+    "countryCode": "NO",
+    "lat": 69.6487851,
+    "lng": 18.9496888,
+    "category": "Hotel",
+    "website": "https://www.firsthotels.no/hoteller/norge/tromsoe/first-hotel-backpack",
+    "amenities": [
+      "Free Wi-Fi",
+      "Air-conditioned",
+      "Wi-Fi"
+    ]
+  },
+  "radisson-blu-tromso": {
+    "matchedTitle": "Radisson Blu Hotel, Tromso, A Verified Net Zero Hotel",
+    "rating": 4.3,
+    "reviews": 3040,
+    "address": "Sjøgata 7, 9259 Tromsø, Norway",
+    "countryCode": "NO",
+    "lat": 69.6490212,
+    "lng": 18.9595945,
+    "category": "Hotel",
+    "website": "https://www.radissonhotels.com/en-us/hotels/radisson-blu-tromso-net-zero",
+    "amenities": []
+  },
+  "scandic-ishavshotel": {
+    "matchedTitle": "Scandic Ishavshotel",
+    "rating": 4.3,
+    "reviews": 3051,
+    "address": "Fredrik Langes gate 2, 9008 Tromsø, Norway",
+    "countryCode": "NO",
+    "lat": 69.6495043,
+    "lng": 18.961943,
+    "category": "Hotel",
+    "website": "https://www.scandichotels.com/no/hotell/scandic-ishavshotel",
+    "amenities": [
+      "Free Wi-Fi",
+      "Air-conditioned",
+      "Breakfast",
+      "Wi-Fi"
+    ]
+  },
+  "first-hotel-viking": {
+    "matchedTitle": "Viking Hotel Tromso",
+    "rating": 3.9,
+    "reviews": 899,
+    "address": "Grønnegata 18, 9008 Tromsø, Norway",
+    "countryCode": "NO",
+    "lat": 69.6467132,
+    "lng": 18.9505692,
+    "category": "Hotel",
+    "website": "https://www.firsthotels.no/hoteller/norge/tromsoe/first-hotel-viking",
+    "amenities": [
+      "Free Wi-Fi",
+      "Air-conditioned",
+      "Wi-Fi",
+      "Airport shuttle"
+    ]
+  },
+  "first-hotel-city-tromso": {
+    "matchedTitle": "First Hotel City",
+    "rating": 3.9,
+    "reviews": 330,
+    "address": "Grønnegata 48, 9008 Tromsø, Norway",
+    "countryCode": "NO",
+    "lat": 69.6483083,
+    "lng": 18.9526453,
+    "category": "Hotel",
+    "website": "https://www.firsthotels.no/hoteller/norge/tromsoe/first-hotel-city-tromsoe",
+    "amenities": [
+      "Free Wi-Fi",
+      "Air-conditioned",
+      "Wi-Fi",
+      "Parking"
+    ]
+  },
+  "enter-st-elisabeth-suites": {
+    "matchedTitle": "St. Elisabeth Suites & SPA",
+    "rating": 4.1,
+    "reviews": 238,
+    "address": "Mellomvegen 50, 9007 Tromsø, Norway",
+    "countryCode": "NO",
+    "lat": 69.6439033,
+    "lng": 18.9394051,
+    "category": "Hotel",
+    "website": "http://www.entertromso.no/",
+    "amenities": [
+      "Pool",
+      "Spa",
+      "Free Wi-Fi",
+      "Air-conditioned"
+    ]
+  }
+}
